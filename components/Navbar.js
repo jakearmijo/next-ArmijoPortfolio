@@ -5,9 +5,7 @@ function Navbar() {
     <>
       <nav>
         <div>
-          <a href="top" id="logo">
-            Armijo Algorithm
-          </a>
+          <a id="logo">Armijo Algorithm</a>
         </div>
         <div className="nav-links">
           <Link to="projects" activeClass="active" spy={true} smooth={true}>
@@ -22,8 +20,12 @@ function Navbar() {
           <Link to="contactTitle" activeClass="active" spy={true} smooth={true}>
             CONTACT
           </Link>
-          <a href="https://github.com/jakearmijo">GITHUB</a>
-          <a href="https://www.linkedin.com/in/jake-armijo/">LINKEDIN</a>
+          <a target="_blank" href="https://github.com/jakearmijo">
+            GITHUB
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/jake-armijo/">
+            LINKEDIN
+          </a>
         </div>
       </nav>
     </>
