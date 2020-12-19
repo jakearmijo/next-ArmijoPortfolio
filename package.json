@@ -1,0 +1,27 @@
+{
+  "name": "my-next-project",
+  "version": "1.0.0",
+  "description": "My First Next.js project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "emailjs": "^3.4.0",
+    "emailjs-com": "^2.6.4",
+    "next": "^10.0.3",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.4.0",
+    "react-dom": "^16.0.0",
+    "react-hook-form": "^6.13.1",
+    "react-scroll": "^1.8.1",
+    "styled-components": "^5.2.1",
+    "styled-components-carousel": "^0.2.0"
+  }
+}
