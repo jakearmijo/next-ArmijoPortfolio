@@ -1,6 +1,9 @@
 import Carousel from "styled-components-carousel";
+import 'keen-slider/keen-slider.min.css'
+import { useKeenSlider } from 'keen-slider/react'
 
 export default function Projects() {
+  const [sliderRef, slider] = useKeenSlider()
   return (
     <div id="projects">
       <div
@@ -12,7 +15,10 @@ export default function Projects() {
       </div>
       <div id="phutbol" data-aos="fade-up" className="aos-init aos-animate">
         <h1 className="projectTitle">Phutbol</h1>
-        <div className="carousel-container">
+        <div ref={sliderRef} className="carousel-container">
+        <div class="keen-slider__slide">1</div>
+        <div class="keen-slider__slide">2</div>
+        <div class="keen-slider__slide">3</div>
           {/* <Carousel center infinite showArrows showIndicator slidesToShow={1}>
             <div>
               <img
