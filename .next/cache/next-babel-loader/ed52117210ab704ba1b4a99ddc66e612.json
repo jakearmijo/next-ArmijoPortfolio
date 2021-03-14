@@ -1,0 +1,1 @@
+{"ast":null,"code":"import styled from \"styled-components\";\nlet imgSource = 'Family-Photo.jpeg';\nexport const StyledIMG = styled.img`\n  background-image: url(/${imgSource});\n  width: 800px;\n  height: 450px;\n`;","map":null,"metadata":{},"sourceType":"module"}

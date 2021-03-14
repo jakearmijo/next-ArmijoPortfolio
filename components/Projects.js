@@ -1,6 +1,7 @@
 import Carousel from "styled-components-carousel";
 import 'keen-slider/keen-slider.min.css'
 import { useKeenSlider } from 'keen-slider/react'
+import ProjectCarousel from './ProjectCarousel'
 
 export default function Projects() {
   const [sliderRef] = useKeenSlider({
@@ -27,33 +28,7 @@ export default function Projects() {
         <div className="keen-slider__slide number-slide2">2</div>
         <div className="keen-slider__slide number-slide3">3</div>
     
-          {/* <Carousel center infinite showArrows showIndicator slidesToShow={1}>
-            <div>
-              <img
-                className="projectImage"
-                src="phutBol-GAME-OVER-screen.png"
-              />
-
-              <div className="text">
-                Game Over - The game is over when a team scores 7 points.
-              </div>
-            </div>
-            <div>
-              <img className="projectImage" src="phutBol-loading-screen.png" />
-              <div className="text">
-                Start Screen - Enter your username and the room code to join
-                your friends.
-              </div>
-            </div>
-            <div>
-              <img className="projectImage" src="phutBol-Player-screen.png" />
-
-              <div className="text">
-                Player Screen - With a arcade feel and a joystick for movement.
-                Phutbol is nostalgic while still being modern.
-              </div>
-            </div>
-          </Carousel> */}
+        <ProjectCarousel />
         </div>
         <div className="project-description">
           <p className="p-project">

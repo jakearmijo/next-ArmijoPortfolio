@@ -226,19 +226,26 @@ h1 {
   color: #fff;
   font-weight: 500;
   height: 300px;
-  max-height: 100vh;
+  width: 800px;
+  height: 450px;
 }
 
 .number-slide1 {
   background-image: url(/phutBol-loading-screen.png);
+  width: 800px;
+  height: 450px;
 }
 
 .number-slide2 {
   background-image: url(/phutBol-Player-screen.png);
+  width: 800px;
+  height: 450px;
 }
 
 .number-slide3 {
   background-image: url(/phutBol-GAME-OVER-screen.png);
+  width: 800px;
+  height: 450px;
 }
 
 
