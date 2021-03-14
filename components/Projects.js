@@ -3,7 +3,14 @@ import 'keen-slider/keen-slider.min.css'
 import { useKeenSlider } from 'keen-slider/react'
 
 export default function Projects() {
-  const [sliderRef, slider] = useKeenSlider()
+  const [sliderRef] = useKeenSlider({
+    spacing: 10,
+    slidesPerView: 2,
+    centered: true,
+    vertical: true,
+    loop: true,
+  })
+
   return (
     <div id="projects">
       <div
@@ -15,10 +22,11 @@ export default function Projects() {
       </div>
       <div id="phutbol" data-aos="fade-up" className="aos-init aos-animate">
         <h1 className="projectTitle">Phutbol</h1>
-        <div ref={sliderRef} className="carousel-container">
-        <div class="keen-slider__slide">1</div>
-        <div class="keen-slider__slide">2</div>
-        <div class="keen-slider__slide">3</div>
+        <div ref={sliderRef} className="keen-slider">
+        <div className="keen-slider__slide number-slide1">1</div>
+        <div className="keen-slider__slide number-slide2">2</div>
+        <div className="keen-slider__slide number-slide3">3</div>
+    
           {/* <Carousel center infinite showArrows showIndicator slidesToShow={1}>
             <div>
               <img
