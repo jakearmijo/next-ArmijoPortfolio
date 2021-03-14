@@ -231,34 +231,14 @@ h1 {
 
 .number-slide1 {
   background-image: url(/phutBol-loading-screen.png);
-  background: linear-gradient(
-    128deg,
-    rgba(64, 175, 255, 1) 0%,
-    rgba(63, 97, 255, 1) 100%
-  );
 }
 
 .number-slide2 {
   background-image: url(/phutBol-Player-screen.png);
-  background: linear-gradient(
-    128deg,
-    rgba(255, 154, 63, 1) 0%,
-    rgba(255, 75, 64, 1) 100%
-  );
 }
 
 .number-slide3 {
   background-image: url(/phutBol-GAME-OVER-screen.png);
-  background: linear-gradient(
-    128deg,
-    rgba(182, 255, 64, 1) 0%,
-    rgba(63, 255, 71, 1) 100%
-  );
-  background: linear-gradient(
-    128deg,
-    rgba(189, 255, 83, 1) 0%,
-    rgba(43, 250, 82, 1) 100%
-  );
 }
 
 
