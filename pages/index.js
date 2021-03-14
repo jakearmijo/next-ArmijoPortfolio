@@ -7,6 +7,7 @@ import Hobbies from "../components/Hobbies";
 import Resume from "../components/Resume";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import DiscordWidget from "../components/DiscordWidget";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
       <Hello />
       <Projects />
       <AboutMe />
+      <DiscordWidget />
       <Hobbies />
       <Resume />
       <Contact />
