@@ -16,9 +16,15 @@ export default function Projects() {
       <div id="phutbol" data-aos="fade-up" className="aos-init aos-animate">
         <h1 className="projectTitle">Phutbol</h1>
         <div ref={sliderRef} className="carousel-container">
-        <div class="keen-slider__slide">1</div>
-        <div class="keen-slider__slide">2</div>
-        <div class="keen-slider__slide">3</div>
+        <div class="keen-slider__slide">testing</div>
+        <div class="keen-slider__slide">2222222222</div>
+        <div class="k">33333L##7333l3377</div>
+        <div>
+        <img
+          className="projectImage"
+          src="/public/Phutbol.svg"
+        />
+        </div>
           {/* <Carousel center infinite showArrows showIndicator slidesToShow={1}>
             <div>
               <img
