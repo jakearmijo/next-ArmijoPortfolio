@@ -3,7 +3,6 @@ export default function Footer() {
     <div>
       <footer>
         <div id="footer-links">
-          {/* {isHovered ? 'armijojake@yahoo.com' : useHover()} */}
           <a href="mailto:armijojake@yahoo.com" />
           <img src="sendit.png" />
 
@@ -14,7 +13,7 @@ export default function Footer() {
           <img src="GitHubLogo.png" />
         </div>
         <div id="copyright">
-          Â© <span id="year">2020</span> Jake Armijo. All rights reserved.
+          © <span id="year">2020</span> Jake Armijo. All rights reserved.
         </div>
       </footer>
     </div>

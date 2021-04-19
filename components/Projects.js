@@ -1,5 +1,3 @@
-import Carousel from "styled-components-carousel";
-
 export default function Projects() {
   return (
     <div id="projects">
