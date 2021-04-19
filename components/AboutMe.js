@@ -27,7 +27,7 @@ export default function AboutMe() {
             timelines, and successfully completing goals. I enjoyed what I was
             doing in the construction industry and it was exciting to see your
             hard work go from plan to product, what I found was missing was that
-            it simply wasnâ€™t enough. It always interested me to see how I
+            it simply wasn't enough. It always interested me to see how I
             could use technology. I researched coding, and coding boot camps
             leveraged a lot of free resources and I landed on joining FullStack
             Academy. Now it has been a challenging ride filled with peaks and

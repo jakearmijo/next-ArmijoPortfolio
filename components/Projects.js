@@ -12,35 +12,10 @@ export default function Projects() {
       </div>
       <div id="phutbol" data-aos="fade-up" className="aos-init aos-animate">
         <h1 className="projectTitle">Phutbol</h1>
-        <div className="carousel-container">
-          {/* <Carousel center infinite showArrows showIndicator slidesToShow={1}>
-            <div>
-              <img
-                className="projectImage"
-                src="phutBol-GAME-OVER-screen.png"
-              />
-
-              <div className="text">
-                Game Over - The game is over when a team scores 7 points.
-              </div>
-            </div>
-            <div>
-              <img className="projectImage" src="phutBol-loading-screen.png" />
-              <div className="text">
-                Start Screen - Enter your username and the room code to join
-                your friends.
-              </div>
-            </div>
-            <div>
-              <img className="projectImage" src="phutBol-Player-screen.png" />
-
-              <div className="text">
-                Player Screen - With a arcade feel and a joystick for movement.
-                Phutbol is nostalgic while still being modern.
-              </div>
-            </div>
-          </Carousel> */}
-        </div>
+        <img
+          className="projectImage"
+          src="/Phutbol.svg"
+        />
         <div className="project-description">
           <p className="p-project">
             Built on Phaser with Javascript as its bones. This socket driven app
@@ -67,42 +42,23 @@ export default function Projects() {
         <div className="projectLinks">
           <a href="http://phutbol.herokuapp.com/">
             Try Demo{" "}
-            <img src="https://chrischindev.com/assets/externallink2.png" />
+            <img src="/externallink2.png" />
           </a>
           <a href="https://github.com/2006-links-light/phutbol">
-            View Code <img src="https://chrischindev.com/assets/github3.png" />
+            View Code <img src="/github3.png" />
           </a>
           <a href="https://youtu.be/XtMdD3XnvXQ">
             Watch Presentation{" "}
-            <img src="https://chrischindev.com/assets/video.png" />
+            <img src="/video.png" />
           </a>
         </div>
       </div>
       <div id="stackawat" data-aos="fade-up" className="aos-init aos-animate">
         <h1 className="projectTitle">Stackawat</h1>
-        <div className="carousel-container">
-          {/* <Carousel center infinite showArrows showIndicator slidesToShow={1}>
-            <div>
-              <img className="projectImage" src="StackAWat-BTPA-layout.png" />
-              <div className="text">
-                Product layout - Layout shows the product and is linked to
-                Watson.
-              </div>
-            </div>
-            <div>
-              <img className="projectImage" src="StackAWat-starting.png" />
-              <div className="text">
-                Engage in a conversation with Watson and ask about products.
-              </div>
-            </div>
-            <div>
-              <img className="projectImage" src="StackAWat-Ordering2.png" />
-              <div className="text">
-                Ordering Screen - Complete an order with Watson.
-              </div>
-            </div>
-          </Carousel> */}
-        </div>
+        <img
+          className="projectImage"
+          src="/StackAWat-BTPA.svg"
+        />
         <div className="project-description">
           <p className="p-project">
             Stackawat is a customer chatbot with IBM Watson built in 2 days. I
@@ -119,11 +75,11 @@ export default function Projects() {
         </div>
         <div className="projectLinks">
           <a href="https://github.com/jakearmijo/cableBuilderFull">
-            View Code <img src="https://chrischindev.com/assets/github3.png" />
+            View Code <img src="/github3.png" />
           </a>
           <a href="https://youtu.be/AGeLlD0xjL0">
             Watch Presentation{" "}
-            <img src="https://chrischindev.com/assets/video.png" />
+            <img src="/video.png" />
           </a>
         </div>
       </div>
@@ -133,25 +89,10 @@ export default function Projects() {
         className="aos-init aos-animate"
       >
         <h1 className="projectTitle">JDB CARS</h1>
-        <div className="carousel-container">
-          {/* <Carousel center infinite showArrows showIndicator slidesToShow={1}>
-            <div>
-              <img className="projectImage" src="Checkout-cars-JDB.png" />
-              <div className="text">
-                Check out process with a shopping cart.
-              </div>
-            </div>
-            <div>
-              <img className="projectImage" src="Start-JDB-Cars.png" />
-              <div className="text">Log In or surf the site as a guest.</div>
-            </div>
-            <div>
-              <img className="projectImage" src="Search-cars-JDB.png" />
-
-              <div className="text">View a list of our inventory.</div>
-            </div>
-          </Carousel> */}
-        </div>
+        <img
+          className="projectImage"
+          src="/JDBCars.svg"
+        />
         <div className="project-description">
           <p className="p-project">
             JDB Cars is a mock e-commerce site for buying and selling vehicles.
@@ -166,7 +107,7 @@ export default function Projects() {
         </div>
         <div className="projectLinks">
           <a href="https://github.com/2006-gs-leo/grace-shopper">
-            View Code <img src="https://chrischindev.com/assets/github3.png" />
+            View Code <img src="/github3.png" />
           </a>
         </div>
       </div>
