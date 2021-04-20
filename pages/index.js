@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Link from 'next/link'
+
 import Navbar from "../components/Navbar";
 import Hello from "../components/Hello";
 import Projects from "../components/Projects";
@@ -15,9 +17,14 @@ function Home() {
       <Head>
         <title>Armijo Algorithm</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        
       </Head>
       <Navbar />
+      <h1 className="title">
+        My{' '}
+        <Link href="/posts/first-post">
+          <a>First Blog Post!</a>
+        </Link>
+      </h1>
       <Hello />
       <Projects />
       <AboutMe />

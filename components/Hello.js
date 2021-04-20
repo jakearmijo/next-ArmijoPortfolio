@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Hello() {
   return (
     <div id="top">
@@ -42,6 +44,7 @@ export default function Hello() {
         className="aos-init-aos-animate"
       >
         <a href="#projects">View Portfolio</a>
+        <Link href="/posts/first-post">View Blog</Link>
       </div>
     </div>
   );

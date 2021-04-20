@@ -278,7 +278,7 @@ p {
   height: 320px;
   border-top-left-radius: 30%;
   border-bottom-right-radius: 30%;
-  background-image: url(/Family-Photo.jpeg);
+  background-image: url(/public/images/Family-Photo.jpeg);
   background-color: #1b1c1c;
   background-repeat: no-repeat;
   background-position: center;
@@ -397,22 +397,22 @@ h3 {
   margin: 10px;
 }
 #videogames {
-  background-image: url(/pc-gaming-icon.png);
+  background-image: url('/pc-gaming-icon.png');
 }
 #travel {
-  background-image: url(/World-Travel.png);
+  background-image: url('/World-Travel.png');
 }
 #flyfish {
-  background-image: url(/fly-fish-clipart.jpeg);
+  background-image: url('/fly-fish-clipart.jpeg');
 }
 #hockey {
-  background-image: url(/hockey-clipart.png);
+  background-image: url('/hockey-clipart.png');
 }
 #seinfeld {
-  background-image: url(/jerry-seinfeld.png);
+  background-image: url('/jerry-seinfeld.png');
 }
 #coffee {
-  background-image: url(/coffee.png);
+  background-image: url('/coffee.png');
 }
 
 #resumeMain a img {

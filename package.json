@@ -1,7 +1,7 @@
 {
-  "name": "my-next-project",
+  "name": "jake-armijo-dot-com",
   "version": "1.0.0",
-  "description": "My First Next.js project",
+  "description": "Offical Jake Armijo website",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
