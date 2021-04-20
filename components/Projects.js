@@ -16,22 +16,7 @@ export default function Projects() {
         />
         <div className="project-description">
           <p className="p-project">
-            Built on Phaser with Javascript as its bones. This socket driven app
-            gives friends and family a chance to play soccer against each other
-            during the pandemic. An easy appealing GUI makes it seamless to set
-            up or join a new game. At project conception, our entire team wanted
-            to make a game. Everyone stayed energized and motivated until the
-            end and beyond. This project offered all of us a chance to use new
-            technologies that we had never previously ventured into. We gained
-            Phaser experience that was not only fun but worthwhile. Phaser as
-            the main component of the game really made it the most interesting
-            piece of the puzzle. Socket.io is the library driving the real-time
-            link to all the players. This had its challenges and offered the
-            team a good chance to collaborate and pair code. We do have future
-            plans to use Firebase for things such as a player leaderboard,
-            profile creation, character editing, and much more. We are pleased
-            with the product we have to offer on this day and are all on board
-            to continue to improve this app.
+          Built on Phaser with Javascript as its bones. This socket-driven app gives friends and family a chance to play soccer against each other during the pandemic. An easily appealing GUI makes it seamless to set up or join a new game. At project conception, our entire team wanted to make a game. Everyone stayed energized and motivated until the end and beyond. This project offered all of us a chance to use new technologies that we had never previously ventured into. We gained Phaser experience that was not only fun but worthwhile. Phaser as the main component of the game really made it the most interesting piece of the puzzle. Socket.io is the library driving the real-time link to all the players. This had its challenges and offered the team a good chance to collaborate and pair code. We do have future plans to use Firebase for things such as a player leaderboard, profile creation, character editing, and much more. We are pleased with the product we have to offer on this day and are all on board to continue to improve this app.
           </p>
           <p className="p-project p-tech">
             Technologies: JavaScript, Phaser, Socket.IO, Firebase
