@@ -74,8 +74,8 @@ export default function Hobbies() {
             family. I am a coffee and craft beer connoisseur. My nature
             activities include snowboarding, wakeboarding, and mostly fly
             fishing. I always enjoy a good hockey game. My favorite tv show is
-            Seinfeld. These are a few of my favorite things ... â€œYada yada
-            yada.â€
+            Seinfeld. These are a few of my favorite things ... Yada yada
+            yada.
           </p>
         </div>
       </div>
