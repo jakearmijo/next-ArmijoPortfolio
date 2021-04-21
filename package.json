@@ -13,9 +13,13 @@
   "license": "ISC",
   "dependencies": {
     "aos": "^2.3.4",
+    "date-fns": "^2.21.1",
     "emailjs": "^3.4.0",
     "emailjs-com": "^2.6.4",
+    "fs": "^0.0.1",
+    "gray-matter": "^4.0.2",
     "next": "^10.0.3",
+    "path": "^0.12.7",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^16.0.0",

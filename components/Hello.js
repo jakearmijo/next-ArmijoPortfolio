@@ -43,8 +43,8 @@ export default function Hello() {
         data-aos="fade-up-right"
         className="aos-init-aos-animate"
       >
-        <a href="#projects">View Portfolio</a>
-        <Link href="/posts/first-post">View Blog</Link>
+        <a className='viewPortfolio' href="#projects">View Portfolio</a>
+        <Link href="/blog/intro">View Blog</Link>
       </div>
     </div>
   );

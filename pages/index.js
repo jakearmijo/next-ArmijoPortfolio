@@ -11,7 +11,9 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import DiscordWidget from "../components/DiscordWidget";
 
-function Home() {
+
+function Home({allPostsData}) {
+  console.log("🚀 ~ file: index.js ~ line 28 ~ Home ~ allPostsData", allPostsData)
   return (
     <>
       <Head>
