@@ -16,7 +16,6 @@ export default function Layout({ children, home }) {
           content="Jake Armijo dot com"
         />
         <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
         {home ? (
@@ -50,8 +49,8 @@ export default function Layout({ children, home }) {
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
+          <Link href="/blog">
+            <a>← Back to Blog</a>
           </Link>
         </div>
       )}
