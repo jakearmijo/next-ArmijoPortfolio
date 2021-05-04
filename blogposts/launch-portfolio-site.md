@@ -1,6 +1,6 @@
 ---
 title: 'How I launched my portfolio site with Google Domains and Netlify'
-date: '2021-04-20'
+date: '2021-05-16'
 category: "Tutorial"
 template: "blog-post"
 tags: 'Google Domains, Netlify, Nextjs, Gatsby, DNS, Portfolio Site'
@@ -73,7 +73,7 @@ I had already been toying with Netlify and my vanilla React portfolio before thi
 
 </br>
 
-Congrats! Your domain is set up - it may take more time but mine was ready within minuets. <b>http://www.jakearmijo.com</b> was born.
+Congrats! Your domain is set up - it may take more time but mine was ready within minuets. <a href='http://www.jakearmijo.com'>http://www.jakearmijo.com</a> was born.
 
 
 Netlify will also set up the HTTPS certificate via https://letsencrypt.org/donate/. This process took a little longer but when I awoke in the morning I had the HTTPS before the URL and my site was not receiving the privacy warning. 
@@ -81,7 +81,8 @@ Netlify will also set up the HTTPS certificate via https://letsencrypt.org/donat
 
 Cheers,
 
-Jake Armijo
+Jake Armijo <bold>|</bold> Full Stack Software Engineer
+Armijojake@yahoo.com
+Connect with me on <a href='https://www.linkedin.com/in/jake-armijo/'>LinkedIn</a>
+Schedule a meeting with me on <a href='https://calendly.com/armijojake/meeting'>Calendly</a>
 
--> Connect with me on <a href='https://www.linkedin.com/in/jake-armijo/' target='_blank'>Linedin</a>
--> Schedule a meeting on <a href='https://calendly.com/armijojake/meeting' target='_blank'>Calendly</a>

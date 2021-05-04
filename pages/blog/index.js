@@ -1,40 +1,56 @@
 import Layout from "../../components/layout";
+import Navbar from "../../components/Navbar";
 import Head from "next/head";
-import Date from "../../components/date";
+import Link from "next/link";
 import utilStyles from "../../styles/utils.module.css";
+import { getSortedPostsData } from '../../lib/utils'
 
-import { getAllPostIds, getPostData } from "../../lib/utils";
-
-export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id);
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  
   return {
     props: {
-      postData,
-    },
-  };
+      allPostsData
+    }
+  }
 }
 
-export async function getStaticPaths() {
-  const paths = getAllPostIds();
-  return {
-    paths,
-    fallback: false,
-  };
-}
-
-export default function Post({ postData }) {
+export default function Post( { allPostsData } ) {
   return (
-    <Layout>
+    <Layout home>
       <Head>
-        <title>{postData.title}</title>
+        <title>Armijo Algorithm - Blog</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
-          <Date dateString={postData.date} />
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-      </article>
+      <Navbar/>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <button>Last Post Button</button>
+        <button>Next Post Button</button>
+      <h2>Hello User, Welcome to my blog!</h2>
+        <p>
+        Welcome to my page and thank you for stopping in for a visit. Today's date is 4/20/21 and it will now also be this page's birthday. I really am just looking for a playground to spend some time practicing things while continuing to increase my confidence with coding. If you read the <Link href="/">About Me Section</Link> you know that I am a boot camp graduate and career switcher. I have been working at a startup for the past few months and want to continue to develop my skill set. I came from the construction industry where I was a project manager/cost estimator. Growing up I played a ton of hockey. I now sub hockey with some competitive video games such as League of Legends and Fortnite. You can find me on Twitch, YouTube, Twitter, Instagram, and discord at FreakyMeasures. I have a beautiful wife and little baby girl (Alex and Charlotte). I have 2 dogs. Bodhisattva is a beagle terrier mix and Winifred is a Yorkie Chihuahua mix. My developer career is still young and I am very excited to see what the future hold. I hope we can connect sometime feel free to reach out via the form on the main page, LinkedIn, or any other media you wish.  
+        Again welcome to my page and thank you for stopping by!
+        </p>
+        <p>Jake Armijo</p>
+      <h4>
+      </h4>
+      </section>
+      <section>
+      <Link href="/">
+      <a>Back to home</a>
+      </Link>
+      <h2>Blog - Table of Contents</h2>
+      <ul className={utilStyles.list}>
+        {allPostsData.map(({ id, date, title }) => (
+          <li className={utilStyles.listItem} key={id}>
+            {title}
+            <br />
+            Post Date: {date}
+          </li>
+        ))}
+      </ul>
+      </section>
+      
     </Layout>
-  );
+)
 }

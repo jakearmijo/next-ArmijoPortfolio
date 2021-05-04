@@ -12,15 +12,15 @@ import Footer from "../components/Footer";
 import DiscordWidget from "../components/DiscordWidget";
 
 
-function Home({allPostsData}) {
-  console.log("🚀 ~ file: index.js ~ line 28 ~ Home ~ allPostsData", allPostsData)
+function Home() {
   return (
     <>
       <Head>
-        <title>Armijo Algorithm</title>
+        <title>Armijo Algorithm - Blog</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Navbar />
+      <body>
       <h1 className="title">
         My{' '}
         <Link href="/posts/first-post">
@@ -34,7 +34,10 @@ function Home({allPostsData}) {
       <Hobbies />
       <Resume />
       <Contact />
+      <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/19915776.js"></script>
+      </body>
       <Footer />
+         
     </>
   );
 }
