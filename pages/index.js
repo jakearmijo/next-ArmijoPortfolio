@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Link from 'next/link'
-
 import Navbar from "../components/Navbar";
 import Hello from "../components/Hello";
 import Projects from "../components/Projects";
@@ -21,12 +19,6 @@ function Home() {
       </Head>
       <Navbar />
       <body>
-      <h1 className="title">
-        My{' '}
-        <Link href="/posts/first-post">
-          <a>First Blog Post!</a>
-        </Link>
-      </h1>
       <Hello />
       <Projects />
       <AboutMe />

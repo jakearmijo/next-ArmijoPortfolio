@@ -1,4 +1,5 @@
 ---
+id: 'web-scraping-nodejs'
 title: 'Web Scraping and how to utilize reduce and map inside chrome dev tool'
 date: '2021-04-30'
 category: "Tutorial"
