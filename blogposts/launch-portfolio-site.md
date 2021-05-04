@@ -10,7 +10,7 @@ tags: 'Google Domains, Netlify, Nextjs, Gatsby, DNS, Portfolio Site'
 <br/>
 <br/>
 
-## How I launched my portfolio site with Google Domains and Netlify
+### How I launched my portfolio site with Google Domains and Netlify
 ____________________________________________________________
 
 <p>
