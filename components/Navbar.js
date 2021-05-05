@@ -6,7 +6,7 @@ function Navbar() {
     <>
       <nav>
         <div>
-          <a id="logo">Armijo Algorithm</a>
+          <a id="logo"> Armijo Algorithm</a>
         </div>
         <div className="nav-links">
           <ScrollLink to="projects" activeClass="active" spy={true} smooth={true}>
