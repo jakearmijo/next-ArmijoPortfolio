@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { Button } from '@zendeskgarden/react-buttons';
 
 export const StyledDefaultButton = styled(Button)`
-  border-color: black;
-  color: black;
+  border-color: #000000;
+  color: #000000;
+  display: inline-flex;
+
 `;

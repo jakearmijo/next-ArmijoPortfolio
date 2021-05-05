@@ -14,56 +14,54 @@ Hello Everyone, A little while ago I knew I wanted to create my website. I looke
 <p>
 When I started to research domains and where to purchase them. I checked GoDaddy first (just because I'm 30 and I've always seen and heard their name) I also stumbled into Google Domains which I quickly leaned towards as the price was even with the range I was seeing and I wanted to have something from a brand I knew. I also came across sites such as  A2, Bluehost, Netlify, or Namecheap. I honestly have no advice as I'm sure if you have made it this far the process is decently simple with any provider you chose. In the end, the final check-out price was $12 for 1 year that I set to reoccurring. There was also an option on there to have a "work" email address. For example, you can choose info@jakearmijo.com or something along those lines. This was added for Google Workspace and was $6 per user per month and came with 30GB of cloud storage. I thought about it for our family pictures cause my wife has been searching for a cloud option to store all of our pictures on. If anyone has any good experiences with any cloud-based photo storage such as google photos or amazon photos or anything please DM on LinkedIn
 </p>
-<div>
+<div class="border">
   <img
-    class="border mobile"
-    width="100%"
-    alt="filler"
-    title="filler"
-    src="http://www.fillmurray.com/460/300"
-    data-canonical-src="/images/ffillerrrrrr.png"
-  />
+      class="border"
+      width="50%"
+      height="50%"
+      alt="Netlify"
+      title="Netlify"
+      src="https://download.logo.wine/logo/Netlify/Netlify-Logo.wine.png"
+      data-canonical-src="https://download.logo.wine/logo/Netlify/Netlify-Logo.wine.png"
+    />
 </div>
+
 <p>
-I had already been toying with Netlify and my vanilla React portfolio before this transition. I watched an <a href='https://explorers.netlify.com/learn/nextjs' target='_blank'>incredible tutorial</a> by Cassidoo and I applied it to my site in order to get it up and running with a basic Netlify URL. The process for Netlify to add my custom domain after I had purchased it from google domains is as follows
+I had already been toying with Netlify and my vanilla React portfolio before this transition. I watched an <strong><a href='https://explorers.netlify.com/learn/nextjs' target='_blank'>incredible tutorial</a></strong> by Cassidoo and I applied it to my site in order to get it up and running with a basic Netlify URL. The process for Netlify to add my custom domain after I had purchased it from google domains is as follows
 </p>
 </br>
 
-### Netlify
-
-<div class="list">
   <div class="list">
     <ol>
-      <li class="listItem"> In your Netlify console, navigate to your site and click Domain Settings. Click the green button "Add custom domain".</li>
-      <li class="listItem"> It will prompt you to provide the name of the domain you have bought. For example http://www.jakearmijo.com.</li>
-      <li class="listItem"> Verify that you are the owner of the domain. </li>
-      <li class="listItem"> Click "verify".</li>
-      <li class="listItem"> You will be redirected to your domain settings where you will see your domain. You will see that your domain will have a warning, to ask you to "check your DNS configuration". Click to Options -> Set Up Netlify DNS.</li>
-      <li class="listItem"> Add domain - Netlify will ask you to re-verify your domain name</li>
-      <li class="listItem"> Add DNS records - The DNS records for your Netlify sites will be configured automatically. I did not have an email account with the domain so I skipped this part.</li>
-      <li class="listItem"> Activate Netlify DNS - Nelify will give you names of their name savers. Keep them open and head to google domains.</li>
+      <p class="listItem">1.) In your Netlify console, navigate to your site and click Domain Settings. Click the green button "Add custom domain".</p>
+      <p class="listItem">2.) It will prompt you to provide the name of the domain you have bought. For example <strong>http://www.jakearmijo.com</strong>.</p>
+      <p class="listItem">3.) Verify that you are the owner of the domain. </p>
+      <p class="listItem">4.) Click "verify".</p>
+      <p class="listItem">5.) You will be redirected to your domain settings where you will see your domain. You will see that your domain will have a warning, to ask you to "check your DNS configuration". Click to Options -> Set Up Netlify DNS.</p>
+      <p class="listItem">6.) Add domain - Netlify will ask you to re-verify your domain name</p>
+      <p class="listItem">7.) Add DNS records - The DNS records for your Netlify sites will be configured automatically. I did not have an email account with the domain so I skipped this part.</p>
+      <p class="listItem">8.) Activate Netlify DNS - Nelify will give you names of their name savers. Keep them open and head to google domains.</p>
     </ol>
   </div>
-  <div class="third right">
+  <div class="border">
     <img
       class="border"
-      width="80%"
-      alt="Tester"
-      title="Tester"
-      src="http://www.fillmurray.com/g/155/300"
-      data-canonical-src="/images/tester.png"
+      width="50%"
+      height="50%"
+      alt="Google Domains"
+      title="Google Domains"
+      src="https://cdn.freelogovectors.net/wp-content/uploads/2020/11/google-domains-logo-768x716.png"
+      data-canonical-src="https://cdn.freelogovectors.net/wp-content/uploads/2020/11/google-domains-logo-768x716.png"
     />
   </div>
-</div>
-
 </br>
 
 ### Google Domains
 <ol>
-  <li>Navigate to your domain settings</li>
-  <li>Click DNS
-  <li>In the NameServers box, select the option "Use custom nameservers". Before I was able to add the custom domains, it made me disable DNSSEC.
-  <li>Add the name servers from Netlify to the Google name servers.
+  <p className='listItem'>1.) Navigate to your domain settings</p>
+  <p className='listItem'>2.) Click DNS
+  <p className='listItem'>3.) In the NameServers box, select the option "Use custom nameservers". Before I was able to add the custom domains, it made me disable DNSSEC.
+  <p className='listItem'>4.) Add the name servers from Netlify to the Google name servers.
 </ol>
 
 </br>

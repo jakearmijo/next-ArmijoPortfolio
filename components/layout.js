@@ -25,7 +25,6 @@ export default function Layout({ children, home }) {
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
           <>
@@ -38,11 +37,6 @@ export default function Layout({ children, home }) {
                 />
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
           </>
         )}
       </header>
