@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { init, sendForm } from "emailjs-com";
@@ -63,7 +65,6 @@ export default function Contact() {
         <div className="btn-box">
           <Button variant="primary" type="submit" className="btn btn-submit">
             Submit
-            <img src="/sendit.png" />
           </Button>
         </div>
       </Form>

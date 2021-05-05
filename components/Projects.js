@@ -1,3 +1,4 @@
+
 export default function Projects() {
   return (
     <div id="projects">
@@ -12,7 +13,7 @@ export default function Projects() {
         <h1 className="projectTitle">Phutbol</h1>
         <img
           className="projectImage"
-          src="/Phutbol.svg"
+          src="/images/Phutbol.svg"
         />
         <div className="project-description">
           <p className="p-project">
@@ -25,14 +26,14 @@ export default function Projects() {
         <div className="projectLinks">
           <a href="http://phutbol.herokuapp.com/">
             Try Demo{" "}
-            <img src="/externallink2.png" />
+            <img src="/images/externallink2.png" />
           </a>
           <a href="https://github.com/2006-links-light/phutbol">
-            View Code <img src="/github3.png" />
+            View Code <img src="/images/github3.png" />
           </a>
           <a href="https://youtu.be/XtMdD3XnvXQ">
             Watch Presentation{" "}
-            <img src="/video.png" />
+            <img src="/images/video.png" />
           </a>
         </div>
       </div>
@@ -40,7 +41,7 @@ export default function Projects() {
         <h1 className="projectTitle">Stackawat</h1>
         <img
           className="projectImage"
-          src="/StackAWat-BTPA.svg"
+          src="/images/StackAWat-BTPA.svg"
         />
         <div className="project-description">
           <p className="p-project">
@@ -58,11 +59,11 @@ export default function Projects() {
         </div>
         <div className="projectLinks">
           <a href="https://github.com/jakearmijo/cableBuilderFull">
-            View Code <img src="/github3.png" />
+            View Code <img src="/images/github3.png" />
           </a>
           <a href="https://youtu.be/AGeLlD0xjL0">
             Watch Presentation{" "}
-            <img src="/video.png" />
+            <img src="/images/video.png" />
           </a>
         </div>
       </div>
@@ -74,7 +75,7 @@ export default function Projects() {
         <h1 className="projectTitle">JDB CARS</h1>
         <img
           className="projectImage"
-          src="/JDBCars.svg"
+          src="/images/JDBCars.svg"
         />
         <div className="project-description">
           <p className="p-project">
@@ -90,7 +91,7 @@ export default function Projects() {
         </div>
         <div className="projectLinks">
           <a href="https://github.com/2006-gs-leo/grace-shopper">
-            View Code <img src="/github3.png" />
+            View Code <img src="/images/github3.png" />
           </a>
         </div>
       </div>
