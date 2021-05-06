@@ -51,7 +51,7 @@ export default function Post( { allPostsData } ) {
       <h2>Blog - Table of Contents</h2>
       <ul className={utilStyles.list}>
         {allPostsData.map(({ id, date, title }, idx) => (
-          <Link href={`/blog/${id}`}>
+          <Link href={`/blog/${id}`} key={idx}>
           <li className={utilStyles.listItem} key={id}>
             #{idx + 1}
             <br />
