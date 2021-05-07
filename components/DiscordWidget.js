@@ -8,9 +8,8 @@ export default function DiscordWidget() {
                 width="350" 
                 height="500" 
                 allowtransparency="true" 
-                frameborder="0" 
+                frameBorder="0" 
                 sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
-
             </iframe>
         </div>
     )

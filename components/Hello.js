@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Hello() {
   return (
     <div id="top">
@@ -41,7 +43,9 @@ export default function Hello() {
         data-aos="fade-up-right"
         className="aos-init-aos-animate"
       >
-        <a href="#projects">View Portfolio</a>
+        <a className='viewPortfolio' target='_blank' href="https://calendly.com/armijojake/meeting">Schedule time with me</a>
+        <a className='viewPortfolio' href="#projects">View Portfolio</a>
+        <Link href="/blog">View Blog</Link>
       </div>
     </div>
   );
