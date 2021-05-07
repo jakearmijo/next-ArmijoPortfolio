@@ -20,8 +20,8 @@ When I started to research domains and where to purchase them. I checked GoDaddy
       height="50%"
       alt="Netlify"
       title="Netlify"
-      src="https://download.logo.wine/logo/Netlify/Netlify-Logo.wine.png"
-      data-canonical-src="https://download.logo.wine/logo/Netlify/Netlify-Logo.wine.png"
+      src="/images/netlify-logo.png"
+      data-canonical-src="/images/Netlify-Logo.png"
     />
 </div>
 <p>
@@ -47,8 +47,8 @@ I had already been toying with Netlify and my vanilla React portfolio before thi
       height="50%"
       alt="Google Domains"
       title="Google Domains"
-      src="https://cdn.freelogovectors.net/wp-content/uploads/2020/11/google-domains-logo-768x716.png"
-      data-canonical-src="https://cdn.freelogovectors.net/wp-content/uploads/2020/11/google-domains-logo-768x716.png"
+      src="/images/google-domains-logo.png"
+      data-canonical-src="/images/google-domains-logo.png"
     />
   </div>
 </br>
