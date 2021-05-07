@@ -5,5 +5,5 @@
   "/": "pages/index.html",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/404": "pages/404.html"
+  "/blog/[id]": "pages/blog/[id].js"
 }
