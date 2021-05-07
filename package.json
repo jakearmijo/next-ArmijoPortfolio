@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@mdx-js/loader": "^1.6.22",
+    "@netlify/plugin-nextjs": "^3.2.2",
     "@next/mdx": "^10.1.3",
     "@zendeskgarden/react-buttons": "^8.36.2",
     "@zendeskgarden/react-grid": "^8.36.2",

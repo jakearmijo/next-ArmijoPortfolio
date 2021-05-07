@@ -1,0 +1,1 @@
+{"ast":null,"code":"import styled from 'styled-components';\nimport { Button } from '@zendeskgarden/react-buttons';\nexport const StyledDefaultButton = styled(Button)`\n  border-color: #000000;\n  color: #000000;\n  display: inline-flex;\n\n`;","map":null,"metadata":{},"sourceType":"module"}
