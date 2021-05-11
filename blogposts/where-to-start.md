@@ -7,7 +7,7 @@ template: "blog-post"
 tags: 'Startups, Brands, Consultants, Agency'
 ---
 Topic: This will be an article about why I started at a start up.
-#### 3 pools of companies
+## *WIP* 3 pools of companies
 - **Start up** is a face paced environment where you are engaged in daily **coding** work and practices. If you get a chance. I do feel a start up is worth it ..
 - **Brands** usually has a established **tech stack**.
 - **Consultants/Agency** usually has a **wide range** of technoogies. These technologies are dependent on client's needs are could vary.
