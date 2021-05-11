@@ -8,7 +8,7 @@ tags: 'Google Dev Tools, Reduce, Map, Nodejs, Web Scraping'
 ---
 <div class="border">
 
-## Web Scraping and how to use reduce and map inside google dev tools console</h2>
+## *WIP* - Web Scraping and how to use reduce and map inside google dev tools console</h2>
 
 Let say I needed to pull specfific information off of webpage. I could utilize web scraping. Web scraping, web harvesting, or web data extraction is data scraping used for extracting informaion from websites. Although it can be used for a wide variety of things (some good and some not good) some Useful examples include:
 <p class="border">
@@ -43,7 +43,7 @@ In these example we are going to be imagining we are trying to grab a bunch of d
   Array.from(document.querySelectorAll('.caseStudy-card-heading > a')).map(({title, innerHTML} ) => ({ URL: "https://" + title + ".com".split(" ").join(), name: title, source: 'https://www.bigcommerce.com/case-study/'} ))
 
 </p>
-  <img
+  <Image
       class="border"
       width="50%"
       height="50%"
