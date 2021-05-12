@@ -18,7 +18,6 @@ function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Navbar />
-      <body>
       <Hello />
       <Projects />
       <AboutMe />
@@ -27,7 +26,6 @@ function Home() {
       <Resume />
       <Contact />
       <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/19915776.js"></script>
-      </body>
       <Footer />
          
     </>
