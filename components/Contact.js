@@ -19,6 +19,7 @@ export default function Contact() {
         console.log("FAILED...", error);
       }
     );
+    Message = ''
   };
   return (
     <div id="contactTitle" data-aos="fade-up" className="aos-init aos-animate">
