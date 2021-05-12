@@ -6,8 +6,8 @@ import { init, sendForm } from "emailjs-com";
 init("user_GifAIRMYb8H5rmuXPFOY1");
 
 export default function Contact() {
-  const { register, handleSubmit, watch, errors } = useForm();
-  const message = watch("Message") || "";
+  const { register, handleSubmit, watch, errors, reset } = useForm();
+  let message = watch("Message") || "";
   const messageCharsLeft = 1500 - message.length;
   const onSubmit = (data) => {
     console.log(data);
@@ -19,6 +19,7 @@ export default function Contact() {
         console.log("FAILED...", error);
       }
     );
+    reset()
   };
   return (
     <div id="contactTitle" data-aos="fade-up" className="aos-init aos-animate">

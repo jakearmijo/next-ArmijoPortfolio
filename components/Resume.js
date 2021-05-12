@@ -9,7 +9,7 @@ export default function Resume() {
           View Resume
           <img src="/images/viewfile.png" />
         </a>
-        <a id="resumeDownload" href="/JakeArmijoResume.pdf" download="">
+        <a id="resumeDownload" href="/JakeArmijoResume.pdf" download="/JakeArmijoResume.pdf">
           Download Resume
           <img src="/images/download.png" />
         </a>
