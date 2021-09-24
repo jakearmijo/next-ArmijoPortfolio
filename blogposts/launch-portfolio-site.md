@@ -14,10 +14,8 @@ Hello Everyone, A little while ago I knew I wanted to create my website. I looke
 When I started to research domains and where to purchase them. I checked GoDaddy first (just because I'm 30 and I've always seen and heard their name) I also stumbled into Google Domains which I quickly leaned towards as the price was even with the range I was seeing and I wanted to have something from a brand I knew. I also came across sites such as  A2, Bluehost, Netlify, or Namecheap. I honestly have no advice as I'm sure if you have made it this far the process is decently simple with any provider you chose. In the end, the final check-out price was $12 for 1 year that I set to reoccurring. There was also an option on there to have a "work" email address. For example, you can choose info@jakearmijo.com or something along those lines. This was added for Google Workspace and was $6 per user per month and came with 30GB of cloud storage. I thought about it for our family pictures cause my wife has been searching for a cloud option to store all of our pictures on. If anyone has any good experiences with any cloud-based photo storage such as google photos or amazon photos or anything please DM on LinkedIn
 
 <div class="border">
-  <Image
+  <img
       class="border"
-      width="50%"
-      height="50%"
       alt="Netlify"
       title="Netlify"
       src="/images/netlify-logo.png"
@@ -41,10 +39,8 @@ I had already been toying with Netlify and my vanilla React portfolio before thi
     </ol>
   </div>
   <div class="border">
-    <Image
+    <img
       class="border"
-      width="50%"
-      height="50%"
       alt="Google Domains"
       title="Google Domains"
       src="/images/google-domains-logo.png"

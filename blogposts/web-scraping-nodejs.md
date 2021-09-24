@@ -43,15 +43,6 @@ In these example we are going to be imagining we are trying to grab a bunch of d
   Array.from(document.querySelectorAll('.caseStudy-card-heading > a')).map(({title, innerHTML} ) => ({ URL: "https://" + title + ".com".split(" ").join(), name: title, source: 'https://www.bigcommerce.com/case-study/'} ))
 
 </p>
-  <Image
-      class="border"
-      width="50%"
-      height="50%"
-      alt="Netlify"
-      title="Netlify"
-      src="https://download.logo.wine/logo/Netlify/Netlify-Logo.wine.png"
-      data-canonical-src="https://download.logo.wine/logo/Netlify/Netlify-Logo.wine.png"
-      />
 </div>
 
  - REDUCE -> https://www.silksoftware.com/work/
