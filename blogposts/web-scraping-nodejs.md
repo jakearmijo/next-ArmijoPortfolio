@@ -45,12 +45,11 @@ In these example we are going to be imagining we are trying to grab a bunch of d
 </p>
   <Image
       class="border"
-      width="50%"
-      height="50%"
+      width="50px"
+      height="50px"
       alt="Netlify"
       title="Netlify"
-      src="https://download.logo.wine/logo/Netlify/Netlify-Logo.wine.png"
-      data-canonical-src="https://download.logo.wine/logo/Netlify/Netlify-Logo.wine.png"
+      src='{require("https://download.logo.wine/logo/Netlify/Netlify-Logo.wine.png")}'
       />
 </div>
 

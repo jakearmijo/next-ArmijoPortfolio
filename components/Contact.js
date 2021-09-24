@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { init, sendForm } from "emailjs-com";

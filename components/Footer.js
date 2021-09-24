@@ -6,13 +6,13 @@ export default function Footer() {
       <footer>
         <div id="footer-links">
           <a href="mailto:armijojake@yahoo.com"/>
-          <Image src="/images/sendit.png" width='30px' height='30px'/>
+          <Image src={require('/images/sendit.png')} width='30px' height='30px'/>
 
           <a href="https://www.linkedin.com/in/jake-armijo/"/>
-          <Image src="/images/LinkedIn.png" width='30px' height='30px'/>
+          <Image src={require('/images/LinkedIn.png')} width='30px' height='30px'/>
 
           <a href="https://github.com/jakearmijo" />
-          <Image src="/images/GitHubLogo.png" width='30px' height='30px'/>
+          <Image src={require('/images/GitHubLogo.png')} width='30px' height='30px'/>
         </div>
         <div id="copyright">
           © <span id="year">2020</span> Jake Armijo. All rights reserved.
