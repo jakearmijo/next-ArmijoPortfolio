@@ -21,7 +21,7 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <img
-              src="/images/JAKEMIJUPDATE.svg"
+              src={require('/images/JAKEMIJUPDATE.svg')}
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />
@@ -31,7 +31,7 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <a>
                 <img
-                  src="/images/JAKEMIJUPDATE.svg"
+                  src={require('/images/JAKEMIJUPDATE.svg')}
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt={name}
                 />

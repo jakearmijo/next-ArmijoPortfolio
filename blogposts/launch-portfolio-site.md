@@ -16,10 +16,12 @@ When I started to research domains and where to purchase them. I checked GoDaddy
 <div class="border">
   <img
       class="border"
+      width="50px"
+      height="50px"
       alt="Netlify"
       title="Netlify"
-      src="/images/netlify-logo.png"
-      data-canonical-src="/images/netlify-logo.png"
+      src='{require("/images/netlify-logo.png")}'
+      data-canonical-src="/images/Netlify-Logo.png"
     />
 </div>
 <p>
@@ -41,10 +43,11 @@ I had already been toying with Netlify and my vanilla React portfolio before thi
   <div class="border">
     <img
       class="border"
+      width="50px"
+      height="50px"
       alt="Google Domains"
       title="Google Domains"
-      src="/images/google-domains-logo.png"
-      data-canonical-src="/images/google-domains-logo.png"
+      src='{require("/images/google-domains-logo.png"})'
     />
   </div>
 </br>
