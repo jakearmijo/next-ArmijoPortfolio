@@ -24,6 +24,13 @@
     "emailjs-com": "^2.6.4",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.2",
+    "image-trace-loader": "^1.0.2",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^10.0.0",
+    "jimp": "^0.16.1",
+    "lqip-loader": "^2.2.1",
     "next": "^10.0.6",
     "path": "^0.12.7",
     "react": "^17.0.1",
@@ -33,6 +40,9 @@
     "react-scroll": "^1.8.1",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
-    "styled-components": "^5.2.1"
+    "responsive-loader": "^2.3.0",
+    "styled-components": "^5.2.1",
+    "svg-sprite-loader": "^6.0.9",
+    "webp-loader": "^0.6.0"
   }
 }
