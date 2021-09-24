@@ -1,13 +1,12 @@
 import React from 'react';
-import { Row, Col } from '@zendeskgarden/react-grid';
 import { StyledDefaultButton } from './ButtonDefault.style'
 
 const ButtonDefault = ( { title } ) => (
-  <Row>
-    <Col textAlign="center">
+  <div>
+    <div textalign="center">
       <StyledDefaultButton>{title}</StyledDefaultButton>
-    </Col>
-  </Row>
+    </div>
+  </div>
 );
 
 export default ButtonDefault;
