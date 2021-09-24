@@ -21,7 +21,6 @@ When I started to research domains and where to purchase them. I checked GoDaddy
       alt="Netlify"
       title="Netlify"
       src='{require("/images/netlify-logo.png")}'
-      data-canonical-src="/images/Netlify-Logo.png"
     />
 </div>
 <p>
