@@ -20,7 +20,7 @@ When I started to research domains and where to purchase them. I checked GoDaddy
       height="50px"
       alt="Netlify"
       title="Netlify"
-      src='{require("/images/netlify-logo.png")}'
+      src='/images/netlify-logo.png'
     />
 </div>
 <p>
@@ -46,7 +46,7 @@ I had already been toying with Netlify and my vanilla React portfolio before thi
       height="50px"
       alt="Google Domains"
       title="Google Domains"
-      src='{require("/images/google-domains-logo.png"})'
+      src='/images/google-domains-logo.png'
     />
   </div>
 </br>

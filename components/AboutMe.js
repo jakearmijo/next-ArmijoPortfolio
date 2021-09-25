@@ -1,4 +1,30 @@
 import Image from 'next/image'
+import { 
+  ReactLogo,
+  ReduxLogo,
+  HTMLLogo,
+  CSSLogo,
+  StyledComponentLogo,
+  BootstrapLogo,
+  NodeLogo,
+  ExpressLogo,
+  SequelizeLogo,
+  PostgresLogo,
+  SocketIOLogo,
+  GitLogo,
+  GitHubLogo,
+  NpmLogo,
+  WebpackLogo,
+  HerokuLogo,
+  TravisCILogo,
+  JavascriptLogo,
+  PythonLogo,
+  VSCODELogo,
+  PostmanLogo,
+  PosticoLogo,
+  MochaLogo,
+  ChaiLogo,
+ } from '../public/images'
 
 export default function AboutMe() {
   return (
@@ -52,27 +78,27 @@ export default function AboutMe() {
           >
             <div className="techDivTitle">FrontEnd</div>
             <div className="tech tooltip">
-              <Image src={require('/images/ReactLogo.png')} width='60px' height='60px' width='60px' height='60px' alt="React" />
+              <Image src={ReactLogo} alt="React" />
               <span className="tooltiptext">React</span>
             </div>
             <div className="tech tooltip">
-              <Image src={require('/images/ReduxLogo.png')} width='60px' height='60px' width='60px' height='60px' alt="Redux" />
+              <Image src={ReduxLogo} alt="Redux" />
               <span className="tooltiptext">Redux</span>
             </div>
             <div className="tech tooltip">
-              <Image src={require('/images/HTMLLogo.png')} width='60px' height='60px' alt="HTML" />
+              <Image src={HTMLLogo} alt="HTML" />
               <span className="tooltiptext">HTML</span>
             </div>
             <div className="tech tooltip">
-              <Image src={require('/images/CSSLogo.png')} width='60px' height='60px' alt="CSS" />
+              <Image src={CSSLogo} alt="CSS" />
               <span className="tooltiptext">CSS</span>
             </div>
             <div className="tech tooltip">
-              <Image src={require('/images/styled-components.png')} width='60px' height='60px' alt="Styled Components" />
+              <Image src={StyledComponentLogo} alt="Styled Components" />
               <span className="tooltiptext">Styled Components</span>
             </div>
             <div className="tech tooltip">
-              <Image src={require('/images/Bootstrap-Logo.png')} width='60px' height='60px' alt="Bootstrap" />
+              <Image src={BootstrapLogo} alt="Bootstrap" />
               <span className="tooltiptext">Bootstrap</span>
             </div>
           </div>
@@ -83,23 +109,23 @@ export default function AboutMe() {
           >
             <div className="techDivTitle">BackEnd</div>
             <div className="tech tooltip">
-              <Image src={require('/images/NodeLogo.png')} width='60px' height='60px' alt="Node" />
+              <Image src={NodeLogo} alt="Node" />
               <span className="tooltiptext">Node</span>
             </div>
             <div className="tech tooltip">
-              <Image src={require('/images/ExpressLogo.png')} width='60px' height='60px' alt="Express" />
+              <Image src={ExpressLogo} alt="Express" />
               <span className="tooltiptext">Express</span>
             </div>
             <div className="tech tooltip">
-              <Image src={require('/images/SequelizeLogo.png')} width='60px' height='60px' alt="HTML" />
+              <Image src={SequelizeLogo} alt="HTML" />
               <span className="tooltiptext">Sequelize</span>
             </div>
             <div className="tech tooltip">
-              <Image src={require('/images/PostgresLogo.png')} width='60px' height='60px' alt="CSS" />
+              <Image src={PostgresLogo} alt="CSS" />
               <span className="tooltiptext">Postgres</span>
             </div>
             <div className="tech tooltip">
-              <Image src={require('/images/SocketIO.png')} width='60px' height='60px' alt="Socket.io" />
+              <Image src={SocketIOLogo} alt="Socket.io" />
               <span className="tooltiptext">Socket.io</span>
             </div>
           </div>
@@ -110,27 +136,27 @@ export default function AboutMe() {
           >
             <div className="techDivTitle">DevOps</div>
             <div className="tech tooltip">
-              <Image src={require('/images/GitLogo.png')} width='60px' height='60px' alt="Git" />
+              <Image src={GitLogo} alt="Git" />
               <span className="tooltiptext">Git</span>
             </div>
             <div className="tech tooltip">
-              <Image src={require('/images/GitHubLogo.png')} width='60px' height='60px' alt="GitHub" />
+              <Image src={GitHubLogo} alt="GitHub" />
               <span className="tooltiptext">GitHub</span>
             </div>
             <div className="tech tooltip">
-              <Image src={require('/images/Npm-logo.png')} width='60px' height='60px' alt="Npm" />
+              <Image src={NpmLogo} alt="Npm" />
               <span className="tooltiptext">Npm</span>
             </div>
             <div className="tech tooltip">
-              <Image src={require('/images/WebpackLogo.png')} width='60px' height='60px' alt="Webpack" />
+              <Image src={WebpackLogo} alt="Webpack" />
               <span className="tooltiptext">Webpack</span>
             </div>
             <div className="tech tooltip">
-              <Image src={require('/images/HerokuLogo.png')} width='60px' height='60px' alt="Heroku" />
+              <Image src={HerokuLogo} alt="Heroku" />
               <span className="tooltiptext">Heroku</span>
             </div>
             <div className="tech tooltip">
-              <Image src={require('/images/TravisCILogo.png')} width='60px' height='60px' alt="TravisCI" />
+              <Image src={TravisCILogo} alt="TravisCI" />
               <span className="tooltiptext">TravisCI</span>
             </div>
           </div>
@@ -141,11 +167,11 @@ export default function AboutMe() {
           >
             <div className="techDivTitle">Languages</div>
             <div className="tech tooltip">
-              <Image src={require('/images/Javascript-Logo.png')} width='60px' height='60px' alt="Javascript" />
+              <Image src={JavascriptLogo} alt="Javascript" />
               <span className="tooltiptext">Javascript</span>
             </div>
             <div className="tech tooltip">
-              <Image src={require('/images/Python-Logo.png')} width='60px' height='60px' alt="Python" />
+              <Image src={PythonLogo} alt="Python" />
               <span className="tooltiptext">Python</span>
             </div>
           </div>
@@ -156,15 +182,15 @@ export default function AboutMe() {
           >
             <div className="techDivTitle">Tools</div>
             <div className="tech tooltip">
-              <Image src={require('/images/VSCODE-logo.png')} width='60px' height='60px' alt="VSCode" />
+              <Image src={VSCODELogo} alt="VSCode" />
               <span className="tooltiptext">VS Code</span>
             </div>
             <div className="tech tooltip">
-              <Image src={require('/images/Postman-Logo.png')} width='60px' height='60px' alt="Postman" />
+              <Image src={PostmanLogo} alt="Postman" />
               <span className="tooltiptext">Postman</span>
             </div>
             <div className="tech tooltip">
-              <Image src={require('/images/Postico-logo.png')} width='60px' height='60px' alt="Postico" />
+              <Image src={PosticoLogo} alt="Postico" />
               <span className="tooltiptext">Postico</span>
             </div>
           </div>
@@ -175,11 +201,11 @@ export default function AboutMe() {
           >
             <div className="techDivTitle">Testing</div>
             <div className="tech tooltip">
-              <Image src={require('/images/Mocha-Logo.png')} width='60px' height='60px' alt="Mocha" />
+              <Image src={MochaLogo} alt="Mocha" />
               <span className="tooltiptext">Mocha</span>
             </div>
             <div className="tech tooltip">
-              <Image src={require('/images/Chai-Logo.png')} width='60px' height='60px' alt="Chai" />
+              <Image src={ChaiLogo} alt="Chai" />
               <span className="tooltiptext">Chai</span>
             </div>
           </div>

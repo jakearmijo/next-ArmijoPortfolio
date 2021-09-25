@@ -2,6 +2,9 @@ import Head from "next/head";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
+import { 
+  JakeMijLogo,
+ } from '../public/images'
 
 const name = "Jake Armijo";
 export const siteTitle = "Jake Armijo dot com";
@@ -21,7 +24,7 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <img
-              src={require('/images/JAKEMIJUPDATE.svg')}
+              src={JakeMijLogo}
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />
@@ -31,7 +34,7 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <a>
                 <img
-                  src={require('/images/JAKEMIJUPDATE.svg')}
+                  src={JakeMijLogo}
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt={name}
                 />

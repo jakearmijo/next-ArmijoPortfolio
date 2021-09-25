@@ -1,4 +1,9 @@
 import Image from 'next/image'
+import { 
+  SendItLogo,
+  GitHubLogo,
+  LinkedInLogo
+ } from '../public/images'
 
 export default function Footer() {
   return (
@@ -6,13 +11,13 @@ export default function Footer() {
       <footer>
         <div id="footer-links">
           <a href="mailto:armijojake@yahoo.com"/>
-          <Image src={require('/images/sendit.png')} width='30px' height='30px'/>
+          <Image src={SendItLogo} width='30px' height='30px'/>
 
           <a href="https://www.linkedin.com/in/jake-armijo/"/>
-          <Image src={require('/images/LinkedIn.png')} width='30px' height='30px'/>
+          <Image src={LinkedInLogo} width='30px' height='30px'/>
 
           <a href="https://github.com/jakearmijo" />
-          <Image src={require('/images/GitHubLogo.png')} width='30px' height='30px'/>
+          <Image src={GitHubLogo} width='30px' height='30px'/>
         </div>
         <div id="copyright">
           © <span id="year">2020</span> Jake Armijo. All rights reserved.
