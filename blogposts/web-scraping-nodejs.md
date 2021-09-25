@@ -49,7 +49,7 @@ In these example we are going to be imagining we are trying to grab a bunch of d
       height="50px"
       alt="Netlify"
       title="Netlify"
-      src='{require("https://download.logo.wine/logo/Netlify/Netlify-Logo.wine.png")}'
+      src='https://download.logo.wine/logo/Netlify/Netlify-Logo.wine.png'
       />
 </div>
 
