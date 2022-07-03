@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Date from '../../components/date'
 import Layout from '../../components/layout'
-import Image from 'next/image'
 import { myImageLoader, getAllPostIds, getPostData } from '../../lib/utils'
 
 
@@ -22,7 +21,7 @@ export async function getStaticPaths() {
   }
 }
 
-export default function Post({ postData, myImageLoader }) {
+export default function Post({ postData }) {
   return (
     <Layout>
       <Head>
