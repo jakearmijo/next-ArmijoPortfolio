@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Date from '../../components/date'
 import Layout from '../../components/layout'
-import { getAllPostIds, getPostData } from '../../lib/utils'
+import Image from 'next/image'
+import { myImageLoader, getAllPostIds, getPostData } from '../../lib/utils'
+
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id)
@@ -20,7 +22,7 @@ export async function getStaticPaths() {
   }
 }
 
-export default function Post({ postData }) {
+export default function Post({ postData, myImageLoader }) {
   return (
     <Layout>
       <Head>
