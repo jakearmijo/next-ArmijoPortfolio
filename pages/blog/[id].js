@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Date from '../../components/date'
 import Layout from '../../components/layout'
-import Image from 'next/image'
-import { myImageLoader, getAllPostIds, getPostData } from '../../lib/utils'
+import { getAllPostIds, getPostData } from '../../lib/utils'
 
 
 export async function getStaticProps({ params }) {

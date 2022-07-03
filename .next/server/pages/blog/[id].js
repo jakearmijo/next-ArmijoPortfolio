@@ -66,7 +66,8 @@ async function getStaticPaths() {
   };
 }
 function Post({
-  postData
+  postData,
+  myImageLoader
 }) {
   return /*#__PURE__*/(0,jsx_runtime_.jsxs)(layout/* default */.Z, {
     children: [/*#__PURE__*/jsx_runtime_.jsx((head_default()), {

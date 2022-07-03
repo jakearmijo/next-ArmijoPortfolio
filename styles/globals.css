@@ -64,7 +64,7 @@ nav {
   text-decoration: none;
   display: flex;
   justify-content: space-around;
-  width: 900px;
+  width: auto;
   display: block;
   list-style-type: disc;
   margin-block-start: 1em;
@@ -82,7 +82,7 @@ nav {
   position: relative;
   background: #ffa500;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
+  width: auto;
 }
 a:link {
   text-decoration: none;
@@ -653,7 +653,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
+    width: auto;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     border-left: 1px solid black;
