@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import { myImageLoader } from '../lib/utils'
+
 export default function Projects() {
   return (
     <div id="projects">
@@ -12,8 +11,7 @@ export default function Projects() {
       </div>
       <div id="phutbol" data-aos="fade-up" className="aos-init aos-animate">
         <h1 className="projectTitle">Phutbol</h1>
-        <Image 
-          loader={myImageLoader} 
+        <img
           className="projectImage"
           src="/images/Phutbol.svg"
         />
@@ -28,20 +26,20 @@ export default function Projects() {
         <div className="projectLinks">
           <a href="http://phutbol.herokuapp.com/">
             Try Demo{" "}
-            <Image loader={myImageLoader} src="/images/externallink2.png" />
+            <img src="/images/externallink2.png" />
           </a>
           <a href="https://github.com/2006-links-light/phutbol">
-            View Code <Image loader={myImageLoader} src="/images/github3.png" />
+            View Code <img src="/images/github3.png" />
           </a>
           <a href="https://youtu.be/XtMdD3XnvXQ">
             Watch Presentation{" "}
-            <Image loader={myImageLoader} src="/images/video.png" />
+            <img src="/images/video.png" />
           </a>
         </div>
       </div>
       <div id="stackawat" data-aos="fade-up" className="aos-init aos-animate">
         <h1 className="projectTitle">Stackawat</h1>
-        <Image loader={myImageLoader}
+        <img
           className="projectImage"
           src="/images/StackAWat-BTPA.svg"
         />
@@ -61,11 +59,11 @@ export default function Projects() {
         </div>
         <div className="projectLinks">
           <a href="https://github.com/jakearmijo/cableBuilderFull">
-            View Code <Image loader={myImageLoader} src="/images/github3.png" />
+            View Code <img src="/images/github3.png" />
           </a>
           <a href="https://youtu.be/AGeLlD0xjL0">
             Watch Presentation{" "}
-            <Image loader={myImageLoader} src="/images/video.png" />
+            <img src="/images/video.png" />
           </a>
         </div>
       </div>
@@ -75,7 +73,7 @@ export default function Projects() {
         className="aos-init aos-animate"
       >
         <h1 className="projectTitle">JDB CARS</h1>
-        <Image loader={myImageLoader}
+        <img
           className="projectImage"
           src="/images/JDBCars.svg"
         />
@@ -93,7 +91,7 @@ export default function Projects() {
         </div>
         <div className="projectLinks">
           <a href="https://github.com/2006-gs-leo/grace-shopper">
-            View Code <Image loader={myImageLoader} src="/images/github3.png" />
+            View Code <img src="/images/github3.png" />
           </a>
         </div>
       </div>

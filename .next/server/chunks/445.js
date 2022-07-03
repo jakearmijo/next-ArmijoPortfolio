@@ -55,7 +55,7 @@ function Layout({
       className: (_layout_module_css__WEBPACK_IMPORTED_MODULE_6___default().header),
       children: home ? /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
         children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx(next_image__WEBPACK_IMPORTED_MODULE_1__.default, {
-          loader: _lib_utils__WEBPACK_IMPORTED_MODULE_4__/* .myImageLoader */ .VA,
+          loader: _lib_utils__WEBPACK_IMPORTED_MODULE_4__.myImageLoader,
           src: _public_images__WEBPACK_IMPORTED_MODULE_3__/* .JakeMijLogo */ .mm,
           className: `${(_layout_module_css__WEBPACK_IMPORTED_MODULE_6___default().headerHomeImage)} ${(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_7___default().borderCircle)}`,
           alt: name
@@ -65,7 +65,7 @@ function Layout({
           href: "/",
           children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("a", {
             children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx(next_image__WEBPACK_IMPORTED_MODULE_1__.default, {
-              loader: _lib_utils__WEBPACK_IMPORTED_MODULE_4__/* .myImageLoader */ .VA,
+              loader: _lib_utils__WEBPACK_IMPORTED_MODULE_4__.myImageLoader,
               src: _public_images__WEBPACK_IMPORTED_MODULE_3__/* .JakeMijLogo */ .mm,
               className: `${(_layout_module_css__WEBPACK_IMPORTED_MODULE_6___default().headerImage)} ${(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_7___default().borderCircle)}`,
               alt: name

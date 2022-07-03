@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/E4Kf12PI600ptwrS2wrmJ/_buildManifest.js",
-    "static/E4Kf12PI600ptwrS2wrmJ/_ssgManifest.js"
+    "static/AgfE1j5Ocxxffw3zI-0rF/_buildManifest.js",
+    "static/AgfE1j5Ocxxffw3zI-0rF/_ssgManifest.js"
   ],
   "pages": {
     "/": [
@@ -14,10 +14,10 @@
       "static/chunks/framework-2191d16384373197bc0a.js",
       "static/chunks/main-1f2c591c5d3bfcfc95e6.js",
       "static/chunks/9f96d65d-7a2bc5bf0bcd1588504d.js",
-      "static/chunks/732-1eb73a729cfbb4d8c487.js",
+      "static/chunks/732-427c9c1e08cb2185cc63.js",
       "static/chunks/261-85ae273b997a53def077.js",
       "static/chunks/681-c6f40c3856e2406b9a9d.js",
-      "static/chunks/pages/index-b49359a1fe880ed70aac.js"
+      "static/chunks/pages/index-f3de812f263560f21236.js"
     ],
     "/_app": [
       "static/chunks/webpack-af28476a2e7790fd48db.js",
@@ -37,20 +37,20 @@
       "static/chunks/framework-2191d16384373197bc0a.js",
       "static/chunks/main-1f2c591c5d3bfcfc95e6.js",
       "static/chunks/9f96d65d-7a2bc5bf0bcd1588504d.js",
-      "static/chunks/732-1eb73a729cfbb4d8c487.js",
+      "static/chunks/732-427c9c1e08cb2185cc63.js",
       "static/chunks/261-85ae273b997a53def077.js",
       "static/chunks/40-a74f3087f591ba6c7292.js",
-      "static/chunks/778-e1309b75e60bd466acdf.js",
+      "static/chunks/778-3bebfc6a97c3aa194b50.js",
       "static/css/9f9494049984663547d9.css",
-      "static/chunks/pages/blog-7684b7ad67c728d5d12d.js"
+      "static/chunks/pages/blog-dcd3a207f6a8b7cfc447.js"
     ],
     "/blog/[id]": [
       "static/chunks/webpack-af28476a2e7790fd48db.js",
       "static/chunks/framework-2191d16384373197bc0a.js",
       "static/chunks/main-1f2c591c5d3bfcfc95e6.js",
       "static/chunks/9f96d65d-7a2bc5bf0bcd1588504d.js",
-      "static/chunks/732-1eb73a729cfbb4d8c487.js",
-      "static/chunks/778-e1309b75e60bd466acdf.js",
+      "static/chunks/732-427c9c1e08cb2185cc63.js",
+      "static/chunks/778-3bebfc6a97c3aa194b50.js",
       "static/css/9f9494049984663547d9.css",
       "static/chunks/pages/blog/[id]-96e0a150ea2402a14999.js"
     ]

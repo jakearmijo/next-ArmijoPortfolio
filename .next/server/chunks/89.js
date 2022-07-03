@@ -7,7 +7,6 @@ exports.modules = {
 
 "use strict";
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "VA": () => (/* binding */ myImageLoader),
 /* harmony export */   "ld": () => (/* binding */ getSortedPostsData),
 /* harmony export */   "Le": () => (/* binding */ getAllPostIds),
 /* harmony export */   "AU": () => (/* binding */ getPostData)
@@ -50,19 +49,10 @@ var ensureArray = function ensureArray() {
 
 var ensureObject = function ensureObject(object) {
   return object || {};
-}; //My custom image loader
-
-
-const myImageLoader = ({
-  src,
-  width,
-  quality
-}) => {
-  return `https://jakearmijo.com/${src}?w=${width}&q=${quality || 75}`;
 }; // POST.JS
 
 
-const postsDirectory = path__WEBPACK_IMPORTED_MODULE_1___default().join(process.cwd(), '/blogposts');
+const postsDirectory = path__WEBPACK_IMPORTED_MODULE_1___default().join(process.cwd(), 'blogposts');
 
 function getSortedPostsData() {
   // Get file names under /posts
@@ -91,7 +81,20 @@ function getSortedPostsData() {
 }
 
 function getAllPostIds() {
-  const fileNames = fs__WEBPACK_IMPORTED_MODULE_0___default().readdirSync(postsDirectory);
+  const fileNames = fs__WEBPACK_IMPORTED_MODULE_0___default().readdirSync(postsDirectory); // Returns an array that looks like this:
+  // [
+  //   {
+  //     params: {
+  //       id: 'ssg-ssr'
+  //     }
+  //   },
+  //   {
+  //     params: {
+  //       id: 'pre-rendering'
+  //     }
+  //   }
+  // ]
+
   return fileNames.map(fileName => {
     return {
       params: {

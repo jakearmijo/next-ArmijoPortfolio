@@ -1,12 +1,10 @@
 import Head from "next/head";
-import Image from 'next/image'
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import { 
   JakeMijLogo,
  } from '../public/images'
- import { myImageLoader } from '../lib/utils'
 
 const name = "Jake Armijo";
 export const siteTitle = "Jake Armijo dot com";
@@ -25,8 +23,7 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <Image 
-              loader={myImageLoader}
+            <img
               src={JakeMijLogo}
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
@@ -36,8 +33,7 @@ export default function Layout({ children, home }) {
           <>
             <Link href="/">
               <a>
-                <Image 
-                  loader={myImageLoader}
+                <img
                   src={JakeMijLogo}
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt={name}
