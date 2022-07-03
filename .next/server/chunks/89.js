@@ -62,7 +62,7 @@ const myImageLoader = ({
 }; // POST.JS
 
 
-const postsDirectory = path__WEBPACK_IMPORTED_MODULE_1___default().join(process.cwd(), 'blogposts');
+const postsDirectory = path__WEBPACK_IMPORTED_MODULE_1___default().join(process.cwd(), '/blogposts');
 
 function getSortedPostsData() {
   // Get file names under /posts
