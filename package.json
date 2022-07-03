@@ -42,5 +42,10 @@
     "styled-components": "^5.2.1",
     "svg-sprite-loader": "^6.0.9",
     "webp-loader": "^0.6.0"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
   }
 }

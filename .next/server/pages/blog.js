@@ -138,7 +138,7 @@ function Post({
           date,
           title
         }, idx) => /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
-          href: `/blog/${id}`,
+          href: `/blog/posts/${id}`,
           children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("li", {
             className: (utils_module_default()).listItem,
             children: ["#", idx + 1, /*#__PURE__*/jsx_runtime_.jsx("br", {}), /*#__PURE__*/jsx_runtime_.jsx("strong", {

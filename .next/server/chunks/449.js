@@ -92,7 +92,7 @@ function Layout({
 /* harmony export */   "Le": () => (/* binding */ getAllPostIds),
 /* harmony export */   "AU": () => (/* binding */ getPostData)
 /* harmony export */ });
-/* unused harmony exports ensureString, ensureNumeric, ensureArray, ensureObject */
+/* unused harmony exports ensureString, ensureNumeric, ensureArray, ensureObject, myImageLoader */
 /* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5747);
 /* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5622);
@@ -130,6 +130,15 @@ var ensureArray = function ensureArray() {
 
 var ensureObject = function ensureObject(object) {
   return object || {};
+}; //My custom image loader
+
+
+const myImageLoader = ({
+  src,
+  width,
+  quality
+}) => {
+  return `https://jakearmijo.com/${src}?w=${width}&q=${quality || 75}`;
 }; // POST.JS
 
 
@@ -162,20 +171,7 @@ function getSortedPostsData() {
 }
 
 function getAllPostIds() {
-  const fileNames = fs__WEBPACK_IMPORTED_MODULE_0___default().readdirSync(postsDirectory); // Returns an array that looks like this:
-  // [
-  //   {
-  //     params: {
-  //       id: 'ssg-ssr'
-  //     }
-  //   },
-  //   {
-  //     params: {
-  //       id: 'pre-rendering'
-  //     }
-  //   }
-  // ]
-
+  const fileNames = fs__WEBPACK_IMPORTED_MODULE_0___default().readdirSync(postsDirectory);
   return fileNames.map(fileName => {
     return {
       params: {
