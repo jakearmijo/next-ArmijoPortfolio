@@ -39,12 +39,9 @@ function date_Date({
 }
 // EXTERNAL MODULE: ./components/layout.js
 var layout = __webpack_require__(3445);
-// EXTERNAL MODULE: ./node_modules/next/image.js
-var next_image = __webpack_require__(5675);
 // EXTERNAL MODULE: ./lib/utils/index.js
 var utils = __webpack_require__(7824);
 ;// CONCATENATED MODULE: ./pages/blog/[id].js
-
 
 
 
@@ -69,8 +66,7 @@ async function getStaticPaths() {
   };
 }
 function Post({
-  postData,
-  myImageLoader
+  postData
 }) {
   return /*#__PURE__*/(0,jsx_runtime_.jsxs)(layout/* default */.Z, {
     children: [/*#__PURE__*/jsx_runtime_.jsx((head_default()), {
@@ -106,20 +102,6 @@ module.exports = require("gray-matter");
 /***/ ((module) => {
 
 module.exports = require("next/dist/server/denormalize-page-path.js");
-
-/***/ }),
-
-/***/ 822:
-/***/ ((module) => {
-
-module.exports = require("next/dist/server/image-config.js");
-
-/***/ }),
-
-/***/ 6695:
-/***/ ((module) => {
-
-module.exports = require("next/dist/shared/lib/head.js");
 
 /***/ }),
 
@@ -186,13 +168,6 @@ module.exports = require("next/dist/shared/lib/router/utils/route-regex.js");
 
 /***/ }),
 
-/***/ 556:
-/***/ ((module) => {
-
-module.exports = require("next/dist/shared/lib/to-base-64.js");
-
-/***/ }),
-
 /***/ 7620:
 /***/ ((module) => {
 
@@ -249,7 +224,7 @@ module.exports = require("remark-html");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [664,675,511,449], () => (__webpack_exec__(3778)));
+var __webpack_exports__ = __webpack_require__.X(0, [664,89,445], () => (__webpack_exec__(3778)));
 module.exports = __webpack_exports__;
 
 })();
