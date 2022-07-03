@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import JakeMijLogo from '../public/images'
+import JakeMijLogo from './public/images'
+import {myImageLoader} from '/lib/utils'
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -12,7 +13,8 @@ import JakeMijLogo from '../public/images'
 <br />
 <p align="center">
   <a href="https://github.com/jakearmijo">
-    <Image 
+    <Image
+      loader={myImageLoader}
       src={JakeMijLogo}
       alt='Logo'
   </a>
