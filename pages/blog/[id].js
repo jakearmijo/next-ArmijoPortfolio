@@ -3,7 +3,6 @@ import Date from '../../components/date'
 import Layout from '../../components/layout'
 import { getAllPostIds, getPostData } from '../../lib/utils'
 
-
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id)
   return {
@@ -21,7 +20,7 @@ export async function getStaticPaths() {
   }
 }
 
-export default function Post({ postData, myImageLoader }) {
+export default function Post({ postData }) {
   return (
     <Layout>
       <Head>

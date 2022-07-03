@@ -585,10 +585,28 @@ module.exports = require("next/dist/server/denormalize-page-path.js");
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "../server/image-config":
 /*!***************************************************!*\
   !*** external "next/dist/server/image-config.js" ***!
   \***************************************************/
+=======
+/***/ 822:
+/***/ ((module) => {
+
+module.exports = require("next/dist/server/image-config.js");
+
+/***/ }),
+
+/***/ 6695:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/head.js");
+
+/***/ }),
+
+/***/ 5378:
+>>>>>>> master
 /***/ ((module) => {
 
 "use strict";
@@ -706,10 +724,21 @@ module.exports = require("next/dist/shared/lib/router/utils/route-regex.js");
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "../shared/lib/to-base-64":
 /*!*****************************************************!*\
   !*** external "next/dist/shared/lib/to-base-64.js" ***!
   \*****************************************************/
+=======
+/***/ 556:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/to-base-64.js");
+
+/***/ }),
+
+/***/ 7620:
+>>>>>>> master
 /***/ ((module) => {
 
 "use strict";
@@ -844,7 +873,11 @@ module.exports = require("styled-components");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+<<<<<<< HEAD
 var __webpack_exports__ = (__webpack_exec__("./pages/blog/index.js"));
+=======
+var __webpack_exports__ = __webpack_require__.X(0, [61,89,445,234], () => (__webpack_exec__(8854)));
+>>>>>>> master
 module.exports = __webpack_exports__;
 
 })();

@@ -2,6 +2,8 @@ import "../styles/globals.css";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+
 export default function Application({ Component, pageProps }) {
   useEffect(() => {
     AOS.init({
