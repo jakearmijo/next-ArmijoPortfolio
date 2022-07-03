@@ -5,6 +5,7 @@ import Link from "next/link";
 import { 
   JakeMijLogo,
  } from '../public/images'
+ import { myImageLoader } from '../lib/utils'
 
 const name = "Jake Armijo";
 export const siteTitle = "Jake Armijo dot com";
@@ -23,7 +24,7 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <img
+            <Image loader={myImageLoader}
               src={JakeMijLogo}
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
@@ -33,7 +34,7 @@ export default function Layout({ children, home }) {
           <>
             <Link href="/">
               <a>
-                <img
+                <Image loader={myImageLoader}
                   src={JakeMijLogo}
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt={name}
