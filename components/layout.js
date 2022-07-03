@@ -25,7 +25,8 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <Image loader={myImageLoader}
+            <Image 
+              loader={myImageLoader}
               src={JakeMijLogo}
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
@@ -35,7 +36,8 @@ export default function Layout({ children, home }) {
           <>
             <Link href="/">
               <a>
-                <Image loader={myImageLoader}
+                <Image 
+                  loader={myImageLoader}
                   src={JakeMijLogo}
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt={name}

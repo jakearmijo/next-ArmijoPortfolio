@@ -10,6 +10,10 @@ const nextConfig = {
       '/blog/where-to-start': { page: '/blog', query: { title: 'where-to-start' } },
     }
   },
+  images: {
+    loader: 'akamai',
+    path: '',
+  },
 }
 
-modules.exports = nextConfig
+module.exports = nextConfig
