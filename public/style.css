@@ -30,7 +30,7 @@ nav {
   text-decoration: none;
   display: flex;
   justify-content: space-around;
-  width: 900px;
+  width: auto;
   display: block;
   list-style-type: disc;
   margin-block-start: 1em;
@@ -48,7 +48,6 @@ nav {
   position: absolute;
   background: #ffa500;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
 }
 a:link {
   text-decoration: none;
