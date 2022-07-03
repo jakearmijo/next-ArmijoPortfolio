@@ -21,7 +21,7 @@ export default function Footer() {
           <Image loader={myImageLoader} src={GitHubLogo} width='30px' height='30px'/>
         </div>
         <div id="copyright">
-          © <span id="year">2020</span> Jake Armijo. All rights reserved.
+          © <span id="year">2022</span> Jake Armijo. All rights reserved.
         </div>
       </footer>
     </div>
