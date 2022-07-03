@@ -24,7 +24,7 @@ export default function Post( { allPostsData } ) {
   return (
     <Layout home>
       <Head>
-        <title>Armijo Algorithm - Blog</title>
+        <title>Armijo Blog</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Navbar/>
@@ -45,9 +45,7 @@ export default function Post( { allPostsData } ) {
       </div>
       </section>
       <section>
-      <Link href="/">
       <ButtonDefault title={backtoHome}/>
-      </Link>
       <h2>Blog - Table of Contents</h2>
       <ul className={utilStyles.list}>
         {allPostsData.map(({ id, date, title }, idx) => (
