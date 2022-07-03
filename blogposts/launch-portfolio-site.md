@@ -17,7 +17,7 @@ When I started to research domains and where to purchase them. I checked GoDaddy
   <Image
       class="border"
       width="50px"
-      loader="{myImageLoader}"
+      loader={myImageLoader}
       height="50px"
       alt="Netlify"
       title="Netlify"
@@ -45,7 +45,7 @@ I had already been toying with Netlify and my vanilla React portfolio before thi
       class="border"
       width="50px"
       height="50px"
-      loader="{myImageLoader}"
+      loader={myImageLoader}
       alt="Google Domains"
       title="Google Domains"
       src="/images/google-domains-logo.png"
