@@ -11,7 +11,7 @@ const nextConfig = {
     }
   },
   images: {
-    loader: "imgix",
+    loader: "custom",
     path: "",
   }
 }
