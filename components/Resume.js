@@ -15,11 +15,11 @@ export default function Resume() {
       <div id="resumeMain" data-aos="fade-up" className="aos-init aos-animate">
         <a id="resumeView" href="/JakeArmijoResume.pdf" target="_blank">
           View Resume
-          <Image loader={myImageLoader} src={Viewfile} layout='fill' />
+          <Image loader={myImageLoader} src={Viewfile} layout="responsive" />
         </a>
         <a id="resumeDownload" href="/JakeArmijoResume.pdf" download="/JakeArmijoResume.pdf">
           Download Resume
-          <Image loader={myImageLoader} src={Download} layout='fill'  />
+          <Image loader={myImageLoader} src={Download} layout="responsive"  />
         </a>
       </div>
     </div>

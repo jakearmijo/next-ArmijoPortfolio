@@ -25,7 +25,7 @@ export default function Projects() {
         <Image 
           loader={myImageLoader}
           className="projectImage"
-          layout="fill" 
+          layout="responsive" 
           src={Phutbol}
         />
         <div className="project-description">
@@ -42,7 +42,7 @@ export default function Projects() {
             <Image 
               loader={myImageLoader} 
               src={Externallink2}
-              layout="fill" 
+              layout="responsive" 
               />
           </a>
           <a href="https://github.com/2006-links-light/phutbol">
@@ -50,12 +50,12 @@ export default function Projects() {
             <Image 
               loader={myImageLoader}
               src={Github3}
-              layout='fill'
+              layout="responsive"
               />
           </a>
           <a href="https://youtu.be/XtMdD3XnvXQ">
             Watch Presentation{" "}
-            <Image loader={myImageLoader} src={Video} layout='fill'/>
+            <Image loader={myImageLoader} src={Video} layout="responsive"/>
           </a>
         </div>
       </div>
@@ -64,7 +64,7 @@ export default function Projects() {
         <Image 
           loader={myImageLoader}
           className="projectImage"
-          layout="fill"
+          layout="responsive"
           src={StackAWatBTPA}
         />
         <div className="project-description">
@@ -87,7 +87,7 @@ export default function Projects() {
             <Image 
               loader={myImageLoader} 
               src={Github3}
-              layout="fill"
+              layout="responsive"
               />
           </a>
           <a href="https://youtu.be/AGeLlD0xjL0">
@@ -95,7 +95,7 @@ export default function Projects() {
             <Image 
               loader={myImageLoader}
               src={Video}
-              layout="fill" />
+              layout="responsive" />
           </a>
         </div>
       </div>
@@ -107,7 +107,7 @@ export default function Projects() {
         <h1 className="projectTitle">JDB CARS</h1>
         <Image loader={myImageLoader}
           className="projectImage"
-          layout="fill" src={JDBCars}
+          layout="responsive" src={JDBCars}
         />
         <div className="project-description">
           <p className="p-project">
@@ -123,7 +123,7 @@ export default function Projects() {
         </div>
         <div className="projectLinks">
           <a href="https://github.com/2006-gs-leo/grace-shopper">
-            View Code <Image loader={myImageLoader} src={Github3} layout='fill'/>
+            View Code <Image loader={myImageLoader} src={Github3} layout="responsive"/>
           </a>
         </div>
       </div>

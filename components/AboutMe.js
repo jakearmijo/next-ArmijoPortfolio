@@ -71,27 +71,27 @@ export default function AboutMe() {
           >
             <div className="techDivTitle">FrontEnd</div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={ReactLogo} alt="React" />
+              <Image loader={myImageLoader} layout="responsive"  src={ReactLogo} alt="React" />
               <span className="tooltiptext">React</span>
             </div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={ReduxLogo} alt="Redux" />
+              <Image loader={myImageLoader} layout="responsive"  src={ReduxLogo} alt="Redux" />
               <span className="tooltiptext">Redux</span>
             </div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={HTMLLogo} alt="HTML" />
+              <Image loader={myImageLoader} layout="responsive"  src={HTMLLogo} alt="HTML" />
               <span className="tooltiptext">HTML</span>
             </div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={CSSLogo} alt="CSS" />
+              <Image loader={myImageLoader} layout="responsive"  src={CSSLogo} alt="CSS" />
               <span className="tooltiptext">CSS</span>
             </div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={StyledComponentLogo} alt="Styled Components" />
+              <Image loader={myImageLoader} layout="responsive"  src={StyledComponentLogo} alt="Styled Components" />
               <span className="tooltiptext">Styled Components</span>
             </div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={BootstrapLogo} alt="Bootstrap" />
+              <Image loader={myImageLoader} layout="responsive"  src={BootstrapLogo} alt="Bootstrap" />
               <span className="tooltiptext">Bootstrap</span>
             </div>
           </div>
@@ -102,23 +102,23 @@ export default function AboutMe() {
           >
             <div className="techDivTitle">BackEnd</div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={NodeLogo} alt="Node" />
+              <Image loader={myImageLoader} layout="responsive"  src={NodeLogo} alt="Node" />
               <span className="tooltiptext">Node</span>
             </div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={ExpressLogo} alt="Express" />
+              <Image loader={myImageLoader} layout="responsive"  src={ExpressLogo} alt="Express" />
               <span className="tooltiptext">Express</span>
             </div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={SequelizeLogo} alt="HTML" />
+              <Image loader={myImageLoader} layout="responsive"  src={SequelizeLogo} alt="HTML" />
               <span className="tooltiptext">Sequelize</span>
             </div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={PostgresLogo} alt="CSS" />
+              <Image loader={myImageLoader} layout="responsive"  src={PostgresLogo} alt="CSS" />
               <span className="tooltiptext">Postgres</span>
             </div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={SocketIOLogo} alt="Socket.io" />
+              <Image loader={myImageLoader} layout="responsive"  src={SocketIOLogo} alt="Socket.io" />
               <span className="tooltiptext">Socket.io</span>
             </div>
           </div>
@@ -129,27 +129,27 @@ export default function AboutMe() {
           >
             <div className="techDivTitle">DevOps</div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={GitLogo} alt="Git" />
+              <Image loader={myImageLoader} layout="responsive"  src={GitLogo} alt="Git" />
               <span className="tooltiptext">Git</span>
             </div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={GitHubLogo} alt="GitHub" />
+              <Image loader={myImageLoader} layout="responsive"  src={GitHubLogo} alt="GitHub" />
               <span className="tooltiptext">GitHub</span>
             </div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={NpmLogo} alt="Npm" />
+              <Image loader={myImageLoader} layout="responsive"  src={NpmLogo} alt="Npm" />
               <span className="tooltiptext">Npm</span>
             </div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={WebpackLogo} alt="Webpack" />
+              <Image loader={myImageLoader} layout="responsive"  src={WebpackLogo} alt="Webpack" />
               <span className="tooltiptext">Webpack</span>
             </div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={HerokuLogo} alt="Heroku" />
+              <Image loader={myImageLoader} layout="responsive"  src={HerokuLogo} alt="Heroku" />
               <span className="tooltiptext">Heroku</span>
             </div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={TravisCILogo} alt="TravisCI" />
+              <Image loader={myImageLoader} layout="responsive"  src={TravisCILogo} alt="TravisCI" />
               <span className="tooltiptext">TravisCI</span>
             </div>
           </div>
@@ -160,11 +160,11 @@ export default function AboutMe() {
           >
             <div className="techDivTitle">Languages</div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={JavascriptLogo} alt="Javascript" />
+              <Image loader={myImageLoader} layout="responsive"  src={JavascriptLogo} alt="Javascript" />
               <span className="tooltiptext">Javascript</span>
             </div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={PythonLogo} alt="Python" />
+              <Image loader={myImageLoader} layout="responsive"  src={PythonLogo} alt="Python" />
               <span className="tooltiptext">Python</span>
             </div>
           </div>
@@ -175,15 +175,15 @@ export default function AboutMe() {
           >
             <div className="techDivTitle">Tools</div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={VSCODELogo} alt="VSCode" />
+              <Image loader={myImageLoader} layout="responsive"  src={VSCODELogo} alt="VSCode" />
               <span className="tooltiptext">VS Code</span>
             </div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={PostmanLogo} alt="Postman" />
+              <Image loader={myImageLoader} layout="responsive"  src={PostmanLogo} alt="Postman" />
               <span className="tooltiptext">Postman</span>
             </div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={PosticoLogo} alt="Postico" />
+              <Image loader={myImageLoader} layout="responsive"  src={PosticoLogo} alt="Postico" />
               <span className="tooltiptext">Postico</span>
             </div>
           </div>
@@ -194,11 +194,11 @@ export default function AboutMe() {
           >
             <div className="techDivTitle">Testing</div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={MochaLogo} alt="Mocha" />
+              <Image loader={myImageLoader} layout="responsive"  src={MochaLogo} alt="Mocha" />
               <span className="tooltiptext">Mocha</span>
             </div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} layout="fill"  src={ChaiLogo} alt="Chai" />
+              <Image loader={myImageLoader} layout="responsive"  src={ChaiLogo} alt="Chai" />
               <span className="tooltiptext">Chai</span>
             </div>
           </div>
