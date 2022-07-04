@@ -3,12 +3,10 @@ import Link from 'next/link'
 
 function Navbar() {
   return (
-    <>
       <nav>
-        <div>
-          <a id="logo"> Armijo Algorithm</a>
-        </div>
-        <div className="nav-links">
+        {/* <div>
+          <div id="logo"> Armijo Algorithm</div>
+        </div> */}
           <ScrollLink to="projects" activeClass="active" spy={true} smooth={true}>
             PORTFOLIO
           </ScrollLink>
@@ -27,9 +25,7 @@ function Navbar() {
           <Link target="_blank" href="https://www.linkedin.com/in/jake-armijo/">
             LINKEDIN
           </Link>
-        </div>
       </nav>
-    </>
   );
 }
 export default Navbar;

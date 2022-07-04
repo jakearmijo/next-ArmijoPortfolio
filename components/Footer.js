@@ -4,6 +4,7 @@ import {
   GitHubLogo,
   LinkedInLogo
  } from '../public/images'
+ import {myImageLoader} from '../lib/utils'
 
 export default function Footer() {
   return (
@@ -11,13 +12,13 @@ export default function Footer() {
       <footer>
         <div id="footer-links">
           <a href="mailto:armijojake@yahoo.com"/>
-          <Image src={SendItLogo} width='30px' height='30px'/>
+          <Image loader={myImageLoader} src={SendItLogo} width='30px' height='30px'/>
 
           <a href="https://www.linkedin.com/in/jake-armijo/"/>
-          <Image src={LinkedInLogo} width='30px' height='30px'/>
+          <Image loader={myImageLoader} src={LinkedInLogo} width='30px' height='30px'/>
 
           <a href="https://github.com/jakearmijo" />
-          <Image src={GitHubLogo} width='30px' height='30px'/>
+          <Image loader={myImageLoader} src={GitHubLogo} width='30px' height='30px'/>
         </div>
         <div id="copyright">
           © <span id="year">2020</span> Jake Armijo. All rights reserved.

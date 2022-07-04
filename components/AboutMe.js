@@ -25,6 +25,7 @@ import {
   MochaLogo,
   ChaiLogo,
  } from '../public/images'
+ import {myImageLoader} from '../lib/utils'
 
 export default function AboutMe() {
   return (
@@ -46,23 +47,15 @@ export default function AboutMe() {
           ></div>
 
           <p data-aos="fade-up" id="pIntro" className="aos-init aos-animate">
-            [ Hello, World, ! ] My name is Jake Armijo. I am embedded with a
-            love to create things. As a kid, I had Legos and Erector sets. As an
-            adult, I received a degree in Applied Engineering and went into the
-            construction field. I have been a PM and cost estimator working for
-            the last 5 years. What I like about construction is collaborating
-            with teams, working on a wide variety of projects, battling critical
-            timelines, and successfully completing goals. I enjoyed what I was
-            doing in the construction industry and it was exciting to see your
-            hard work go from plan to product, what I found was missing was that
-            it simply wasn't enough. It always interested me to see how I
-            could use technology. I researched coding, and coding boot camps
-            leveraged a lot of free resources and I landed on joining FullStack
-            Academy. Now it has been a challenging ride filled with peaks and
-            valleys, but hard work always pays off! I am looking to join an
-            innovative company where I can leverage my past experiences in
-            project management and teamwork combined with my Bootcamp education
-            to create new exciting things and make old ones better.
+            [ Hello, World, ! ] I am a sociable creator with adoration for variety. 
+            As a kid, I lived frequently singing and playing with Legos or Erector sets. 
+            As an adult, I helped build commercial buildings, and now I help build software
+            solutions. All while still singing. I have a swiss army knife-like mindset and 
+            love to learn new things. I am a versatile team player with a vivid imagination. 
+            My off-hours creative activities include fly tying, djing, and making my family laugh. 
+            I am always willing to chat. Feel free to message me! 
+            
+            Career switcher 2020 - Girl Dad - Fly Fisher
           </p>
         </div>
       </div>
@@ -78,27 +71,27 @@ export default function AboutMe() {
           >
             <div className="techDivTitle">FrontEnd</div>
             <div className="tech tooltip">
-              <Image src={ReactLogo} alt="React" />
+              <Image loader={myImageLoader} layout="fill"  src={ReactLogo} alt="React" />
               <span className="tooltiptext">React</span>
             </div>
             <div className="tech tooltip">
-              <Image src={ReduxLogo} alt="Redux" />
+              <Image loader={myImageLoader} layout="fill"  src={ReduxLogo} alt="Redux" />
               <span className="tooltiptext">Redux</span>
             </div>
             <div className="tech tooltip">
-              <Image src={HTMLLogo} alt="HTML" />
+              <Image loader={myImageLoader} layout="fill"  src={HTMLLogo} alt="HTML" />
               <span className="tooltiptext">HTML</span>
             </div>
             <div className="tech tooltip">
-              <Image src={CSSLogo} alt="CSS" />
+              <Image loader={myImageLoader} layout="fill"  src={CSSLogo} alt="CSS" />
               <span className="tooltiptext">CSS</span>
             </div>
             <div className="tech tooltip">
-              <Image src={StyledComponentLogo} alt="Styled Components" />
+              <Image loader={myImageLoader} layout="fill"  src={StyledComponentLogo} alt="Styled Components" />
               <span className="tooltiptext">Styled Components</span>
             </div>
             <div className="tech tooltip">
-              <Image src={BootstrapLogo} alt="Bootstrap" />
+              <Image loader={myImageLoader} layout="fill"  src={BootstrapLogo} alt="Bootstrap" />
               <span className="tooltiptext">Bootstrap</span>
             </div>
           </div>
@@ -109,23 +102,23 @@ export default function AboutMe() {
           >
             <div className="techDivTitle">BackEnd</div>
             <div className="tech tooltip">
-              <Image src={NodeLogo} alt="Node" />
+              <Image loader={myImageLoader} layout="fill"  src={NodeLogo} alt="Node" />
               <span className="tooltiptext">Node</span>
             </div>
             <div className="tech tooltip">
-              <Image src={ExpressLogo} alt="Express" />
+              <Image loader={myImageLoader} layout="fill"  src={ExpressLogo} alt="Express" />
               <span className="tooltiptext">Express</span>
             </div>
             <div className="tech tooltip">
-              <Image src={SequelizeLogo} alt="HTML" />
+              <Image loader={myImageLoader} layout="fill"  src={SequelizeLogo} alt="HTML" />
               <span className="tooltiptext">Sequelize</span>
             </div>
             <div className="tech tooltip">
-              <Image src={PostgresLogo} alt="CSS" />
+              <Image loader={myImageLoader} layout="fill"  src={PostgresLogo} alt="CSS" />
               <span className="tooltiptext">Postgres</span>
             </div>
             <div className="tech tooltip">
-              <Image src={SocketIOLogo} alt="Socket.io" />
+              <Image loader={myImageLoader} layout="fill"  src={SocketIOLogo} alt="Socket.io" />
               <span className="tooltiptext">Socket.io</span>
             </div>
           </div>
@@ -136,27 +129,27 @@ export default function AboutMe() {
           >
             <div className="techDivTitle">DevOps</div>
             <div className="tech tooltip">
-              <Image src={GitLogo} alt="Git" />
+              <Image loader={myImageLoader} layout="fill"  src={GitLogo} alt="Git" />
               <span className="tooltiptext">Git</span>
             </div>
             <div className="tech tooltip">
-              <Image src={GitHubLogo} alt="GitHub" />
+              <Image loader={myImageLoader} layout="fill"  src={GitHubLogo} alt="GitHub" />
               <span className="tooltiptext">GitHub</span>
             </div>
             <div className="tech tooltip">
-              <Image src={NpmLogo} alt="Npm" />
+              <Image loader={myImageLoader} layout="fill"  src={NpmLogo} alt="Npm" />
               <span className="tooltiptext">Npm</span>
             </div>
             <div className="tech tooltip">
-              <Image src={WebpackLogo} alt="Webpack" />
+              <Image loader={myImageLoader} layout="fill"  src={WebpackLogo} alt="Webpack" />
               <span className="tooltiptext">Webpack</span>
             </div>
             <div className="tech tooltip">
-              <Image src={HerokuLogo} alt="Heroku" />
+              <Image loader={myImageLoader} layout="fill"  src={HerokuLogo} alt="Heroku" />
               <span className="tooltiptext">Heroku</span>
             </div>
             <div className="tech tooltip">
-              <Image src={TravisCILogo} alt="TravisCI" />
+              <Image loader={myImageLoader} layout="fill"  src={TravisCILogo} alt="TravisCI" />
               <span className="tooltiptext">TravisCI</span>
             </div>
           </div>
@@ -167,11 +160,11 @@ export default function AboutMe() {
           >
             <div className="techDivTitle">Languages</div>
             <div className="tech tooltip">
-              <Image src={JavascriptLogo} alt="Javascript" />
+              <Image loader={myImageLoader} layout="fill"  src={JavascriptLogo} alt="Javascript" />
               <span className="tooltiptext">Javascript</span>
             </div>
             <div className="tech tooltip">
-              <Image src={PythonLogo} alt="Python" />
+              <Image loader={myImageLoader} layout="fill"  src={PythonLogo} alt="Python" />
               <span className="tooltiptext">Python</span>
             </div>
           </div>
@@ -182,15 +175,15 @@ export default function AboutMe() {
           >
             <div className="techDivTitle">Tools</div>
             <div className="tech tooltip">
-              <Image src={VSCODELogo} alt="VSCode" />
+              <Image loader={myImageLoader} layout="fill"  src={VSCODELogo} alt="VSCode" />
               <span className="tooltiptext">VS Code</span>
             </div>
             <div className="tech tooltip">
-              <Image src={PostmanLogo} alt="Postman" />
+              <Image loader={myImageLoader} layout="fill"  src={PostmanLogo} alt="Postman" />
               <span className="tooltiptext">Postman</span>
             </div>
             <div className="tech tooltip">
-              <Image src={PosticoLogo} alt="Postico" />
+              <Image loader={myImageLoader} layout="fill"  src={PosticoLogo} alt="Postico" />
               <span className="tooltiptext">Postico</span>
             </div>
           </div>
@@ -201,11 +194,11 @@ export default function AboutMe() {
           >
             <div className="techDivTitle">Testing</div>
             <div className="tech tooltip">
-              <Image src={MochaLogo} alt="Mocha" />
+              <Image loader={myImageLoader} layout="fill"  src={MochaLogo} alt="Mocha" />
               <span className="tooltiptext">Mocha</span>
             </div>
             <div className="tech tooltip">
-              <Image src={ChaiLogo} alt="Chai" />
+              <Image loader={myImageLoader} layout="fill"  src={ChaiLogo} alt="Chai" />
               <span className="tooltiptext">Chai</span>
             </div>
           </div>
