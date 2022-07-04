@@ -10,6 +10,10 @@ const nextConfig = {
       '/blog/where-to-start': { page: '/post', query: { title: 'where-to-start' } },
     }
   },
+  images: {
+    loader: "custom",
+    path: "",
+  }
 }
 
 module.exports = nextConfig

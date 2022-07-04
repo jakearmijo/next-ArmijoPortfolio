@@ -1,5 +1,4 @@
 import Layout from "../../components/layout";
-import Navbar from "../../components/Navbar";
 import Head from "next/head";
 import Link from "next/link";
 import utilStyles from "../../styles/utils.module.css";
@@ -25,10 +24,9 @@ export default function Post( { allPostsData } ) {
   return (
     <Layout home>
       <Head>
-        <title>Armijo Blog</title>
+        <title>The Mij Blog</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Navbar/>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <div className={`${utilStyles.nextLastPostBlog}`}>
           <ButtonDefault title={lastPostBtn}/>
@@ -36,7 +34,7 @@ export default function Post( { allPostsData } ) {
           <ButtonDefault title={nextPostBtn}/>
         </div> 
       <div className='blogIntroDiv'>
-        <h2>Hello User, Welcome to the grid... I mean my blog!</h2>
+        <h3>Hello User, Welcome to the grid... I mean my blog!</h3>
         <p>
         Welcome, Hope you find something useful.
         </p>

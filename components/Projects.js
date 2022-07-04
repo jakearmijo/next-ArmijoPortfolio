@@ -22,11 +22,12 @@ export default function Projects() {
       </div>
       <div id="phutbol" data-aos="fade-up" className="aos-init aos-animate">
         <h1 className="projectTitle">Phutbol</h1>
-        <Image 
+        <Image
           loader={myImageLoader}
-          className="projectImage"
-          layout="fill" 
           src={Phutbol}
+          className="projectImage"
+          width="1000"
+          height="600"
         />
         <div className="project-description">
           <p className="p-project">
@@ -37,25 +38,31 @@ export default function Projects() {
           </p>
         </div>
         <div className="projectLinks">
-          <a href="http://phutbol.herokuapp.com/">
+          <a target="_blank" href="http://phutbol.herokuapp.com/">
             Try Demo{" "}
             <Image 
               loader={myImageLoader} 
               src={Externallink2}
-              layout="fill" 
+              width="3vw"
+              height="3vw"
               />
           </a>
-          <a href="https://github.com/2006-links-light/phutbol">
+          <a target="_blank" href="https://github.com/2006-links-light/phutbol">
             View Code 
-            <Image 
+            <Image
               loader={myImageLoader}
               src={Github3}
-              layout='fill'
+              width="3vw"
+              height="3vw"
               />
           </a>
-          <a href="https://youtu.be/XtMdD3XnvXQ">
+          <a target="_blank" href="https://youtu.be/XtMdD3XnvXQ">
             Watch Presentation{" "}
-            <Image loader={myImageLoader} src={Video} layout='fill'/>
+            <Image
+              loader={myImageLoader}
+              src={Video}
+              width="3vw"
+              height="3vw"/>
           </a>
         </div>
       </div>
@@ -64,8 +71,9 @@ export default function Projects() {
         <Image 
           loader={myImageLoader}
           className="projectImage"
-          layout="fill"
           src={StackAWatBTPA}
+          width="1000"
+          height="600"
         />
         <div className="project-description">
           <p className="p-project">
@@ -82,32 +90,37 @@ export default function Projects() {
           </p>
         </div>
         <div className="projectLinks">
-          <a href="https://github.com/jakearmijo/cableBuilderFull">
+          <a target="_blank" href="https://github.com/jakearmijo/cableBuilderFull">
             View Code 
             <Image 
               loader={myImageLoader} 
               src={Github3}
-              layout="fill"
+              width="3vw"
+              height="3vw"
               />
           </a>
-          <a href="https://youtu.be/AGeLlD0xjL0">
+          <a target="_blank" href="https://youtu.be/AGeLlD0xjL0">
             Watch Presentation{" "}
             <Image 
               loader={myImageLoader}
               src={Video}
-              layout="fill" />
+              width="3vw"
+              height="3vw"
+               />
           </a>
         </div>
       </div>
-      <div
-        id="graceshopper"
+      <div id="graceshopper"
         data-aos="fade-up"
         className="aos-init aos-animate"
       >
         <h1 className="projectTitle">JDB CARS</h1>
-        <Image loader={myImageLoader}
+        <Image
+          loader={myImageLoader}
           className="projectImage"
-          layout="fill" src={JDBCars}
+          src={JDBCars}
+          width="1000"
+          height="600"
         />
         <div className="project-description">
           <p className="p-project">
@@ -122,8 +135,13 @@ export default function Projects() {
           </p>
         </div>
         <div className="projectLinks">
-          <a href="https://github.com/2006-gs-leo/grace-shopper">
-            View Code <Image loader={myImageLoader} src={Github3} layout='fill'/>
+          <a target="_blank" href="https://github.com/2006-gs-leo/grace-shopper">
+            View Code 
+            <Image
+              loader={myImageLoader}
+              src={Github3}
+              width="3vw"
+              height="3vw"/>
           </a>
         </div>
       </div>
