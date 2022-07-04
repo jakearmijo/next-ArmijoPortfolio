@@ -408,6 +408,9 @@ h3 {
 #coffee {
   background-image: url('/coffee.png');
 }
+#tv {
+  background-image: url('/gemini.png');
+}
 
 #resumeMain a img {
   width: 19px;

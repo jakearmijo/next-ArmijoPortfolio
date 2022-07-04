@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
+import Navbar from "../components/Navbar";
 import { 
   JakeMijLogo,
  } from '../public/images'
@@ -22,6 +23,7 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
       </Head>
+      <Navbar/>
       <header className={styles.header}>
         {home ? (
           <>
@@ -30,6 +32,8 @@ export default function Layout({ children, home }) {
               src={JakeMijLogo}
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
+              width="800"
+              height="600"
             />
           </>
         ) : (
@@ -41,6 +45,8 @@ export default function Layout({ children, home }) {
                   src={JakeMijLogo}
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt={name}
+                  width="800"
+                  height="600"
                 />
               </a>
             </Link>
