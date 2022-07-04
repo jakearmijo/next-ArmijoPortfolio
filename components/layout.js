@@ -6,6 +6,7 @@ import Link from "next/link";
 import { 
   JakeMijLogo,
  } from '../public/images'
+import {myImageLoader} from '../lib/utils'
 
 const name = "Jake Armijo";
 export const siteTitle = "Jake Armijo dot com";
@@ -25,6 +26,7 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <Image
+              loader={myImageLoader}
               src={JakeMijLogo}
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
@@ -35,6 +37,7 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <a>
                 <Image
+                  loader={myImageLoader}
                   src={JakeMijLogo}
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt={name}

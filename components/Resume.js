@@ -1,3 +1,11 @@
+import Image from 'next/image'
+import {myImageLoader} from '../lib/utils'
+import { 
+  Viewfile,
+  Download
+ } from '../public/images'
+
+ 
 export default function Resume() {
   return (
     <div id="resume">
@@ -7,11 +15,11 @@ export default function Resume() {
       <div id="resumeMain" data-aos="fade-up" className="aos-init aos-animate">
         <a id="resumeView" href="/JakeArmijoResume.pdf" target="_blank">
           View Resume
-          <img src="/images/viewfile.png" />
+          <Image loader={myImageLoader} src={Viewfile} layout='fill' />
         </a>
         <a id="resumeDownload" href="/JakeArmijoResume.pdf" download="/JakeArmijoResume.pdf">
           Download Resume
-          <img src="/images/download.png" />
+          <Image loader={myImageLoader} src={Download} layout='fill'  />
         </a>
       </div>
     </div>

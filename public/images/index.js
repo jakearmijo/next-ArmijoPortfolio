@@ -25,6 +25,14 @@ import ChaiLogo from './Chai-Logo.png'
 import JakeMijLogo from './JAKEMIJUPDATE.svg'
 import SendItLogo from './sendit.png'
 import LinkedInLogo from './LinkedIn.png'
+import Phutbol from './Phutbol.svg'
+import Externallink2 from './externallink2.png'
+import Github3 from './github3.png'
+import JDBCars from './JDBCars.svg'
+import Video from './video.png'
+import StackAWatBTPA from './StackAWat-BTPA.svg'
+import Viewfile from './viewfile.png'
+import Download from './download.png'
 
 export {
   ReactLogo,
@@ -54,4 +62,12 @@ export {
   JakeMijLogo,
   SendItLogo,
   LinkedInLogo,
+  Phutbol,
+  Externallink2,
+  Github3,
+  JDBCars,
+  Video,
+  StackAWatBTPA,
+  Viewfile,
+  Download,
 }

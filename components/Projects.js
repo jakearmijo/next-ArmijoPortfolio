@@ -1,3 +1,14 @@
+import Image from 'next/image'
+import { 
+  Phutbol,
+  Externallink2,
+  Github3,
+  JDBCars,
+  Video,
+  StackAWatBTPA,
+ } from '../public/images'
+
+import { myImageLoader } from '../lib/utils'
 
 export default function Projects() {
   return (
@@ -11,9 +22,11 @@ export default function Projects() {
       </div>
       <div id="phutbol" data-aos="fade-up" className="aos-init aos-animate">
         <h1 className="projectTitle">Phutbol</h1>
-        <img
+        <Image 
+          loader={myImageLoader}
           className="projectImage"
-          src="/images/Phutbol.svg"
+          layout="fill" 
+          src={Phutbol}
         />
         <div className="project-description">
           <p className="p-project">
@@ -26,22 +39,33 @@ export default function Projects() {
         <div className="projectLinks">
           <a href="http://phutbol.herokuapp.com/">
             Try Demo{" "}
-            <img src="/images/externallink2.png" />
+            <Image 
+              loader={myImageLoader} 
+              src={Externallink2}
+              layout="fill" 
+              />
           </a>
           <a href="https://github.com/2006-links-light/phutbol">
-            View Code <img src="/images/github3.png" />
+            View Code 
+            <Image 
+              loader={myImageLoader}
+              src={Github3}
+              layout='fill'
+              />
           </a>
           <a href="https://youtu.be/XtMdD3XnvXQ">
             Watch Presentation{" "}
-            <img src="/images/video.png" />
+            <Image loader={myImageLoader} src={Video} layout='fill'/>
           </a>
         </div>
       </div>
       <div id="stackawat" data-aos="fade-up" className="aos-init aos-animate">
         <h1 className="projectTitle">Stackawat</h1>
-        <img
+        <Image 
+          loader={myImageLoader}
           className="projectImage"
-          src="/images/StackAWat-BTPA.svg"
+          layout="fill"
+          src={StackAWatBTPA}
         />
         <div className="project-description">
           <p className="p-project">
@@ -59,11 +83,19 @@ export default function Projects() {
         </div>
         <div className="projectLinks">
           <a href="https://github.com/jakearmijo/cableBuilderFull">
-            View Code <img src="/images/github3.png" />
+            View Code 
+            <Image 
+              loader={myImageLoader} 
+              src={Github3}
+              layout="fill"
+              />
           </a>
           <a href="https://youtu.be/AGeLlD0xjL0">
             Watch Presentation{" "}
-            <img src="/images/video.png" />
+            <Image 
+              loader={myImageLoader}
+              src={Video}
+              layout="fill" />
           </a>
         </div>
       </div>
@@ -73,9 +105,9 @@ export default function Projects() {
         className="aos-init aos-animate"
       >
         <h1 className="projectTitle">JDB CARS</h1>
-        <img
+        <Image loader={myImageLoader}
           className="projectImage"
-          src="/images/JDBCars.svg"
+          layout="fill" src={JDBCars}
         />
         <div className="project-description">
           <p className="p-project">
@@ -91,7 +123,7 @@ export default function Projects() {
         </div>
         <div className="projectLinks">
           <a href="https://github.com/2006-gs-leo/grace-shopper">
-            View Code <img src="/images/github3.png" />
+            View Code <Image loader={myImageLoader} src={Github3} layout='fill'/>
           </a>
         </div>
       </div>
