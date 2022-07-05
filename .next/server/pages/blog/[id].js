@@ -70,8 +70,8 @@ function Post({
 }) {
   return /*#__PURE__*/(0,jsx_runtime_.jsxs)(layout/* default */.Z, {
     children: [/*#__PURE__*/jsx_runtime_.jsx((head_default()), {
-      children: /*#__PURE__*/jsx_runtime_.jsx("title", {
-        children: postData.title
+      children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("title", {
+        children: [postData.title, " - Armijo - Blog"]
       })
     }), /*#__PURE__*/jsx_runtime_.jsx("div", {
       className: "blogIntroDiv",
@@ -217,6 +217,13 @@ module.exports = require("react");
 
 /***/ }),
 
+/***/ 3783:
+/***/ ((module) => {
+
+module.exports = require("react-scroll");
+
+/***/ }),
+
 /***/ 5282:
 /***/ ((module) => {
 
@@ -245,7 +252,7 @@ module.exports = require("remark-html");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [61,89,445], () => (__webpack_exec__(3778)));
+var __webpack_exports__ = __webpack_require__.X(0, [61,246,445], () => (__webpack_exec__(3778)));
 module.exports = __webpack_exports__;
 
 })();
