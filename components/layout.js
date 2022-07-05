@@ -10,18 +10,14 @@ import {
 import {myImageLoader} from '../lib/utils'
 
 const name = "Jake Armijo";
-export const siteTitle = "Jake Armijo dot com";
+export const siteTitle = "Armijo - Blog";
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Jake Armijo dot com"
-        />
-        <meta name="og:title" content={siteTitle} />
+        <meta name={name} content={siteTitle} />
       </Head>
       <Navbar/>
       <header className={styles.header}>

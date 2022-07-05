@@ -555,9 +555,10 @@ footer {
   height: 30px;
 }
 
-/* START OF PHONE AND OTHER MEDIA RESIZING */
 
-@media only screen and (max-width: 1000px) {
+/* TODO:  START OF PHONE AND OTHER MEDIA RESIZING */
+
+/* @media only screen and (max-width: 1000px) {
   html {
     scroll-behavior: smooth;
   }
@@ -569,9 +570,9 @@ footer {
   #hobbiesMain {
     width: 100%;
   }
-}
+} */
 
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
   .slideshow-container {
     width: 100%;
     height: 56.25vw;
@@ -617,10 +618,10 @@ footer {
   #resumeMain a {
     margin-bottom: 15px;
   }
-}
+} */
 
 /* ------MOBILE PHONES STYLING------ */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   body {
     overflow-x: hidden;
   }
@@ -771,9 +772,9 @@ footer {
   p.p-project.p-tech {
     padding-top: 0px;
   }
-}
+} */
 
-@media only screen and (max-height: 600px) and (orientation: landscape) {
+/* @media only screen and (max-height: 600px) and (orientation: landscape) {
   #helloh2 {
     padding-top: 70px;
   }
@@ -787,7 +788,7 @@ footer {
 
 @media only screen and (max-width: 320px) {
   /* Form Styling */
-  form {
+  /* form {
     width: 300px;
     margin: 45px auto;
   }
@@ -832,4 +833,4 @@ footer {
   flex-direction: column;
   align-items: center;
   align-content: center;
-}
+} */ 

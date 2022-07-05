@@ -24,7 +24,7 @@ export default function Post({ postData }) {
   return (
     <Layout>
       <Head>
-        <title>{postData.title}</title>
+        <title>{postData.title} - Armijo - Blog</title>
       </Head>
       <div className='blogIntroDiv' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     </Layout>

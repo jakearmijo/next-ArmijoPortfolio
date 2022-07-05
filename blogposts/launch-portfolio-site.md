@@ -9,7 +9,9 @@ tags: 'Google Domains, Netlify, Nextjs, Gatsby, DNS, Portfolio Site'
 ## How I launched my portfolio site with Google Domains and Netlify
 ____________________________________________________________
 
+
 Hello Everyone, I knew I wanted to create my website a little while ago. I looked at different tech options and tried to select which one would be best. I knew <strong><a href='https://nextjs.org/' target='_blank'>Next.js</strong> and <strong><a href='https://www.gatsbyjs.com/' target='_blank'>Gatsby</strong> were popular choices so I mainly researched those. After Bootcamp, I did make a full React-based portfolio, but it was large and slow on load time. I knew I could research how to improve this but I thought I would change the pace and try something new. I was reading about how server-side rendering would be better for load time. I chose Next over Gatsby just because I thought it was a tad bit newer and I enjoyed the tutorials while I was going through them. So I converted the React-based project into a Next.js project and now I am using that going forward.
+
 
 </br>
 
