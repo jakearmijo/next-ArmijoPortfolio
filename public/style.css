@@ -216,7 +216,7 @@ p {
   font-size: 1.5em;
   line-height: 1.6;
   padding: 20px;
-  width: 600px;
+  
 }
 
 .p-project {
@@ -483,7 +483,6 @@ div[role='alert'] {
 }
 
 .message-chars-left {
-  width: 600px;
   margin: auto;
   text-align: left;
 }
