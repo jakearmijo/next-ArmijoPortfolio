@@ -272,7 +272,6 @@ h2 {
 p {
   color: #333333;
   line-height: 1.6;
-  width: 600px;
   max-width: 100%;
 }
 
@@ -546,7 +545,6 @@ div[role="alert"] {
 }
 
 .message-chars-left {
-  width: 600px;
   margin: auto;
   text-align: left;
 }
@@ -575,6 +573,13 @@ footer {
   width: 30px;
   height: 30px;
   max-width: 100%;
+}
+
+.blogIntroDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
