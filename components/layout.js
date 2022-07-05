@@ -49,7 +49,7 @@ export default function Layout({ children, home }) {
           </>
         )}
       </header>
-      <main>{children}</main>
+      <main className="blogIntroDiv">{children}</main>
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/blog">

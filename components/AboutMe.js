@@ -46,7 +46,7 @@ export default function AboutMe() {
             className="aos-init aos-animate"
           ></div>
 
-          <p data-aos="fade-up" id="pIntro" className="aos-init aos-animate">
+          <p data-aos="fade-up" id="pIntro" className="aos-init aos-animate p-project">
             [ Hello, World, ! ] I am a sociable creator with adoration for variety. 
             As a kid, I lived frequently singing and playing with Legos or Erector sets. 
             As an adult, I helped build commercial buildings, and now I help build software

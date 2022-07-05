@@ -31,13 +31,13 @@ code {
   align-items: center;
 }
 
-body {
+/* body {
   padding: 0;
   margin: 0;
   width: 100%;
   height: 100vh;
   font-family: "Lato", sans-serif;
-}
+} */
 
 a {
   text-decoration: none;
@@ -581,6 +581,31 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.blog_section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  /* font-size: 1.5em; */
+  flex-wrap: wrap;
+  max-width: 50%;
+  justify-content: center;
+}
+
+.listItem {
+  cursor: pointer;
+  color: #333333;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 
 /* TODO:  START OF PHONE AND OTHER MEDIA RESIZING */
@@ -691,7 +716,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: auto;
+    width: 100%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     border-left: 1px solid black;
@@ -823,6 +848,7 @@ footer {
     height: 56.25vw;
     position: relative;
     margin: auto;
+    max-width: 100%;
   }
 }
 

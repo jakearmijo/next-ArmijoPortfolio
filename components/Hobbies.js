@@ -68,7 +68,7 @@ export default function Hobbies() {
             ></div>
           </div>
 
-          <p data-aos="fade-up" id="p2" className="aos-init aos-animate">
+          <p data-aos="fade-up" id="p2" className="aos-init aos-animate p-project">
             I love many things in this beautiful world. Besides my love for
             coding. I love to be creative, play video games, and travel with my
             family. I am a coffee and craft beer connoisseur. My nature
