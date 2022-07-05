@@ -23,7 +23,7 @@ I watched an <strong><a href='https://explorers.netlify.com/learn/nextjs' target
 
 **Step By Step How To - Netlify**
 1. In your Netlify console, navigate to your site and click Domain Settings. Click the green button "Add custom domain".
-2. It will prompt you to provide the name of the domain you have bought. For example <strong>http://www.jakearmijo.com</strong>.
+2. It will prompt you to provide the name of the domain you have bought. For example <strong>https://www.jakearmijo.com</strong>.
 3. Verify that you are the owner of the domain. 
 4. Click "verify".
 5. You will be redirected to your domain settings where you will see your domain. You will see that your domain will have a warning, to ask you to "check your DNS configuration". Click to Options -> Set Up Netlify DNS.
@@ -41,7 +41,7 @@ I watched an <strong><a href='https://explorers.netlify.com/learn/nextjs' target
   4. Add the name servers from Netlify to the Google name servers.
 </br>
 
-Congrats! Your domain is set up - it may take more time but mine was ready within minuets. <a href='http://www.jakearmijo.com'>http://www.jakearmijo.com</a> was born.
+Congrats! Your domain is set up - it may take more time but mine was ready within minuets. <a href='https://www.jakearmijo.com'>https://www.jakearmijo.com</a> was born.
 
 
 Netlify will also set up the HTTPS certificate via https://letsencrypt.org/donate/. This process took a little longer but when I awoke in the morning I had the HTTPS before the URL and my site was not receiving the privacy warning. 
