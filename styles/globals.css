@@ -20,7 +20,6 @@ main {
 code {
   background: #fafafa;
   border-radius: 5px;
-  padding: 0.75rem;
   font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
 }
 
@@ -52,12 +51,13 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 100px;
-  position: relative;
+  align-content: center;
+  height: auto;
   width: auto;
-  max-width: 100vw;
+  max-width: 100%;
   background-color: white;
   z-index: 10000;
+  flex-wrap: wrap;
 }
 
 .nav-links {
@@ -126,7 +126,7 @@ form div {
   border: 4px solid black;
   width: 160px;
   height: 100px;
-  font-size: 1.23rem;
+  font-size: 1.25rem;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -141,12 +141,12 @@ form div {
 
 #top {
   width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
+  max-width: 100%;
 }
 
 * {
@@ -155,37 +155,47 @@ form div {
 }
 
 h2 {
-  font-size: 4rem;
+  /* font-size: large; */
   font-weight: 700;
   color: #333333;
   padding-left: 20px;
   padding-right: 20px;
-}
+} 
 
-h1 {
-  display: block;
-  font-size: 2em;
+ h1 {
+  font-size: 2rem;
   margin-block-start: 0.3em;
   margin-block-end: 0.3em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
-}
+} 
 
 #nameDiv {
-  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 #nameh1 {
+  display: flex;
   font-size: 7rem;
   color: #ffa500;
-  text-align: left;
-  padding-left: 20px;
-  padding-right: 20px;
+  text-align: center;
+}
+
+#helloh2 {
+  padding-top: 35px;
+  padding-left: 25px;
 }
 
 .viewPortfolio{
   margin: 15px 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 10%;
 }
 
 /* PROJECT SECTION */
@@ -202,18 +212,21 @@ h1 {
   border-radius: 50px;
   background-color: white;
   transition: background-color 0.3s ease 0s;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #projectsTitle {
   display: flex;
   justify-content: center;
   columns: #333333;
-  font-size: 3em;
+  font-size: 12em;
   margin-block-start: 0.3em;
   margin-block-end: 0.3em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .projectTitle {
@@ -246,24 +259,26 @@ h1 {
 
 .text {
   color: #ffa500;
-  font-size: 15px;
+  font-size: 12px;
   padding: 8px 12px;
   position: relative;
   bottom: 0px;
   width: 100%;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.8);
+  max-width: 100%;
 }
 
 p {
   color: #333333;
-  font-size: 1.5em;
   line-height: 1.6;
   width: 600px;
+  max-width: 100%;
 }
 
 .p-project {
   width: 850px;
+  max-width: 100%;
 }
 
 .p-tech {
@@ -276,13 +291,7 @@ p {
   font-size: 1rem;
   border: 2px solid #333333;
   border-radius: 50px;
-  margin-left: 20px;
-  margin-right: 0px;
   text-transform: uppercase;
-  padding-bottom: 10px;
-  padding-top: 4px;
-  padding-left: 12px;
-  padding-right: 12px;
 }
 
 .projectLinks a img,
@@ -338,13 +347,13 @@ p {
 
 h1 {
   color: #333333;
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
   /* padding-top: 85px; */
 }
 
 h3 {
-  font-size: 1.7rem;
+  font-size: medium;
   font-weight: bold;
   color: #333333;
   padding-left: 20px;
@@ -354,6 +363,7 @@ h3 {
 #skillsMain {
   flex-direction: row;
   width: 1000px;
+  max-width: 100%;
 }
 
 .techDiv {
@@ -364,6 +374,7 @@ h3 {
   justify-content: center;
   border: 1px solid #333333;
   margin: 6px;
+  max-width: 100%;
 }
 
 .techDivTitle {
@@ -373,16 +384,18 @@ h3 {
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 14px;
+  font-size: large;
   background-color: #333333;
   color: white;
   padding: 5px;
+  max-width: 100%;
 }
 
 .tech img {
   width: 64px;
   padding: 0.35em;
   max-height: 70px;
+  max-width: 100%;
 }
 
 .tooltip .tooltiptext {
@@ -400,6 +413,7 @@ h3 {
   margin-left: -60px;
   opacity: 0;
   transition: opacity 0.5s;
+  max-width: 100%;
 }
 
 .tooltip .tooltiptext::after {
@@ -422,6 +436,7 @@ h3 {
   margin-right: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
+  max-width: 100%;
 }
 
 .hobbiesIcon {
@@ -432,6 +447,7 @@ h3 {
   background-position: center;
   background-size: cover;
   margin: 10px;
+  max-width: 100%;
 }
 #videogames {
   background-image: url(/pc-gaming-icon.png);
@@ -460,18 +476,21 @@ h3 {
   height: 19px;
   position: relative;
   top: 4px;
-  margin-left: 5px;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-#resumeMain a {
+/* #resumeMain a {
   margin-left: 10px;
   margin-right: 10px;
-}
+} */
 
 form {
   width: 320px;
   margin: 45px auto;
   display: block;
+  max-width: 100%;
 }
 
 input,
@@ -485,6 +504,7 @@ textarea {
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #333333;
+  max-width: 100%;
 }
 input {
   writing-mode: horizontal-tb !important;
@@ -537,6 +557,7 @@ div[role="alert"] {
   justify-content: space-evenly;
   margin: 20px;
   width: 320px;
+  max-width: 100%;
 }
 
 #footer-links a {
@@ -553,37 +574,41 @@ footer {
 #footer-links img {
   width: 30px;
   height: 30px;
+  max-width: 100%;
 }
 
 
 /* TODO:  START OF PHONE AND OTHER MEDIA RESIZING */
 
-/* @media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
   html {
     scroll-behavior: smooth;
+    max-width: 100%;
   }
   #skillsMain {
     flex-direction: row;
-    width: 320px;
+    max-width: 100%;
   }
 
   #hobbiesMain {
-    width: 100%;
+    max-width: 100%;
   }
-} */
+}
 
-/* @media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   .slideshow-container {
     width: 100%;
     height: 56.25vw;
     position: relative;
     margin: auto;
+    max-width: 100%;
   }
 
   #recipix,
   #racehopper,
   #botbuddies {
     width: 100%;
+    max-width: 100%;
   }
 
   .projectImage {
@@ -592,6 +617,7 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    max-width: 100%;
   }
 
   .project-description {
@@ -602,6 +628,7 @@ footer {
     width: 100%;
     padding: 28px;
     margin: 0px;
+    max-width: 100%;
   }
 
   p.p-project.p-tech {
@@ -610,26 +637,29 @@ footer {
 
   .projectLinks,
   #resumeMain {
-    width: 100%;
     flex-wrap: wrap;
+    max-width: 100%;
   }
 
   .projectLinks a,
   #resumeMain a {
     margin-bottom: 15px;
+    align-items: center;
+    align-content: space-evenly;
+    justify-content: center;
   }
-} */
+}
 
 /* ------MOBILE PHONES STYLING------ */
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   body {
     overflow-x: hidden;
+    max-width: 100%;
   }
   h1 {
     font-size: 3rem;
   }
   #nameh1 {
-    font-size: 3.5rem;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -643,8 +673,8 @@ footer {
     padding-right: 20px;
   }
   nav {
-    position: fixed;
     width: 100%;
+    max-width: 100%;
   }
   .nav-links {
     position: fixed;
@@ -749,6 +779,7 @@ footer {
     height: 56.25vw;
     position: relative;
     margin: auto;
+    max-width: 100%;
   }
 
   .projectImage {
@@ -757,24 +788,28 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    max-width: 100%;
   }
 
   .project-description {
     width: 100%;
+    max-width: 100%;
   }
 
   p.p-project {
     width: 100%;
     padding: 28px;
     margin: 0px;
+    max-width: 100%;
   }
 
   p.p-project.p-tech {
     padding-top: 0px;
+    max-width: 100%;
   }
-} */
+}
 
-/* @media only screen and (max-height: 600px) and (orientation: landscape) {
+@media only screen and (max-height: 600px) and (orientation: landscape) {
   #helloh2 {
     padding-top: 70px;
   }
@@ -786,6 +821,7 @@ footer {
   }
 }
 
+/*
 @media only screen and (max-width: 320px) {
   /* Form Styling */
   /* form {

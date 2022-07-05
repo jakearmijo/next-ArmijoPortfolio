@@ -3,7 +3,7 @@ export default function Hobbies() {
     <div>
       <div id="hobbies">
         <div
-          id="hobbiesTitle"
+          id="projectsTitle"
           data-aos="fade-up"
           className="aos-init aos-animate"
         >

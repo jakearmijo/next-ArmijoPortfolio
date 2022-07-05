@@ -12,7 +12,7 @@ import DiscordWidget from "../components/DiscordWidget";
 
 function Home() {
   return (
-    <>
+    <div className="main">
       <Head>
         <title>The Armijo Algorithm</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -27,8 +27,7 @@ function Home() {
       <Contact />
       <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/19915776.js"></script>
       <Footer />
-         
-    </>
+    </div>
   );
 }
 export default Home;

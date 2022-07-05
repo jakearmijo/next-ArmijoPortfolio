@@ -1,7 +1,7 @@
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { init, sendForm } from "emailjs-com";
-init("user_GifAIRMYb8H5rmuXPFOY1");
+init(process.env.USER);
 
 export default function Contact() {
   const { register, handleSubmit, watch, errors, reset } = useForm();
@@ -20,8 +20,11 @@ export default function Contact() {
     reset()
   };
   return (
-    <div id="contactTitle" data-aos="fade-up" className="aos-init aos-animate">
+    <>
+    <div id="projectsTitle" data-aos="fade-up" className="aos-init aos-animate">
       <h1>Contact</h1>
+      </div>
+      <div>
       <Form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
         <Form.Group controlId="exampleForm.ControlInput1">
           <Form.Label>Name</Form.Label>
@@ -67,6 +70,8 @@ export default function Contact() {
           </Button>
         </div>
       </Form>
-    </div>
+      </div>
+      </>
+    
   );
 }

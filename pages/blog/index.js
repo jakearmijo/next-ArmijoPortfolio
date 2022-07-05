@@ -29,28 +29,18 @@ export default function Post( { allPostsData } ) {
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <div className={`${utilStyles.nextLastPostBlog}`}>
-          <ButtonDefault title={lastPostBtn}/>
-          <ButtonDefault title={tableOfContents}/>
-          <ButtonDefault title={nextPostBtn}/>
         </div> 
       <div className='blogIntroDiv'>
-        <h3>Hello User, Welcome to the grid... I mean my blog!</h3>
-        <text>
-        Hope you find something useful.
-        </text>
-        <p>Sincerly,{' '}Jake Armijo</p>
-        <h4>
-        </h4>
+        <h3>Hello User, Welcome to the grid...</h3>
       </div>
       </section>
       <section>
-      <ButtonDefault title={backtoHome}/>
-      <h2>Blog - Table of Contents</h2>
+      <h2>__________________________________________</h2>
+      <h2>Table of Contents</h2>
       <ul className={utilStyles.list}>
         {allPostsData.map(({ id, date, title }, idx) => (
           <Link href={`/blog/${id}`} key={idx}>
           <li className={utilStyles.listItem} key={id}>
-            #{idx + 1}
             <br />
             <strong>Post Title:</strong> {title}
             <br />

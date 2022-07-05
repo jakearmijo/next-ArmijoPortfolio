@@ -38,7 +38,7 @@ export default function Projects() {
           </p>
         </div>
         <div className="projectLinks">
-          <a target="_blank" href="http://phutbol.herokuapp.com/">
+          <a className='viewPortfolio' target="_blank" href="http://phutbol.herokuapp.com/">
             Try Demo{" "}
             <Image 
               loader={myImageLoader} 
@@ -47,7 +47,7 @@ export default function Projects() {
               height="3vw"
               />
           </a>
-          <a target="_blank" href="https://github.com/2006-links-light/phutbol">
+          <a className='viewPortfolio' target="_blank" href="https://github.com/2006-links-light/phutbol">
             View Code 
             <Image
               loader={myImageLoader}
@@ -56,7 +56,7 @@ export default function Projects() {
               height="3vw"
               />
           </a>
-          <a target="_blank" href="https://youtu.be/XtMdD3XnvXQ">
+          <a className='viewPortfolio' target="_blank" href="https://youtu.be/XtMdD3XnvXQ">
             Watch Presentation{" "}
             <Image
               loader={myImageLoader}
@@ -90,7 +90,7 @@ export default function Projects() {
           </p>
         </div>
         <div className="projectLinks">
-          <a target="_blank" href="https://github.com/jakearmijo/cableBuilderFull">
+          <a className='viewPortfolio' target="_blank" href="https://github.com/jakearmijo/cableBuilderFull">
             View Code 
             <Image 
               loader={myImageLoader} 
@@ -99,7 +99,7 @@ export default function Projects() {
               height="3vw"
               />
           </a>
-          <a target="_blank" href="https://youtu.be/AGeLlD0xjL0">
+          <a className='viewPortfolio' target="_blank" href="https://youtu.be/AGeLlD0xjL0">
             Watch Presentation{" "}
             <Image 
               loader={myImageLoader}
@@ -135,7 +135,7 @@ export default function Projects() {
           </p>
         </div>
         <div className="projectLinks">
-          <a target="_blank" href="https://github.com/2006-gs-leo/grace-shopper">
+          <a className='viewPortfolio' target="_blank" href="https://github.com/2006-gs-leo/grace-shopper">
             View Code 
             <Image
               loader={myImageLoader}

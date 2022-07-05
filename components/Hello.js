@@ -45,7 +45,8 @@ export default function Hello() {
       >
         <a className='viewPortfolio' target='_blank' href="https://calendly.com/armijojake/meeting">Schedule time with me</a>
         <a className='viewPortfolio' href="#projects">View Portfolio</a>
-        <Link href="/blog">View Blog</Link>
+        <a className='viewPortfolio' href="/blog">View Blog</a>
+        
       </div>
     </div>
   );
