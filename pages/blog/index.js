@@ -35,9 +35,9 @@ export default function Post( { allPostsData } ) {
         </div> 
       <div className='blogIntroDiv'>
         <h3>Hello User, Welcome to the grid... I mean my blog!</h3>
-        <p>
-        Welcome, Hope you find something useful.
-        </p>
+        <text>
+        Hope you find something useful.
+        </text>
         <p>Sincerly,{' '}Jake Armijo</p>
         <h4>
         </h4>
