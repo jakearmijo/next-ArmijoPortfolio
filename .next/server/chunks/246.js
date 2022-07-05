@@ -47,7 +47,7 @@ function Navbar() {
       children: "CONTACT"
     }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx(next_link__WEBPACK_IMPORTED_MODULE_1__.default, {
       target: "_blank",
-      href: "https:/jakearmijo/blog",
+      href: "https:/jakearmijo.com/blog",
       children: "BLOG"
     }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx(next_link__WEBPACK_IMPORTED_MODULE_1__.default, {
       target: "_blank",

@@ -77,6 +77,7 @@ function Layout({
         })
       })
     }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx("main", {
+      className: "blogIntroDiv",
       children: children
     }), !home && /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx("div", {
       className: (_layout_module_css__WEBPACK_IMPORTED_MODULE_7___default().backToHome),

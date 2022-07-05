@@ -99,40 +99,41 @@ function Post({
         name: "viewport",
         content: "initial-scale=1.0, width=device-width"
       })]
-    }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("section", {
+    }), /*#__PURE__*/jsx_runtime_.jsx("section", {
       className: `${(utils_module_default()).headingMd} ${(utils_module_default()).padding1px}`,
-      children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
+      children: /*#__PURE__*/jsx_runtime_.jsx("div", {
         className: `${(utils_module_default()).nextLastPostBlog}`
-      }), /*#__PURE__*/jsx_runtime_.jsx("div", {
-        className: "blogIntroDiv",
-        children: /*#__PURE__*/jsx_runtime_.jsx("h3", {
-          children: "Hello User, Welcome to the grid..."
-        })
-      })]
-    }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("section", {
-      children: [/*#__PURE__*/jsx_runtime_.jsx("h2", {
-        children: "__________________________________________"
-      }), /*#__PURE__*/jsx_runtime_.jsx("h2", {
-        children: "Table of Contents"
-      }), /*#__PURE__*/jsx_runtime_.jsx("ul", {
-        className: (utils_module_default()).list,
-        children: allPostsData.map(({
-          id,
-          date,
-          title
-        }, idx) => /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
-          href: `/blog/${id}`,
-          children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("li", {
-            className: (utils_module_default()).listItem,
-            children: [/*#__PURE__*/jsx_runtime_.jsx("br", {}), /*#__PURE__*/jsx_runtime_.jsx("strong", {
-              children: "Post Title:"
-            }), " ", title, /*#__PURE__*/jsx_runtime_.jsx("br", {}), /*#__PURE__*/jsx_runtime_.jsx("strong", {
-              children: "Post Date:"
-            }), " ", date, /*#__PURE__*/jsx_runtime_.jsx("h6", {
-              children: "_______________________"
-            }), /*#__PURE__*/jsx_runtime_.jsx("br", {})]
-          }, id)
-        }, idx))
+      })
+    }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+      className: "blogIntroDiv",
+      children: [/*#__PURE__*/jsx_runtime_.jsx("h3", {
+        children: "Hello User, Welcome to the grid..."
+      }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("section", {
+        className: "blog_section",
+        children: [/*#__PURE__*/jsx_runtime_.jsx("h2", {
+          children: "__________________________________________"
+        }), /*#__PURE__*/jsx_runtime_.jsx("h2", {
+          children: "Table of Contents"
+        }), /*#__PURE__*/jsx_runtime_.jsx("ul", {
+          className: "list",
+          children: allPostsData.map(({
+            id,
+            date,
+            title
+          }, idx) => /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
+            href: `/blog/${id}`,
+            children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("li", {
+              className: "listItem",
+              children: [/*#__PURE__*/jsx_runtime_.jsx("br", {}), /*#__PURE__*/jsx_runtime_.jsx("strong", {
+                children: "Post Title:"
+              }), " ", title, /*#__PURE__*/jsx_runtime_.jsx("br", {}), /*#__PURE__*/jsx_runtime_.jsx("strong", {
+                children: "Post Date:"
+              }), " ", date, /*#__PURE__*/jsx_runtime_.jsx("h6", {
+                children: "_______________________"
+              }), /*#__PURE__*/jsx_runtime_.jsx("br", {})]
+            }, id)
+          }, idx))
+        })]
       })]
     })]
   });
