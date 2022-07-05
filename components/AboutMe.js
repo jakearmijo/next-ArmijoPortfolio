@@ -32,7 +32,7 @@ export default function AboutMe() {
     <div>
       <div id="aboutMe">
         <div
-          id="aboutMeTitle"
+          id="projectsTitle"
           data-aos="fade-up"
           className="aos-init aos-animate"
         >

@@ -6,9 +6,7 @@ category: "Tutorial"
 template: "blog-post"
 tags: 'Google Dev Tools, Reduce, Map, Nodejs, Web Scraping'
 ---
-<div class="border">
-
-## *WIP* - Web Scraping and how to use reduce and map inside google dev tools console</h2>
+## **WIP** - Web Scraping and how to use reduce and map inside google dev tools console
 
 Let say I needed to pull specfific information off of webpage. I could utilize web scraping. Web scraping, web harvesting, or web data extraction is data scraping used for extracting informaion from websites. Although it can be used for a wide variety of things (some good and some not good) some Useful examples include:
 
@@ -33,33 +31,33 @@ On the other hand, sometimes it is much easier to just grab the few results that
 
 In the below examples, I will showcase how to use a **css selector** to grab info off a webpage. In this examples it could be faster to use this technique, but doing it the long way (copy paste each item) will always be available. 
 
-**2 EXAMPLES ->** 1 reduce 1 map 
-<div class="border">
-  <p>
-In these example we are going to be imagining we are trying to grab a bunch of different eCommerce websites to save for a later date. In a later section we might export all these results to a csv file, but for now will jusst be copying and pasting into a seperate .csv we will open up in a new vs code window. 
-<p class="listItem">1.) Open Chrome and navigate to <a href='https://www.featuredcustomers.com/vendor/woocommerce/case-studies/all' target='_blank'>featuredcustomers.com</a>. This is the website we will be grabbing all of our URLs from.</p>
+**2 EXAMPLES ->** 1 reduce 1 map
+The example we are going to be imagining we are trying to grab a bunch of different eCommerce websites to save for a later date. In a later section we might export all these results to a csv file, but for now will jusst be copying and pasting into a seperate .csv we will open up in a new vs code window. 
+  
+  1. Open Chrome and navigate to <a href='https://www.featuredcustomers.com/vendor/woocommerce/case-studies/all' target='_blank'>featuredcustomers.com</a>. This is the website we will be grabbing all of our URLs from.
 
-- MAP EXAMPLE -> can add in the .com to query and show that as well
-  Code -> 
-  Array.from(document.querySelectorAll('.caseStudy-card-heading > a')).map(({title, innerHTML} ) => ({ URL: "https://" + title + ".com".split(" ").join(), name: title, source: 'https://www.bigcommerce.com/case-study/'} ))
+**MAP EXAMPLE -> can add in the .com to query and show that as well**
 
-</p>
-</div>
 
- - REDUCE -> https://www.silksoftware.com/work/
-Code -> 
-Array.from(document.querySelectorAll('.content-center'))
-    .reduce((previous, element) => {
+`
+  Array.from(document.querySelectorAll('.caseStudy-card-heading > a'))
+    .map(({title, innerHTML} ) => ({ URL: "https://" + title + ".com"
+    .split(" ")
+    .join(), name: title, source: 'https://www.bigcommerce.com/case-study/'}))
+`
+
+
+**REDUCE -> https://www.silksoftware.com/work/**
+`
+  Array.from(document.querySelectorAll('.content-center')).reduce((previous, element) => { 
     console.log("element", element)
-      const { href } = element.querySelectorAll('a')
-      const { innerText } = element.querySelectorAll('.category')
-      return [
-        ...previous,
-          { url: undefined, name: innerHTML, source: 'https://netalico.com/', provider:innerText }
-        ]
-    }, [])
+    const { href } = element.querySelectorAll('a')
+    const { innerText } = element.querySelectorAll('.category')
+      return [...previous,{ url: undefined, name: innerHTML, source: 'https://netalico.com/', provider:innerText }]}, [])
+`
+  
 
 **NOTES** —> —> —>  
 
 Or you can skip everything and just spend around $500 USD to buy the information or data you want from a site that already has been doing this for years.
-</div>
+

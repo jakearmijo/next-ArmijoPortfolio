@@ -1,7 +1,7 @@
 ---
 id: 'where-to-start'
-title: 'Where to start'
-date: '2021-05-03'
+title: 'Where to start your SDE career'
+date: '2022-07-05'
 category: "Guidance/Advice"
 template: "blog-post"
 tags: 'Startups, Brands, Consultants, Agency'

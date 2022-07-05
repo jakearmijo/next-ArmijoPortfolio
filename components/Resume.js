@@ -9,11 +9,11 @@ import {
 export default function Resume() {
   return (
     <div id="resume">
-      <div id="resumeTitle" data-aos="fade-up" className="aos-init aos-animate">
+      <div id="projectsTitle" data-aos="fade-up" className="aos-init aos-animate">
         <h1>Resume</h1>
       </div>
       <div id="resumeMain" data-aos="fade-up" className="aos-init aos-animate">
-        <a id="resumeView" href="/JakeArmijoResume.pdf" target="_blank">
+        <a id="viewPortfolio" href="/JakeArmijoResume.pdf" target="_blank">
           View Resume
           <Image
             loader={myImageLoader}
@@ -21,7 +21,7 @@ export default function Resume() {
             width="2vw"
             height="2vw" />
         </a>
-        <a id="resumeDownload" href="/JakeArmijoResume.pdf" download="/JakeArmijoResume.pdf">
+        <a id="viewPortfolio" href="/JakeArmijoResume.pdf" download="/JakeArmijoResume.pdf">
           Download Resume
           <Image
             loader={myImageLoader}
