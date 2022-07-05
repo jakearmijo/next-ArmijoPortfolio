@@ -38,14 +38,12 @@ The example we are going to be imagining we are trying to grab a bunch of differ
 
 **MAP EXAMPLE -> can add in the .com to query and show that as well**
 
-
 `
   Array.from(document.querySelectorAll('.caseStudy-card-heading > a'))
     .map(({title, innerHTML} ) => ({ URL: "https://" + title + ".com"
     .split(" ")
     .join(), name: title, source: 'https://www.bigcommerce.com/case-study/'}))
 `
-
 
 **REDUCE -> https://www.silksoftware.com/work/**
 `
@@ -55,9 +53,11 @@ The example we are going to be imagining we are trying to grab a bunch of differ
     const { innerText } = element.querySelectorAll('.category')
       return [...previous,{ url: undefined, name: innerHTML, source: 'https://netalico.com/', provider:innerText }]}, [])
 `
-  
 
 **NOTES** —> —> —>  
 
 Or you can skip everything and just spend around $500 USD to buy the information or data you want from a site that already has been doing this for years.
 
+Jake Armijo <bold>|</bold> Full Stack Software Engineer
+Connect with me on [LinkedIn](https://www.linkedin.com/in/jake-armijo/)
+Schedule a meeting with me on [Calendly](https://calendly.com/armijojake/meeting)
