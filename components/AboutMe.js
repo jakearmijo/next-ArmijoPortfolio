@@ -27,6 +27,8 @@ import {
   DockerLogo,
   VueLogo,
   FastAPILogo,
+  AWSLogo,
+  AzureLogo,
  } from '../public/images'
  import {myImageLoader} from '../lib/utils'
 
