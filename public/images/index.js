@@ -33,6 +33,11 @@ import Video from './video.png'
 import StackAWatBTPA from './StackAWat-BTPA.svg'
 import Viewfile from './viewfile.png'
 import Download from './download.png'
+import FastAPILogo from './FastAPILogo.png'
+import DockerLogo from './DockerLogo.png'
+import VueLogo from './VUEjsLogo.png'
+import AWSLogo from './AWSLogo.svg'
+import AzureLogo from './AzureLogo.png'
 
 export {
   ReactLogo,
@@ -70,4 +75,9 @@ export {
   StackAWatBTPA,
   Viewfile,
   Download,
+  DockerLogo,
+  VueLogo,
+  FastAPILogo,
+  AWSLogo,
+  AzureLogo,
 }
