@@ -24,6 +24,9 @@ import {
   PosticoLogo,
   MochaLogo,
   ChaiLogo,
+  DockerLogo,
+  VueLogo,
+  FastAPILogo,
  } from '../public/images'
  import {myImageLoader} from '../lib/utils'
 
@@ -75,6 +78,10 @@ export default function AboutMe() {
               <span className="tooltiptext">React</span>
             </div>
             <div className="tech tooltip">
+              <Image loader={myImageLoader} width="3vw" height="3vw"  src={VueLogo} alt="Vuejs"/>
+              <span className="tooltiptext">Vue.js</span>
+            </div>
+            <div className="tech tooltip">
               <Image loader={myImageLoader} width="3vw" height="3vw"  src={ReduxLogo} alt="Redux" />
               <span className="tooltiptext">Redux</span>
             </div>
@@ -108,6 +115,10 @@ export default function AboutMe() {
             <div className="tech tooltip">
               <Image loader={myImageLoader} width="3vw" height="3vw"  src={ExpressLogo} alt="Express" />
               <span className="tooltiptext">Express</span>
+            </div>
+            <div className="tech tooltip">
+              <Image loader={myImageLoader} width="3vw" height="3vw"  src={FastAPILogo} alt="FastApi" />
+              <span className="tooltiptext">FastApi</span>
             </div>
             <div className="tech tooltip">
               <Image loader={myImageLoader} width="3vw" height="3vw"  src={SequelizeLogo} alt="HTML" />
@@ -152,6 +163,10 @@ export default function AboutMe() {
               <Image loader={myImageLoader} width="3vw" height="3vw"  src={TravisCILogo} alt="TravisCI" />
               <span className="tooltiptext">TravisCI</span>
             </div>
+            <div className="tech tooltip">
+              <Image loader={myImageLoader} width="3vw" height="3vw"  src={DockerLogo} alt="TravisCI" />
+              <span className="tooltiptext">Docker</span>
+            </div>
           </div>
           <div
             className="techDiv aos-init aos-animate"
@@ -193,13 +208,28 @@ export default function AboutMe() {
             data-aos="fade-up"
           >
             <div className="techDivTitle">Testing</div>
+              <div className="tech tooltip">
+                <Image loader={myImageLoader} width="3vw" height="3vw"  src={MochaLogo} alt="Mocha" />
+                <span className="tooltiptext">Mocha</span>
+              </div>
+              <div className="tech tooltip">
+                <Image loader={myImageLoader} width="3vw" height="3vw"  src={ChaiLogo} alt="Chai" />
+                <span className="tooltiptext">Chai</span>
+              </div>
+           </div>
+           <div
+            className="techDiv aos-init aos-animate"
+            id="testing"
+            data-aos="fade-up"
+          >
+            <div className="techDivTitle">Cloud</div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} width="3vw" height="3vw"  src={MochaLogo} alt="Mocha" />
-              <span className="tooltiptext">Mocha</span>
+              <Image loader={myImageLoader} width="3vw" height="3vw"  src={AWSLogo} alt="AwsLogo" />
+              <span className="tooltiptext">AWS</span>
             </div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} width="3vw" height="3vw"  src={ChaiLogo} alt="Chai" />
-              <span className="tooltiptext">Chai</span>
+              <Image loader={myImageLoader} width="3vw" height="3vw"  src={AzureLogo} alt="Azure" />
+              <span className="tooltiptext">Awzure</span>
             </div>
           </div>
         </div>
