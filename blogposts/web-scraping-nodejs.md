@@ -47,5 +47,10 @@ The example we are going to be imagining we are trying to grab a bunch of differ
 Or you can skip everything and just spend around $500 USD to buy the information or data you want from a site that already has been doing this for years.
 
 Jake Armijo **|** Full Stack Software Engineer
+</br>
+
 Connect with me on [LinkedIn](https://www.linkedin.com/in/jake-armijo/)
+
+</br>
+
 Schedule a meeting with me on [Calendly](https://calendly.com/armijojake/meeting)

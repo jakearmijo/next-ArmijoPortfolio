@@ -83,5 +83,10 @@ Time is not a friend to ADHD people. Don’t stress on how long things will take
 Set Intentions and create certainty
 
 Jake Armijo **|** Full Stack Software Engineer
+</br>
+
 Connect with me on [LinkedIn](https://www.linkedin.com/in/jake-armijo/)
+
+</br>
+
 Schedule a meeting with me on [Calendly](https://calendly.com/armijojake/meeting)

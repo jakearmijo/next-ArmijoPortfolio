@@ -51,5 +51,10 @@ Netlify will also set up the HTTPS certificate via [letsencrypt.org](https://let
 Cheers,
 
 Jake Armijo **|** Full Stack Software Engineer
+</br>
+
 Connect with me on [LinkedIn](https://www.linkedin.com/in/jake-armijo/)
+
+</br>
+
 Schedule a meeting with me on [Calendly](https://calendly.com/armijojake/meeting)

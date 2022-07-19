@@ -36,5 +36,10 @@ Here I want to talk about my current expeirnece and how I have already learned n
 **What sold me** was the knowledge I was going to be exposed to. Start up's tend to be smaller teams where you will handle and touch a lot of code. It gives you an opportunity to dive into their tech stack and be a short distance away to turn and ask a question when needed. Start up's tend to move fast and preach that agility is a main strength to moving into a success long term path. This environment of moving fast tosses you in the mix at a rate that, for a post bootcamp graduate, is awesome! You will have opportunity to work solo, pair program, group program, and more.
 
 Jake Armijo **|** Full Stack Software Engineer
-Connect with me on [LinkedIn](https://linkedin.com/in/jake-armijo/)
+</br>
+
+Connect with me on [LinkedIn](https://www.linkedin.com/in/jake-armijo/)
+
+</br>
+
 Schedule a meeting with me on [Calendly](https://calendly.com/armijojake/meeting)
