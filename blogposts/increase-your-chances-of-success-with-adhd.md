@@ -20,17 +20,18 @@ Secondly, The act of being intentional. Life is driven by intention decision mak
 </article>
 
 ### List of Lessons
+
 - Wife (or other family member) holds new needed level of focus
 - Drop what you are doing and listen without response
 - Invest in ability to bounce back up
 - Be Calm and Collective
 - To Do List Written
 - Daily/Monthly/Yearly Planner
-  - Notion List
-  - Sticky Notes on phone
+    - Notion List
+    - Sticky Notes on phone
 - Rethink your morning routine
 - Ask yourself - “What is your default?” 
-  - Related to your ways of being
+    - Related to your ways of being
 - What do you fall back into when something changes in your life?
 - Massive Growth can occur when you are OPEN & WILLING. 
 - It is BEST to prove yourself WRONG
@@ -38,33 +39,33 @@ Secondly, The act of being intentional. Life is driven by intention decision mak
 - Long term = best 
 - Short term = short lived
 - Ask yourself (write down if needed)
-  - WHAT IS A LEADER?
-  - WHAT IS OPPOSITE OF A LEADER?
+    - WHAT IS A LEADER?
+    - WHAT IS OPPOSITE OF A LEADER?
 - Your life is defined by the current questions you are asking yourself.
 - Think outside the box
 - start asking yourself new questions.
-  - OR ask the same questions from a new light
+    - OR ask the same questions from a new light
 - Allow to take actions on #10.
 - Fall for nothing -> I’ll find a way mentality
 - Living life with INTENTION. Being INTENTIONAL
 - How long will something take?
 - Be aware and observant of ghost time
-  - Ghost time is everything around the task you have that you don’t see.
-  - Task that sometime fall into ghost time are 
-    - forgetting your phone
-    - having to use the bathroom
-    - looking for your wallet
-    - traffic
+    - Ghost time is everything around the task you have that you don’t see.
+    - Task that sometime fall into ghost time are 
+        - forgetting your phone
+        - having to use the bathroom
+        - looking for your wallet
+        - traffic
 - “If you don’t have intention you create the possibility of tension”
 - Always account for ghost time -> See Parkinson’s Law
 - What is Parkinson's Law? Parkinson's Law is the old adage that work expands to fill the time allotted for its completion
 - Give extra time
-  - Standard time versus super safe time
-  - Be intentional with this extra time
+    - Standard time versus super safe time
+    - Be intentional with this extra time
 - Intentional Freedom
-  - Versus non intentional  - 
-  - Intentional has what they want
-  - Non Intentional floats by each day with no intention
+    - Versus non intentional  - 
+    - Intentional has what they want
+    - Non Intentional floats by each day with no intention
 - Find the balance of planning and intention
 - Take the little moments to re-center and check in.
 - Make time for freedom
@@ -72,16 +73,22 @@ Secondly, The act of being intentional. Life is driven by intention decision mak
 - Make yourself open and relax
 - Verbal Journal into morning routine
 - Talk out loud
-  - “I locked the door”
-  - "I have my phone, keys, wallet"
-  - "I will ____ by noon"
+    - “I locked the door”
+    - "I have my phone, keys, wallet"
+    - "I will ____ by noon"
+
+<article>
 
 ### FIRST AID - in tough times - this is your first aid - find which one you need to work on and keep it simple
-A - Accountability
-I - Intentional
-D - Do Able
+
+- A - Accountability
+-  I - Intentional
+- D - Do Able
+
 Time is not a friend to ADHD people. Don’t stress on how long things will take. You will have to work harder than the others.
 Set Intentions and create certainty
+
+</article>
 
 
 Jake Armijo <strong>|</strong> Full Stack Software Engineer
