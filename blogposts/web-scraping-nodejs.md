@@ -10,18 +10,11 @@ tags: 'Google Dev Tools, Reduce, Map, Nodejs, Web Scraping'
 
 Let say I needed to pull specfific information off of webpage. I could utilize web scraping. Web scraping, web harvesting, or web data extraction is data scraping used for extracting informaion from websites. Although it can be used for a wide variety of things (some good and some not good) some Useful examples include:
 
-<p class="border">
 - Website URLS
-</br>
 - Product Prices (Personal use only)
-</br>
 - Betting Odds?
-</br>
 - Market research
-</br>
 - Fun and Creativity
-</p>
-</br>
 
 You should ask yourself: "Could a script take less time with more results then doing this **by hand** ?" If the answer is yes, then you should write a script to achieve this. 
 
@@ -32,32 +25,27 @@ On the other hand, sometimes it is much easier to just grab the few results that
 In the below examples, I will showcase how to use a **css selector** to grab info off a webpage. In this examples it could be faster to use this technique, but doing it the long way (copy paste each item) will always be available. 
 
 **2 EXAMPLES ->** 1 reduce 1 map
-The example we are going to be imagining we are trying to grab a bunch of different eCommerce websites to save for a later date. In a later section we might export all these results to a csv file, but for now will jusst be copying and pasting into a seperate .csv we will open up in a new vs code window. 
+The example we are going to be imagining we are trying to grab a bunch of different eCommerce websites to save for a later date. In a later section we might export all these results to a csv file, but for now will jusst be copying and pasting into a seperate .csv we will open up in a new vs code window.
   
-  1. Open Chrome and navigate to <a href='https://www.featuredcustomers.com/vendor/woocommerce/case-studies/all' target='_blank'>featuredcustomers.com</a>. This is the website we will be grabbing all of our URLs from.
+  1. Open Chrome and navigate to [featuredcustomers.com](https://www.featuredcustomers.com/vendor/woocommerce/case-studies/all). This is the website we will be grabbing all of our URLs from.
 
 **MAP EXAMPLE -> can add in the .com to query and show that as well**
-
-`
-  Array.from(document.querySelectorAll('.caseStudy-card-heading > a'))
+`Array.from(document.querySelectorAll('.caseStudy-card-heading > a'))
     .map(({title, innerHTML} ) => ({ URL: "https://" + title + ".com"
     .split(" ")
-    .join(), name: title, source: 'https://www.bigcommerce.com/case-study/'}))
-`
+    .join(), name: title, source: 'https://www.bigcommerce.com/case-study/'}))`
 
 **REDUCE -> https://www.silksoftware.com/work/**
-`
-  Array.from(document.querySelectorAll('.content-center')).reduce((previous, element) => { 
+`Array.from(document.querySelectorAll('.content-center')).reduce((previous, element) => {
     console.log("element", element)
     const { href } = element.querySelectorAll('a')
     const { innerText } = element.querySelectorAll('.category')
-      return [...previous,{ url: undefined, name: innerHTML, source: 'https://netalico.com/', provider:innerText }]}, [])
-`
+      return [...previous,{ url: undefined, name: innerHTML, source: 'https://netalico.com/', provider:innerText }]}, [])`
 
 **NOTES** —> —> —>  
 
 Or you can skip everything and just spend around $500 USD to buy the information or data you want from a site that already has been doing this for years.
 
-Jake Armijo <bold>|</bold> Full Stack Software Engineer
+Jake Armijo **|** Full Stack Software Engineer
 Connect with me on [LinkedIn](https://www.linkedin.com/in/jake-armijo/)
 Schedule a meeting with me on [Calendly](https://calendly.com/armijojake/meeting)
