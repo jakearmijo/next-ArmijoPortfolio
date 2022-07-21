@@ -18,18 +18,18 @@ When I started to research domains and where to purchase them, I checked GoDaddy
 
 </br>
 
-I watched this **[incredible tutorial](https://explorers.netlify.com/learn/nextjs)** by Cassidoo and I applied it to my site in order to get it up and running with a basic Netlify URL. The process for Netlify to add my custom domain after I had purchased it from google domains posted below.
+I watched this **[incredible tutorial](https://explorers.netlify.com/learn/nextjs)** by Cassidoo and I applied it to my site in order to get it up and running with a basic Netlify URL. The process for Netlify to add my custom domain after I had purchased it from google domains is posted below.
 
 ### Step By Step How To - Netlify
 
-1. In your Netlify console, navigate to your site and click Domain Settings. Click the green button "Add custom domain".
+1. In your Netlify console, navigate to your site and click Domain Settings. Click the green button "Add a custom domain".
 2. It will prompt you to provide the name of the domain you have bought. For example **<https://www.jakearmijo.com>**.
 3. Verify that you are the owner of the domain.
 4. Click "verify".
-5. You will be redirected to your domain settings where you will see your domain. You will see that your domain will have a warning, to ask you to "check your DNS configuration". Click to Options -> Set Up Netlify DNS.
+5. You will be redirected to your domain settings where you will see your domain. You will see that your domain will have a warning, asking you to "check your DNS configuration". Click to Options -> Set Up Netlify DNS.
 6. Add domain - Netlify will ask you to re-verify your domain name
 7. Add DNS records - The DNS records for your Netlify sites will be configured automatically. I did not have an email account with the domain so I skipped this part.
-8. Activate Netlify DNS - Nelify will give you names of their name savers. Keep them open and head to google domains.
+8. Activate Netlify DNS - Nelify will give you the names of their name savers. Keep them open and head to google domains.
 
 </br>
 
@@ -44,7 +44,7 @@ I watched this **[incredible tutorial](https://explorers.netlify.com/learn/nextj
 
 </br>
 
-Congrats! Your domain is set up - it may take more time but mine was ready within minuets.That is how [https://www.jakearmijo.com](https://www.jakearmijo.com) was born.
+Congrats! Your domain is set up - it may take more time but mine was ready within minutes. That is how [https://www.jakearmijo.com](https://www.jakearmijo.com) was born.
 
 Netlify will also set up the HTTPS certificate via [letsencrypt.org](https://letsencrypt.org/donate/). This process took a little longer but when I awoke in the morning I had the HTTPS before the URL and my site was not receiving a privacy warning.
 
