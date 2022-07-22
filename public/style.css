@@ -766,6 +766,20 @@ footer {
   p.p-project.p-tech {
     padding-top: 0px;
   }
+
+  .list {
+    list-style: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 50%;
+    justify-content: center;
+  }
+  
+  .listItem {
+    cursor: pointer;
+    color: #333333;
+    list-style: none;
+  }
 }
 
 @media only screen and (max-height: 600px) and (orientation: landscape) {
@@ -811,5 +825,19 @@ footer {
     width: 300px;
     height: 1px;
     background-color: #333333;
+  }
+
+  .list {
+    list-style: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 50%;
+    justify-content: center;
+  }
+  
+  .listItem {
+    cursor: pointer;
+    color: #333333;
+    list-style: none;
   }
 }
