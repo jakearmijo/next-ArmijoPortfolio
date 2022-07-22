@@ -525,11 +525,31 @@ footer {
   #hobbiesMain {
     width: 100%;
   }
+
+  .blog_section {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .list {
+    list-style: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 50%;
+    justify-content: center;
+  }
+  
+  .listItem {
+    cursor: pointer;
+    color: #333333;
+    list-style: none;
+  }
 }
 
 @media only screen and (max-width: 800px) {
   .slideshow-container {
     width: 100%;
+    max-width: 100%;
     height: 56.25vw;
     position: relative;
     margin: auto;
@@ -572,6 +592,24 @@ footer {
   .projectLinks a,
   #resumeMain a {
     margin-bottom: 15px;
+  }
+
+  .blog_section {
+    width: 100%;
+    max-width: 100%;
+  }
+  .list {
+    list-style: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 50%;
+    justify-content: center;
+  }
+  
+  .listItem {
+    cursor: pointer;
+    color: #333333;
+    list-style: none;
   }
 }
 

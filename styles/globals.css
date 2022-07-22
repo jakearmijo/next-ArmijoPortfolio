@@ -593,12 +593,17 @@ footer {
 
 .list {
   list-style: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 50%;
+  justify-content: center;
 }
 
-/* .listItem {
+.listItem {
   cursor: pointer;
   color: #333333;
-} */
+  list-style: none;
+}
 
 
 /* TODO:  START OF PHONE AND OTHER MEDIA RESIZING */
