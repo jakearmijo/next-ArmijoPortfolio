@@ -22,6 +22,9 @@ function Navbar() {
           <Link target="_blank" href="https://jakearmijo.com/blog">
             BLOG
           </Link>
+          <Link target="_blank" href="http://todaystilts.jakearmijo.com/">
+            Today's Tilts
+          </Link>
           <Link target="_blank" href="https://github.com/jakearmijo">
             GITHUB
           </Link>
