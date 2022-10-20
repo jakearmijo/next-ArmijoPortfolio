@@ -13,7 +13,7 @@ export default function Resume() {
         <h1>Resume</h1>
       </div>
       <div id="resumeMain" data-aos="fade-up" className="aos-init aos-animate">
-        <a id="viewPortfolio" href="/JakeArmijoResume.pdf" target="_blank">
+        <a id="viewPortfolio" href="/Jake_Armijo_Resume.pdf" target="_blank">
           View Resume
           <Image
             loader={myImageLoader}
@@ -21,7 +21,7 @@ export default function Resume() {
             width="2vw"
             height="2vw" />
         </a>
-        <a id="viewPortfolio" href="/JakeArmijoResume.pdf" download="/JakeArmijoResume.pdf">
+        <a id="viewPortfolio" href="/Jake_Armijo_Resume.pdf" download="/Jake_Armijo_Resume.pdf">
           Download Resume
           <Image
             loader={myImageLoader}

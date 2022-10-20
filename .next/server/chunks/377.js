@@ -51,6 +51,10 @@ function Navbar() {
       children: "BLOG"
     }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx(next_link__WEBPACK_IMPORTED_MODULE_1__.default, {
       target: "_blank",
+      href: "http://todaystilts.jakearmijo.com/",
+      children: "Today's Tilts"
+    }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx(next_link__WEBPACK_IMPORTED_MODULE_1__.default, {
+      target: "_blank",
       href: "https://github.com/jakearmijo",
       children: "GITHUB"
     }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx(next_link__WEBPACK_IMPORTED_MODULE_1__.default, {
