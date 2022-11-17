@@ -6,7 +6,7 @@ category: "Guidance/Advice"
 template: "blog-post"
 tags: 'Startups, Brands, Consultants, Agency'
 ---
-## Where to start your SDE career - (Work in progress)
+## Where to start your SDE career
 
 After graduating from coding Bootcamp I landed a job at a Chicago start-up. During the job hunt phase, I was always reading job descriptions and looking at different companies' websites. It is a lot of information to take in. Where do you start? Which company do you choose?  For most people that answer - I think - is the first place to give you an offer. Use this in your search to aid in your decision-making. I like to think of companies in three pools.
 
