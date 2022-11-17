@@ -12,7 +12,7 @@ After graduating from coding Bootcamp I landed a job at a Chicago start-up. Duri
 
 - **Startups** is a face paced environment where you are engaged in daily **coding** work and practices.
 - **Brands** usually has an established **tech stack**.
-- **Agencies** usually have a **wide range** of technologies. These technologies are dependent on clients' needs and could vary.
+- **Consulting Firm** usually have a **wide range** of technologies. These technologies are dependent on clients' needs and could vary.
 
 ### Start-Up
 
@@ -20,7 +20,7 @@ Start-ups are a great place for you to start up... These companies have a tenden
 
 ### Brands
 
-Here I want to talk about a specific brand and showcase that they are a defined tech stack that you would learn and get good with. Working at a brand is in my opinion pretty consistent. These companies have defined their technology stack and stick to it. They are making improvements or creating new features but they are all using or should be using, the same technology that the brand is based on. You will gain more in-depth knowledge of a specific technology and be able to keep improving your abilities. 
+Let's talk about brands. A brand is a type of product manufactured by a particular company under a particular name. Working at a brand might be more consistent than say working at a consulting firm. These companies have defined their engineering processes and their tech stack. They have a team or teams of engineers that you would join and be placed on. A brand may have been a startup at one time but now has scaled enough that they are solidified. They are making improvements or creating new features but they are all using or should be using, the same technology that the brand is based on. You will gain more in-depth knowledge of a specific technology and be able to keep improving your abilities. You will learn and grow with other engineers around you and have opportunities to contribute to the brand or product. I have never worked at a brand so this section is a little difficult to write. I write this from the outside looking in.
 
 #### Examples of Random Brands
 
@@ -30,13 +30,13 @@ Here I want to talk about a specific brand and showcase that they are a defined 
 - [Workday](https://www.Workday.com)
 - [Zapier](https://www.Zapier.com)
 
-### Consultants
+### Consulting Firm
 
-Here I want to talk about my current experience and how I have already learned new technologies and researched more every day. Every project I am on is not always the same tech stack. I have picked up a new programming language as well as several other technologies that I never used or even knew existed. Although this is a bit of inconsistency for my ADHD brain. It helps that I can hyper-focus and obsess over these technologies while building the project. Shorter sprints and project durations give me a chance to dabble in a wide variety of things. I am always working with new clients and new companies. This challenges you to learn things in a fast-paced environment and be able to apply them to a production-level application. 
+Here I want to talk about my current experience and how I have already learned new technologies and researched more every day. A consultant is a person who provides expert advice professionally. Every project I am on is not always the same tech stack. I have picked up a new technologies that I never used or even knew existed. Although this is a bit of inconsistency for my ADHD brain. It helps that I can hyper-focus and obsess over these technologies while building the project. Shorter sprints and project durations give me a chance to dabble in a wide variety of things. I am always working with new clients and new companies, which is something I love. This challenges you to learn things in a fast-paced environment and be able to apply them to a production-level application. You will work with many other companies and talk with many other people. You interact with people from all sorts of titles (not always engineers). Different stakeholders are usually involved in the meetings and you see how other companies operate. You are hired by a client to make what they need and guide them down the proper path. After you complete the projet you may never go back to that project again. Which does sometime leave a bad taste if you know there was something you could have improved or something that just wasnt quite right. This is a great place to start your career as well!
 
 ## Importantly
 
-**What sold me** was the knowledge I was going to be exposed to. Start up tend to be smaller teams where you will handle and touch a lot of code. It gives you an opportunity to dive into their tech stack and be a short distance away to turn and ask a question when needed. Start up's tend to move fast and preach that agility is the main strength to moving into a successful long-term path. This environment of moving fast tosses you in the mix at a rate that, for a post-Bootcamp graduate, is awesome! You will have the opportunity to work solo, in pairs, in groups, and more.
+Overall it is on you to decide. Any path you choose is fine. They all have pros and cons and it's on you to make the best of the choice you made. For me, it was a start-up. What sold me was the knowledge I was going to be exposed to. I recommend any of these paths to anyone who is searching. If you have any questions or want to make some comments just reach out to me. Don't take this as a bible as this is just me writing my personal thoughts and about my personal experience. Everyone is different and like I said it is ON YOU to decide. I hope this gave you some small insight into the scene and more information when making your decision.
 
 Jake Armijo **|** Full Stack Software Engineer
 </br>
