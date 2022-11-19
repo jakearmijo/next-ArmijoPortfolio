@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Date from '../../components/date'
 import Layout from '../../components/layout'
 import { getAllPostIds, getPostData } from '../../lib/utils'
+import Script from 'next/script'
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id)

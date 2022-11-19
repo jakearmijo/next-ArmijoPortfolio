@@ -4,6 +4,7 @@ import Link from "next/link";
 import utilStyles from "../../styles/utils.module.css";
 import { ButtonDefault } from '../../UI'
 import { getSortedPostsData } from '../../lib/utils'
+import Script from 'next/script'
 
 export async function getStaticProps() {
   
