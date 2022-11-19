@@ -27,22 +27,22 @@ export default function Post( { allPostsData } ) {
       <Head>
         <title>The Mij Blog</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <Script strategy="afterInteractive" async src="https://www.googletagmanager.com/gtag/js?id=G-LLL7EVW69L"></Script>
-        <Script
-          id='google-analytics'
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-LLL7EVW69L', {
-                page_path: window.location.pathname,
-              });
-            `,
-            }}
-        />
       </Head>
+      <Script strategy="afterInteractive" async src="https://www.googletagmanager.com/gtag/js?id=G-LLL7EVW69L"></Script>
+      <Script
+        id='google-analytics'
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LLL7EVW69L', {
+              page_path: window.location.pathname,
+            });
+          `,
+          }}
+      />
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <div className={`${utilStyles.nextLastPostBlog}`}>
         </div> 

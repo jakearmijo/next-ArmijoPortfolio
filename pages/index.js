@@ -19,6 +19,7 @@ function Home() {
       <Head>
         <title>The Armijo Algorithm</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      </Head>
         <Script strategy="afterInteractive" async src="https://www.googletagmanager.com/gtag/js?id=G-LLL7EVW69L"></Script>
         <Script
           id='google-analytics'
@@ -34,7 +35,6 @@ function Home() {
             `,
             }}
         />
-      </Head>
       <Navbar />
       <Hello />
       <Projects />
