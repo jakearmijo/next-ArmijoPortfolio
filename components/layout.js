@@ -18,6 +18,13 @@ export default function Layout({ children, home }) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name={name} content={siteTitle} />
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLL7EVW69L"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments)}
+          gtag('js', new Date());
+          gtag('config', 'G-LLL7EVW69L');
+        </script> */}
       </Head>
       <Navbar/>
       <header className={styles.header}>

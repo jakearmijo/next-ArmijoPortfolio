@@ -26,6 +26,13 @@ export default function Post( { allPostsData } ) {
       <Head>
         <title>The Mij Blog</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLL7EVW69L"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments)}
+          gtag('js', new Date());
+          gtag('config', 'G-LLL7EVW69L');
+        </script> */}
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <div className={`${utilStyles.nextLastPostBlog}`}>
