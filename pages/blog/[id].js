@@ -25,13 +25,6 @@ export default function Post({ postData }) {
     <Layout>
       <Head>
         <title>{postData.title} - Armijo - Blog</title>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLL7EVW69L"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments)}
-          gtag('js', new Date());
-          gtag('config', 'G-LLL7EVW69L');
-        </script>
       </Head>
       <div className='blogIntroDiv' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     </Layout>
