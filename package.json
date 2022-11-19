@@ -44,6 +44,6 @@
     "os": false
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^4.11.1"
+    "@netlify/plugin-nextjs": "^4.29.1"
   }
 }
