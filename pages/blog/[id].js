@@ -25,6 +25,21 @@ export default function Post({ postData }) {
     <Layout>
       <Head>
         <title>{postData.title} - Armijo - Blog</title>
+        <Script strategy="afterInteractive" async src="https://www.googletagmanager.com/gtag/js?id=G-LLL7EVW69L"></Script>
+        <Script
+          id='google-analytics'
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-LLL7EVW69L', {
+                page_path: window.location.pathname,
+              });
+            `,
+            }}
+        />
       </Head>
       <div className='blogIntroDiv' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     </Layout>
