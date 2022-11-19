@@ -19,10 +19,10 @@ function Home() {
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLL7EVW69L"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
+          function gtag(){window.dataLayer.push(arguments)}
           gtag('js', new Date());
           gtag('config', 'G-LLL7EVW69L');
-</script>
+        </script>
       </Head>
       <Navbar />
       <Hello />
