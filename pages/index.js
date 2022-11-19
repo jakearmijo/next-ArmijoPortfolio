@@ -16,6 +16,13 @@ function Home() {
       <Head>
         <title>The Armijo Algorithm</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLL7EVW69L"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date());
+          gtag('config', 'G-LLL7EVW69L');
+</script>
       </Head>
       <Navbar />
       <Hello />
