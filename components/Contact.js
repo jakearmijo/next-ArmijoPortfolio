@@ -17,63 +17,73 @@ export default function Contact() {
         console.log("FAILED...", error);
       }
     );
-    reset()
+    reset();
   };
   return (
     <>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <div id="projectsTitle" data-aos="fade-up" className="aos-init aos-animate">
-      <h1>Contact</h1>
+      <script
+        src="https://www.google.com/recaptcha/api.js"
+        async
+        defer
+      ></script>
+      <div
+        id="projectsTitle"
+        data-aos="fade-up"
+        className="aos-init aos-animate"
+      >
+        <h1>Contact</h1>
       </div>
       <div>
-      <Form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
-        <Form.Group controlId="exampleForm.ControlInput1">
-          <Form.Label>Name</Form.Label>
-          {errors.user_name && errors.user_name.type === "required" && (
-            <div role="alert">
-              Name is required
-              <br />
-            </div>
-          )}
-          <Form.Control
-            name="user_name"
-            placeholder="Firstname & Surname"
-            required="required"
-            aria-invalid={errors.user_name ? "true" : "false"}
-            ref={register({ required: true })}
-          />
-        </Form.Group>
-        <Form.Group controlId="exampleForm.ControlInput1">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control
-            name="email"
-            placeholder="name@example.com"
-            required="required"
-            ref={register}
-          />
-        </Form.Group>
-        <Form.Group controlId="exampleForm.ControlTextarea1">
-          <Form.Label>Message</Form.Label>
-          <Form.Control
-            as="textarea"
-            placeholder="Message"
-            name="Message"
-            rows={5}
-            required="required"
-            ref={register}
-            maxLength="1500"
-          />
-          <p className="message-chars-left">{messageCharsLeft}</p>
-        </Form.Group>
-        <div className="btn-box">
-          <Button variant="primary" type="submit" className="btn btn-submit">
-            Submit
-          </Button>
-          <div className="g-recaptcha" data-sitekey="6LcSEn8jAAAAAMEMWqmqyJP9Rd7XU81X-1Dvh17w"></div>
-        </div>
-      </Form>
+        <Form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
+          <Form.Group controlId="exampleForm.ControlInput1">
+            <Form.Label>Name</Form.Label>
+            {errors.user_name && errors.user_name.type === "required" && (
+              <div role="alert">
+                Name is required
+                <br />
+              </div>
+            )}
+            <Form.Control
+              name="user_name"
+              placeholder="Firstname & Surname"
+              required="required"
+              aria-invalid={errors.user_name ? "true" : "false"}
+              ref={register({ required: true })}
+            />
+          </Form.Group>
+          <Form.Group controlId="exampleForm.ControlInput1">
+            <Form.Label>Email address</Form.Label>
+            <Form.Control
+              name="email"
+              placeholder="name@example.com"
+              required="required"
+              ref={register}
+            />
+          </Form.Group>
+          <Form.Group controlId="exampleForm.ControlTextarea1">
+            <Form.Label>Message</Form.Label>
+            <Form.Control
+              as="textarea"
+              placeholder="Message"
+              name="Message"
+              rows={5}
+              required="required"
+              ref={register}
+              maxLength="1500"
+            />
+            <p className="message-chars-left">{messageCharsLeft}</p>
+          </Form.Group>
+          <div className="btn-box">
+            <Button variant="primary" type="submit" className="btn btn-submit">
+              Submit
+            </Button>
+            <div
+              className="g-recaptcha"
+              data-sitekey="6LcSEn8jAAAAAMEMWqmqyJP9Rd7XU81X-1Dvh17w"
+            ></div>
+          </div>
+        </Form>
       </div>
-      </>
-    
+    </>
   );
 }
