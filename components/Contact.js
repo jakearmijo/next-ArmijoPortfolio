@@ -77,11 +77,11 @@ export default function Contact() {
             <Button variant="primary" type="submit" className="btn btn-submit">
               Submit
             </Button>
-            <div
-              className="g-recaptcha"
-              data-sitekey="6LcSEn8jAAAAAMEMWqmqyJP9Rd7XU81X-1Dvh17w"
-            ></div>
           </div>
+          <div
+            className="g-recaptcha"
+            data-sitekey="6LcSEn8jAAAAAMEMWqmqyJP9Rd7XU81X-1Dvh17w"
+          ></div>
         </Form>
       </div>
     </>
