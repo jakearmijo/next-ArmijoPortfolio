@@ -20,7 +20,7 @@ function Home() {
         <title>The Armijo Algorithm</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
       </Head>
-        <Script strategy="afterInteractive" async src='https://www.googletagmanager.com/gtag/js?id=G-LLL7EVW69L'></Script>
+        <Script strategy="afterInteractive" async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_TRACKING_ID}`}></Script>
         <Script
           id='google-analytics'
           strategy="afterInteractive"
