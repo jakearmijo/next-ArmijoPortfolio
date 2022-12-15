@@ -27,7 +27,6 @@ export default function Contact() {
       </div>
       <div>
       <Form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
-        <div className="g-recaptcha" data-sitekey={`${process.env.RECAPTCHA_SITE_KEY}`}></div>
         <Form.Group controlId="exampleForm.ControlInput1">
           <Form.Label>Name</Form.Label>
           {errors.user_name && errors.user_name.type === "required" && (
@@ -70,6 +69,7 @@ export default function Contact() {
           <Button variant="primary" type="submit" className="btn btn-submit">
             Submit
           </Button>
+          <div className="g-recaptcha" data-sitekey="6LcSEn8jAAAAAMEMWqmqyJP9Rd7XU81X-1Dvh17w"></div>
         </div>
       </Form>
       </div>
