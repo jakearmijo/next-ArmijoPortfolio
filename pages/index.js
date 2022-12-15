@@ -20,7 +20,7 @@ function Home() {
         <title>The Armijo Algorithm</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
       </Head>
-        <Script strategy="afterInteractive" async src="https://www.googletagmanager.com/gtag/js?id=G-LLL7EVW69L"></Script>
+        <Script strategy="afterInteractive" async src='https://www.googletagmanager.com/gtag/js?id=G-LLL7EVW69L'></Script>
         <Script
           id='google-analytics'
           strategy="afterInteractive"
@@ -29,7 +29,7 @@ function Home() {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-LLL7EVW69L', {
+              gtag('config', '${process.env.GOOGLE_TRACKING_IN}', {
                 page_path: window.location.pathname,
               });
             `,

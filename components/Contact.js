@@ -21,7 +21,8 @@ export default function Contact() {
   };
   return (
     <>
-    <div id="projectsTitle" data-aos="fade-up" className="aos-init aos-animate">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <div id="projectsTitle" data-aos="fade-up" className="aos-init aos-animate g-recaptcha" data-sitekey={`${process.env.RECAPTCHA_SITE_KEY}`}>
       <h1>Contact</h1>
       </div>
       <div>
