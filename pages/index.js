@@ -19,6 +19,7 @@ function Home() {
       <Head>
         <title>The Armijo Algorithm</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
       </Head>
         <Script strategy="afterInteractive" async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_TRACKING_ID}`}></Script>
         <Script
