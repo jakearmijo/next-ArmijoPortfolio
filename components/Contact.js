@@ -22,11 +22,12 @@ export default function Contact() {
   return (
     <>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <div id="projectsTitle" data-aos="fade-up" className="aos-init aos-animate g-recaptcha" data-sitekey={`${process.env.RECAPTCHA_SITE_KEY}`}>
+    <div id="projectsTitle" data-aos="fade-up" className="aos-init aos-animate">
       <h1>Contact</h1>
       </div>
       <div>
       <Form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
+        <div className="g-recaptcha" data-sitekey={`${process.env.RECAPTCHA_SITE_KEY}`}></div>
         <Form.Group controlId="exampleForm.ControlInput1">
           <Form.Label>Name</Form.Label>
           {errors.user_name && errors.user_name.type === "required" && (
