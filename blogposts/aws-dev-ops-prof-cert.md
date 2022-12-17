@@ -311,6 +311,10 @@ ____________________________________________________________
 - DynamoDB streams will propagate changes between the replicas so that users will have high performant and consistent app experience regardless of from where they access the site
 - MULTI REGION REPLICATION AND MULTI-MASTER WRITES = GLOBAL TABLE in DYNAMODB
 
+#### ACKNOWLEDGEMENTS
+
+[AWS DEV OPS Cheat Sheet - smadikanti](https://smadikanti.medium.com/aws-devops-professional-cheat-sheet-2cf77f76ace0)
+
 </br>
 
 Jake Armijo **|** Full Stack Software Engineer
