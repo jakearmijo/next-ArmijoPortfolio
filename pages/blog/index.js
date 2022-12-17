@@ -2,7 +2,6 @@ import Layout from "../../components/layout";
 import Head from "next/head";
 import Link from "next/link";
 import utilStyles from "../../styles/utils.module.css";
-import { ButtonDefault } from '../../UI'
 import { getSortedPostsData } from '../../lib/utils'
 import Script from 'next/script'
 

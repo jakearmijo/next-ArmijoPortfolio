@@ -19,7 +19,7 @@ function Navbar() {
           <ScrollLink to="contactTitle" activeClass="active" spy={true} smooth={true}>
             CONTACT
           </ScrollLink>
-          <Link target="_blank" href="https://jakearmijo.com/blog">
+          <Link href="/blog">
             BLOG
           </Link>
           <Link target="_blank" href="http://todaystilts.jakearmijo.com/">
