@@ -1,12 +1,14 @@
 ---
 id: 'aws-dev-ops-cert'
-title: 'AWS DOP-C01'
-date: '2022-08-23'
-category: "Guidance/Advice"
+title: 'AWS DOP-C01 Cheat Sheet'
+date: '2022-12-17'
+category: "Guidance, Advice"
 template: "blog-post"
-tags: 'AWS, Exam, DEV OPS'
+tags: 'AWS, Exam, DEV OPS, AWS Certified, AWS Professional, Cheat Sheet, AWS Certified DevOps Engineer - Professional'
 ---
-## The Domains of Exam
+## AWS DEV OPS PROFESSIONAL CHEAT SHEET
+
+____________________________________________________________
 
 - **Domain 1: SDLC Automation (16 questions)** -
 - **Domain 2: Configuration Management & Infrastructure as Code (16 questions)** -
@@ -15,7 +17,9 @@ tags: 'AWS, Exam, DEV OPS'
 - **Domain 5: Incident and Event Response (13 questions)** -
 - **Domain 6: High Availability, Fault Tolerance, & DR (10 questions)** -
 
-### CD
+</br>
+
+### CodeDeploy
 
 #### blue/green is past but want to change to run one set of servers and to update everything at same time
 
@@ -26,14 +30,14 @@ tags: 'AWS, Exam, DEV OPS'
 
 - CC requires KMS. a policy might be attached to the already existing IAM user that DENIES KMS actions required
 - For a new IAM user attach AWSCodeCommitFullAccess or another managed policy for CC access
-- user might have prev configured his local computer to use credential helper for CC. if so EDIT the .GITCONFIG file to remove the credential helper info from the file before using git creds
+- user might have prev configured his local computer to use credential helper for CC. if so EDIT the .GITCONFIG file to remove the credential helper info from the file before using git credentials
 
 #### RDS test DB is isolated on private subnet. Want to run at night
 
 - Amazon VPC access in your CB project needs to be enabled
-- Specify your VPC ID, subnets, and securty groups in your build project
+- Specify your VPC ID, subnets, and security groups in your build project
 - set up CW Events to start pipeline on schedule
-- ```aws events put-rule --schedule-expression 'cron(10 3 ? * MON-FRI *)' --name IntegrationTests```
+- ```aws events put-rule --schedule-expression 'cron(10 3 ? *MON-FRI*)' --name IntegrationTests```
 - CB DOES NOT SUPPORT assigning elastic IP addresses to the network interfaces that it creates, and auto-assigning a public IP address is not supported by EC2 for any network interfaces created outside EC2 instance launches
 
 #### AWS_CODEBUILD_MAX_MEM_ALLOC defined in multiple parts
@@ -43,11 +47,11 @@ tags: 'AWS, Exam, DEV OPS'
 - value in the **build spec declaration** takes lowest precedence
 - DO NOT SET ENV VAR with 'CODEBUILD_'
 
-### CW
+### CloudWatch
 
 - With CloudTrail enabled create CW Event rule to track AWS API call via CloudTrail
 - use SNS as a target for notification
-- create a rule that triggers on an action by an AWS service that doesn not emit events, you can base the rule on API calls
+- create a rule that triggers on an action by an AWS service that does not emit events, you can base the rule on API calls
 - Dynamo Streams captures information but do not capture DeleteTable API calls, they only capture item level events
 
 #### Resolving the audit deficiency requires the creation of a centralized log monitoring capability for the AWS-based apps and infrastructure, and for certain on-premises systems that they interface with
@@ -61,27 +65,27 @@ tags: 'AWS, Exam, DEV OPS'
 - Lambda in each account can move log data from CW into Elasticsearch for indexing
 - Visualization with Kibana
 - CloudWatch log streams are a sequences of events from the same source, whereas a log group is a collection of log streams.
-- Logstash works well for collecting logs, but is usuallly paired with Elasticsearch for log monitoring and analysis.
+- Logstash works well for collecting logs, but is usually paired with Elasticsearch for log monitoring and analysis.
 - AWS System Manager agents send status and execution info back to Systems Manager but NOT THE APPS LOGS, which the CW Logs agents are capable of sending.
 
 #### want to monitor AWS resources, on premises resources, apps and services
 
 - CW console is a suitable service for selecting metrics and creating graphs
 - CW logs will allow you to log both AWS and on premises resources
-- CW Alarams will be suitable for alerts and notifications
+- CW Alarms will be suitable for alerts and notifications
 
-### CF
+### CloudFormation
 
 #### Best Practices
 
-- seperate stacks into individual, seperate logical components with dependencies on eachother
+- separate stacks into individual, separate logical components with dependencies on each other
 - best way to link is with Exports and Imports
-- each CF template to be seperate file
+- each CF template to be separate file
 
 #### upgrade database
 
-- major update - advances both minor and major - can take longer - compatability issue during & after possible
-- minor update - keeps the major version the same while advanic the minor
+- major update - advances both minor and major - can take longer - compatibility issue during & after possible
+- minor update - keeps the major version the same while advance the minor
 - SourceDBInstanceIdentifier in CF template for a RDS Read Replica
 - rolling upgrade with read replicas
 
@@ -92,7 +96,7 @@ tags: 'AWS, Exam, DEV OPS'
 - Fn::GetAZs to return a list of ALL AZs
 - FN:Select to choose each AZ from the list
 
-### CP
+### CodePipeline
 
 - two versions of code require 2 pipelines
 - master to one production to another
@@ -124,13 +128,13 @@ tags: 'AWS, Exam, DEV OPS'
 - Setup CW Event rule to match CodeCommit repository events 'CodeCommit Repository State Change'
 - commit must be tagged for easy future reference
 - look for 'referenceCreated' events with a 'tag' referenceType that are created when a production release is tagged after a merge to master
-- Lmabda func use the CC API to retrieve that release commit message and store it in a static website hosting enabled S3 bucket
+- Lambda func use the CC API to retrieve that release commit message and store it in a static website hosting enabled S3 bucket
 
 ### AWS Config
 
-- _AWS Config auditing capabilitiy provided with a timeline dashboard with compliance over time._
+- _AWS Config auditing compatibility provided with a timeline dashboard with compliance over time._
 
-#### alerts of EBS unencryption
+#### alerts of EBS NOT encrypted
 
 - Config custom managed rule checking for EBS volume encryption.
 - CW Event rule alerts
@@ -147,7 +151,7 @@ tags: 'AWS, Exam, DEV OPS'
 
 - using CW events schedule a SF which will launch a single EC2 instance from the AMI & tag it
 - SF kicks off AMI assessment template using AWS Inspector and the created tag.
-- cost effecitive to test on SINGLE EC2 instance - run assesment then terminate
+- cost effective to test on SINGLE EC2 instance - run assessment then terminate
 
 ### Dynamo & Lambda & EC2
 
@@ -175,8 +179,8 @@ tags: 'AWS, Exam, DEV OPS'
 
 #### security hardened daily check for vulnerabilities
 
-- CWE on daily sched target = SF
-- SF -> EC2 instanve from AMI
+- CWE on daily schedule target = SF
+- SF -> EC2 instance from AMI
 
 ### Health Service
 
@@ -193,19 +197,19 @@ tags: 'AWS, Exam, DEV OPS'
 - _SSM Agent can be installed and configured on EC2 instance, on prem, or a VM._
 - makes it possible for System Manager to update, manage, and configure these resources
 - SSM Inventory collects metadata from managed instances - data can be stored
-- Create CW Event rule yo trigger a lambda func on hourly basis. This can be set to do a comparison of the instances that sare running in EC2 and those tracked by SSM
+- Create CW Event rule yo trigger a lambda func on hourly basis. This can be set to do a comparison of the instances that share running in EC2 and those tracked by SSM
 
-- An SSM automation cannont contain complex logic to hjandle failures, although it would provide an execution history.
+- An SSM automation can not contain complex logic to handle failures, although it would provide an execution history.
 - An SSM automation documents defines the actions that Systems Manager performs on your managed instances and other AWS resources when an automation execution runs.
 - A document contains one or more steps that run in sequential order.
 - Each ste[ is built around a single action. The output of one step can be used as input in a later step
 - The process of running these actions and their steps is called the automation workflow.
 
-### EB
+### ElasticBeanstalk
 
 #### container_commands
 
-- ```container_commands``` key to execute commands that affect your applciation source code
+- ```container_commands``` key to execute commands that affect your application source code
 - these run after the app and web server have been set up and the app version archive has been extracted
 - this is BEFORE the app is deployed
 - ```leader_only``` to only run cmd when a test evaluates to true
@@ -216,23 +220,23 @@ tags: 'AWS, Exam, DEV OPS'
 
 #### blue/green with .NET/SQLServer/Github
 
-- Create an MSBuild container image with required tools for compliling .NET apps and push it to ECR
+- Create an MSBuild container image with required tools for compiling .NET apps and push it to ECR
 - Configure AWS Code Pipeline to fetch the latest GitHub code and schema update script
 - Have CP trigger AWS CodeBuild to use the MSBuild container image from ECR to compile the source code
 - Configure CB to then construct the .NET app
-- Also have CB create an executable to run the schuma update script
+- Also have CB create an executable to run the schema update script
 - CP to trigger ACD to deploy .NET app to EB
 - CB invoke a PowerShell script to run the schema update executable
 
 ### Trusted Advisor
 
-- checks infrastructure accorss all regions and provides summary of the results
+- checks infrastructure across all regions and provides summary of the results
 
-#### check for low cpu ultization
+#### check for low cpu utilization
 
 - check the low-utilized EC2 instances are on
 - create CW event that tracks the events created by TA use lambda as a target
-- the lambda should trigger SSM Automation document with manual approaval step
+- the lambda should trigger SSM Automation document with manual approval step
 - Upon approval, the SSM document proceeds with instance termination
 
 ### Jenkins
@@ -266,17 +270,17 @@ tags: 'AWS, Exam, DEV OPS'
 
 #### Kinesis Data Streams - throughput lower then expected
 
-- Check the GetShartIterator, CreateStream, and DescribeStream **Service Limits**
+- Check the GetShardIterator, CreateStream, and DescribeStream **Service Limits**
 - Use a SMall Producer with the Kinesis Producer Library, but using the PutRecords operation
 - Develop code using the ZKinesis Producer Library to put data onto the streams
 
-#### slower than expected reading from the shards, but you are also seeing records being skipped - WHAT COULD CAUSE A SLOW DOWN IN READDING FROM A SHARD
+#### slower than expected reading from the shards, but you are also seeing records being skipped - WHAT COULD CAUSE A SLOW DOWN IN READING FROM A SHARD
 
 - for slow reading - it could be due to the maxRecords value being set too low
 - code logic which is calling processRecords being inefficient and causing high CPU usage or blocking
 - USUALLY PROCESSRECORDS CALLS HAVING BE UN HANDLED EXCEPTIONS
 
-#### prcession incoming streaming data. GetRecords.IteratorAgeMilliseconds metric increases. How TO REDUCE THE TIME LAG IN THE STREAM
+#### procession incoming streaming data. GetRecords.IteratorAgeMilliseconds metric increases. How TO REDUCE THE TIME LAG IN THE STREAM
 
 - Increase parallelism by adding more shards per stream
 - Add more EC2 KCL consumers to allow each to process less shards per instance
@@ -289,25 +293,25 @@ tags: 'AWS, Exam, DEV OPS'
 - Implement Amazon CloudSearch
 - Setup Access policies
 - Configure your index
-- Creaete a search domain
+- Create a search domain
 
 ### Amazon Inspector
 
 #### weekly scan of ports reachable from outside the VPC
 
-- Configure Netowork Assessments
-- Amazon Inspector is an automated security assessment service which will allow you to improve the security and compliance of your applcations.
+- Configure Network Assessments
+- Amazon Inspector is an automated security assessment service which will allow you to improve the security and compliance of your applications.
 - **A network configuration analysis checks for any ports reachable from outside the VPC.**
 - THE AGENT IS REQUIRED
 
 ### latency of static files currently shared EFS volume across all your app servers its to slow
 
-- Utilise Amazone CloudFront to optimise your static content
-- Use DynamoDB Global Tables to create a multi-master, multi-region data store for your application's back-end. 
+- Utilize Amazon CloudFront to optimize your static content
+- Use DynamoDB Global Tables to create a multi-master, multi-region data store for your application's back-end.
 - DynamoDB streams will propagate changes between the replicas so that users will have high performant and consistent app experience regardless of from where they access the site
-- MULTI REGUION REPLICATION AND MULTI-MASTER WRITES = GLOBAL TABLE in DYNAMODB
+- MULTI REGION REPLICATION AND MULTI-MASTER WRITES = GLOBAL TABLE in DYNAMODB
 
-## Importantly
+</br>
 
 Jake Armijo **|** Full Stack Software Engineer
 </br>
