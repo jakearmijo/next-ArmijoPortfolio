@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
-import Navbar from "../components/Navbar";
+import NavbarBlog from "../components/NavbarBlog";
 import { 
   JakeMijLogo,
  } from '../public/images'
@@ -26,7 +26,7 @@ export default function Layout({ children, home }) {
           gtag('config', 'G-LLL7EVW69L');
         </script> */}
       </Head>
-      <Navbar/>
+      <NavbarBlog />
       <header className={styles.header}>
         {home ? (
           <>

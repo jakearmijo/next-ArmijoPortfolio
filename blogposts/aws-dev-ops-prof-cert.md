@@ -19,7 +19,7 @@ ____________________________________________________________
 
 </br>
 
-### CodeDeploy
+## CodeDeploy
 
 #### blue/green is past but want to change to run one set of servers and to update everything at same time
 
@@ -47,7 +47,7 @@ ____________________________________________________________
 - value in the **build spec declaration** takes lowest precedence
 - DO NOT SET ENV VAR with 'CODEBUILD_'
 
-### CloudWatch
+## CloudWatch
 
 - With CloudTrail enabled create CW Event rule to track AWS API call via CloudTrail
 - use SNS as a target for notification
@@ -74,7 +74,7 @@ ____________________________________________________________
 - CW logs will allow you to log both AWS and on premises resources
 - CW Alarms will be suitable for alerts and notifications
 
-### CloudFormation
+## CloudFormation
 
 #### Best Practices
 
@@ -96,7 +96,7 @@ ____________________________________________________________
 - Fn::GetAZs to return a list of ALL AZs
 - FN:Select to choose each AZ from the list
 
-### CodePipeline
+## CodePipeline
 
 - two versions of code require 2 pipelines
 - master to one production to another
@@ -107,7 +107,7 @@ ____________________________________________________________
 - The number of OAuth tokens is limited and if CP reaches that limit older tokens will stop working and actions in pipeline that rely upon that token will fail.
 - Try to manually configure one OAuth token as a personal access token and then configure all pipeline in your AWS account to use that token
 
-### CodeCommit
+## CodeCommit
 
 - create IAM policy with required permissions and attach it to a  ```developers``` group
 
@@ -130,7 +130,7 @@ ____________________________________________________________
 - look for 'referenceCreated' events with a 'tag' referenceType that are created when a production release is tagged after a merge to master
 - Lambda func use the CC API to retrieve that release commit message and store it in a static website hosting enabled S3 bucket
 
-### AWS Config
+## AWS Config
 
 - _AWS Config auditing compatibility provided with a timeline dashboard with compliance over time._
 
@@ -153,7 +153,7 @@ ____________________________________________________________
 - SF kicks off AMI assessment template using AWS Inspector and the created tag.
 - cost effective to test on SINGLE EC2 instance - run assessment then terminate
 
-### Dynamo & Lambda & EC2
+## Dynamo & Lambda & EC2
 
 #### send logs before termination
 
@@ -167,7 +167,7 @@ ____________________________________________________________
 
 - fan-out pattern with lambda and SQS/SNS
 
-### ECS
+## ECS
 
 #### send logs om a container on ECS
 
@@ -175,14 +175,14 @@ ____________________________________________________________
 - the EC2 should have proper IAM role to write to CWL
 - require ```logs:CreateLogStream``` and ```logs:PutLogEvents``` permission on the IAM role
 
-### AMIs ?
+## AMIs ?
 
 #### security hardened daily check for vulnerabilities
 
 - CWE on daily schedule target = SF
 - SF -> EC2 instance from AMI
 
-### Health Service
+## Health Service
 
 #### AWS_RISK_CREDENTIALS_EXPOSED
 
@@ -190,7 +190,7 @@ ____________________________________________________________
 - Personal Health Dashboard service
 - if way to react to event will have retries and you want full audit trail of each workflow SF > Lambda
 
-### SSM
+## SSM
 
 #### list of install software packages
 
@@ -205,7 +205,7 @@ ____________________________________________________________
 - Each ste[ is built around a single action. The output of one step can be used as input in a later step
 - The process of running these actions and their steps is called the automation workflow.
 
-### ElasticBeanstalk
+## ElasticBeanstalk
 
 #### container_commands
 
@@ -228,7 +228,7 @@ ____________________________________________________________
 - CP to trigger ACD to deploy .NET app to EB
 - CB invoke a PowerShell script to run the schema update executable
 
-### Trusted Advisor
+## Trusted Advisor
 
 - checks infrastructure across all regions and provides summary of the results
 
@@ -239,20 +239,20 @@ ____________________________________________________________
 - the lambda should trigger SSM Automation document with manual approval step
 - Upon approval, the SSM document proceeds with instance termination
 
-### Jenkins
+## Jenkins
 
 #### Jenkins as build provider in CI/CD
 
 - CodePipeline plugin for Jenkins
 
-### AWS SAM
+## AWS SAM
 
 #### gradually shift customer traffic to the updated lambda in increments of 10% with 10 minutes between each increment until you are satisfied that it's working as expected
 
 - Define a DeploymentPreference of type 'Linear10PercentEvery10Minutes' in your AWS SAM template
 - Configure a post traffic hook Lambda function to run a sanity test that is invoked by CodeDeploy after traffic shifting completes
 
-### EC2
+## EC2
 
 #### High Performance Computing (HPC) app on small number of EC2 placed in single AZ
 
@@ -260,13 +260,13 @@ ____________________________________________________________
 - Cluster Placement Groups are recommended for application that benefit from low network latency, high network throughput, or both
 - also when the majority of the network traffic is between the instances in the group
 
-### Server Migration Service
+## Server Migration Service
 
 - migrate your servers to cloud?
 - current servers are built and configured automatically using Chef
 - Server Migration Service will bring your existing Chef managed machines into EC2 and to manage them with Chef the same way you have been on your in-house system
 
-### Kinesis Data Streams
+## Kinesis Data Streams
 
 #### Kinesis Data Streams - throughput lower then expected
 
@@ -286,7 +286,7 @@ ____________________________________________________________
 - Add more EC2 KCL consumers to allow each to process less shards per instance
 - An increased GetRecords.IteratorAgeMilliseconds metric means that either the KCL consumer cannot keep up processing the data from the Kinesis stream or there aren't enough shards in the stream
 
-### AWS CloudSearch
+## AWS CloudSearch
 
 #### search contents of documents in S3
 
@@ -295,7 +295,7 @@ ____________________________________________________________
 - Configure your index
 - Create a search domain
 
-### Amazon Inspector
+## Amazon Inspector
 
 #### weekly scan of ports reachable from outside the VPC
 

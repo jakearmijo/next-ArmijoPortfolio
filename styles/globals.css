@@ -581,6 +581,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
 .blog_section{
   display: flex;
   flex-direction: column;
@@ -589,6 +590,50 @@ footer {
   flex-wrap: wrap;
   width: 100%;
   max-width: 100%;
+}
+
+.blogIntroDiv > ul{
+  display: inline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+}
+
+.blogIntroDiv > li {
+  list-style: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 50%;
+  justify-content: center;
+  
+}
+
+.blogIntroDiv > h2 {
+  list-style: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 50%;
+  justify-content: center;
+  
+}
+
+.blogIntroDiv > h3 {
+  list-style: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 50%;
+  justify-content: center;
+  
+}
+
+.blogIntroDiv > h4 {
+  list-style: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 50%;
+  justify-content: center;
+  
 }
 
 .list {
