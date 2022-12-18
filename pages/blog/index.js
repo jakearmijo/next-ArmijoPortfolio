@@ -64,6 +64,7 @@ export default function Post({ allPostsData }) {
                   <strong>Post Title:</strong> {title}
                   <br />
                   <strong>Post Date:</strong> {date}
+                  <br />
                   <strong>Post Tags:</strong> {tags}
                   <h2>____________________________________</h2>
                   <br />

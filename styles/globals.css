@@ -633,7 +633,7 @@ footer {
   
 }
 
-.blogIntroDiv > li > li{
+.blogIntroDiv > ul > ul{
   list-style: none;
   flex-direction: column;
   flex-wrap: wrap;
