@@ -592,7 +592,31 @@ footer {
   max-width: 100%;
 }
 
-.blogIntroDiv > ul{
+.blogIntroDiv > p {
+  display: inline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+}
+
+.blogIntroDiv > img {
+  display: inline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+}
+
+.blogIntroDiv > ul {
+  display: inline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+}
+
+.blogIntroDiv > ol {
   display: inline;
   flex-direction: column;
   justify-content: center;
