@@ -5,68 +5,25 @@ exports.id = 195;
 exports.ids = [195];
 exports.modules = {
 
-/***/ 8854:
+/***/ 2120:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ Post),
-  "getStaticProps": () => (/* binding */ getStaticProps)
-});
-
-// EXTERNAL MODULE: ./components/layout.js
-var layout = __webpack_require__(3445);
-// EXTERNAL MODULE: external "next/head"
-var head_ = __webpack_require__(701);
-var head_default = /*#__PURE__*/__webpack_require__.n(head_);
-// EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__(1664);
-// EXTERNAL MODULE: ./styles/utils.module.css
-var utils_module = __webpack_require__(5855);
-var utils_module_default = /*#__PURE__*/__webpack_require__.n(utils_module);
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(9297);
-;// CONCATENATED MODULE: external "styled-components"
-const external_styled_components_namespaceObject = require("styled-components");
-var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(external_styled_components_namespaceObject);
-;// CONCATENATED MODULE: ./UI/atoms/ButtonDefault/ButtonDefault.style.js
-
-const ButtonDefault_style_StyledDefaultButton = (external_styled_components_default()).button`
-  border-color: #000000;
-  color: #000000;
-  display: inline-flex;
-
-`;
-// EXTERNAL MODULE: external "react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(5282);
-;// CONCATENATED MODULE: ./UI/atoms/ButtonDefault/ButtonDefault.js
-
-
-
-
-const ButtonDefault = ({
-  title
-}) => /*#__PURE__*/_jsx("div", {
-  children: /*#__PURE__*/_jsx("div", {
-    textalign: "center",
-    children: /*#__PURE__*/_jsx(StyledDefaultButton, {
-      children: title
-    })
-  })
-});
-
-/* harmony default export */ const ButtonDefault_ButtonDefault = ((/* unused pure expression or super */ null && (ButtonDefault)));
-;// CONCATENATED MODULE: ./UI/atoms/ButtonDefault/index.js
-
-;// CONCATENATED MODULE: ./UI/index.js
-
-
-// EXTERNAL MODULE: ./lib/utils/index.js
-var utils = __webpack_require__(7824);
-;// CONCATENATED MODULE: ./pages/blog/index.js
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getStaticProps": () => (/* binding */ getStaticProps),
+/* harmony export */   "default": () => (/* binding */ Post)
+/* harmony export */ });
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1177);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(701);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1664);
+/* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5855);
+/* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7824);
+/* harmony import */ var next_script__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8689);
+/* harmony import */ var next_script__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_script__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(5282);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
 
 
 
@@ -76,7 +33,7 @@ var utils = __webpack_require__(7824);
 
 
 async function getStaticProps() {
-  const allPostsData = (0,utils/* getSortedPostsData */.ld)();
+  const allPostsData = (0,_lib_utils__WEBPACK_IMPORTED_MODULE_3__/* .getSortedPostsData */ .ld)();
   return {
     props: {
       allPostsData
@@ -90,47 +47,67 @@ function Post({
   const nextPostBtn = 'Next Post';
   const backtoHome = 'Back to Home Page';
   const tableOfContents = 'Table Of Contents';
-  return /*#__PURE__*/(0,jsx_runtime_.jsxs)(layout/* default */.Z, {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_components_layout__WEBPACK_IMPORTED_MODULE_0__/* .default */ .Z, {
     home: true,
-    children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)((head_default()), {
-      children: [/*#__PURE__*/jsx_runtime_.jsx("title", {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)((next_head__WEBPACK_IMPORTED_MODULE_1___default()), {
+      children: [/*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("title", {
         children: "The Mij Blog"
-      }), /*#__PURE__*/jsx_runtime_.jsx("meta", {
+      }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("meta", {
         name: "viewport",
         content: "initial-scale=1.0, width=device-width"
-      })]
-    }), /*#__PURE__*/jsx_runtime_.jsx("section", {
-      className: `${(utils_module_default()).headingMd} ${(utils_module_default()).padding1px}`,
-      children: /*#__PURE__*/jsx_runtime_.jsx("div", {
-        className: `${(utils_module_default()).nextLastPostBlog}`
+      }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("link", {
+        rel: "canonical",
+        href: "https://www.jakearmijo.com/blog"
+      }, "canonical")]
+    }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx((next_script__WEBPACK_IMPORTED_MODULE_4___default()), {
+      strategy: "afterInteractive",
+      async: true,
+      src: "https://www.googletagmanager.com/gtag/js?id=G-LLL7EVW69L"
+    }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx((next_script__WEBPACK_IMPORTED_MODULE_4___default()), {
+      id: "google-analytics",
+      strategy: "afterInteractive",
+      dangerouslySetInnerHTML: {
+        __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LLL7EVW69L', {
+              page_path: window.location.pathname,
+            });
+          `
+      }
+    }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("section", {
+      className: `${(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6___default().headingMd)} ${(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6___default().padding1px)}`,
+      children: /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("div", {
+        className: `${(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6___default().nextLastPostBlog)}`
       })
-    }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
       className: "blogIntroDiv",
-      children: [/*#__PURE__*/jsx_runtime_.jsx("h3", {
+      children: [/*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("h3", {
         children: "Hello User, Welcome to the grid..."
-      }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("section", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("section", {
         className: "blog_section",
-        children: [/*#__PURE__*/jsx_runtime_.jsx("h2", {
+        children: [/*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("h2", {
           children: "__________________________________________"
-        }), /*#__PURE__*/jsx_runtime_.jsx("h2", {
+        }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("h2", {
           children: "Table of Contents"
-        }), /*#__PURE__*/jsx_runtime_.jsx("ul", {
+        }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("ul", {
           className: "list",
           children: allPostsData.map(({
             id,
             date,
             title
-          }, idx) => /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
+          }, idx) => /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__.default, {
             href: `/blog/${id}`,
-            children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("li", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("li", {
               className: "listItem",
-              children: [/*#__PURE__*/jsx_runtime_.jsx("br", {}), /*#__PURE__*/jsx_runtime_.jsx("strong", {
+              children: [/*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("br", {}), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("strong", {
                 children: "Post Title:"
-              }), " ", title, /*#__PURE__*/jsx_runtime_.jsx("br", {}), /*#__PURE__*/jsx_runtime_.jsx("strong", {
+              }), " ", title, /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("br", {}), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("strong", {
                 children: "Post Date:"
-              }), " ", date, /*#__PURE__*/jsx_runtime_.jsx("h6", {
+              }), " ", date, /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("h6", {
                 children: "_______________________"
-              }), /*#__PURE__*/jsx_runtime_.jsx("br", {})]
+              }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("br", {})]
             }, id)
           }, idx))
         })]
@@ -260,6 +237,13 @@ module.exports = require("next/head");
 
 /***/ }),
 
+/***/ 8689:
+/***/ ((module) => {
+
+module.exports = require("next/script");
+
+/***/ }),
+
 /***/ 5622:
 /***/ ((module) => {
 
@@ -271,13 +255,6 @@ module.exports = require("path");
 /***/ ((module) => {
 
 module.exports = require("react");
-
-/***/ }),
-
-/***/ 3783:
-/***/ ((module) => {
-
-module.exports = require("react-scroll");
 
 /***/ }),
 
@@ -309,7 +286,7 @@ module.exports = require("remark-html");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [61,377,445], () => (__webpack_exec__(8854)));
+var __webpack_exports__ = __webpack_require__.X(0, [61,978,177], () => (__webpack_exec__(2120)));
 module.exports = __webpack_exports__;
 
 })();

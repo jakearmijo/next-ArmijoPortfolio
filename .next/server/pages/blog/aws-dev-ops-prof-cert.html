@@ -1,0 +1,328 @@
+<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width"/><meta charSet="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="Jake Armijo" content="Armijo - Blog"/><title>AWS DOP-C01 Cheat Sheet - Armijo - Blog</title><link rel="canonical" href="https://www.jakearmijo.com/blog/aws-dev-ops-prof-cert"/><meta name="description" content="AWS DOP-C01 Cheat Sheet"/><meta name="next-head-count" content="7"/><link rel="preload" href="/_next/static/css/f4de138cef3619804927.css" as="style"/><link rel="stylesheet" href="/_next/static/css/f4de138cef3619804927.css" data-n-g=""/><link rel="preload" href="/_next/static/css/212642039fea8e077473.css" as="style"/><link rel="stylesheet" href="/_next/static/css/212642039fea8e077473.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-a40ef1678bae11e696dba45124eadd70.js"></script><script src="/_next/static/chunks/webpack-af28476a2e7790fd48db.js" defer=""></script><script src="/_next/static/chunks/framework-2191d16384373197bc0a.js" defer=""></script><script src="/_next/static/chunks/main-1f2c591c5d3bfcfc95e6.js" defer=""></script><script src="/_next/static/chunks/pages/_app-e50ed009712380b1fb04.js" defer=""></script><script src="/_next/static/chunks/9f96d65d-7a2bc5bf0bcd1588504d.js" defer=""></script><script src="/_next/static/chunks/701-fa96c6df8912d61d0375.js" defer=""></script><script src="/_next/static/chunks/825-0a13158155332f0b71a9.js" defer=""></script><script src="/_next/static/chunks/pages/blog/%5Bid%5D-8359222ce03d988ab571.js" defer=""></script><script src="/_next/static/VAtrMvffHXl6KoSzfFe-D/_buildManifest.js" defer=""></script><script src="/_next/static/VAtrMvffHXl6KoSzfFe-D/_ssgManifest.js" defer=""></script></head><body><div id="__next"><div class="layout_container__2t4v2"><nav><a href="/">PORTFOLIO</a><a href="/">ABOUT</a><a href="/">RESUME</a><a href="/">CONTACT</a><a href="/blog">BLOG</a><a href="http://todaystilts.jakearmijo.com/">Today&#x27;s Tilts</a><a href="https://github.com/jakearmijo">GITHUB</a><a href="https://www.linkedin.com/in/jake-armijo/">LINKEDIN</a></nav><header class="layout_header__2rhWq"><a href="/"><div style="display:inline-block;max-width:100%;overflow:hidden;position:relative;box-sizing:border-box;margin:0"><div style="box-sizing:border-box;display:block;max-width:100%"><img style="max-width:100%;display:block;margin:0;border:none;padding:0" alt="" aria-hidden="true" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="/></div><img alt="Jake Armijo" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="intrinsic" class="layout_headerImage__2h5On utils_borderCircle__13qdJ" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/><noscript><img alt="Jake Armijo" srcSet="https://jakearmijo.com//_next/static/image/public/images/JAKEMIJUPDATE.26fe3eb92629b31f98ee50e930a2b37a.svg?w=828 1x, https://jakearmijo.com//_next/static/image/public/images/JAKEMIJUPDATE.26fe3eb92629b31f98ee50e930a2b37a.svg?w=1920 2x" src="https://jakearmijo.com//_next/static/image/public/images/JAKEMIJUPDATE.26fe3eb92629b31f98ee50e930a2b37a.svg?w=1920" decoding="async" data-nimg="intrinsic" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" class="layout_headerImage__2h5On utils_borderCircle__13qdJ" loading="lazy"/></noscript></div></a></header><main class="blogIntroDiv"><div class="blogIntroDiv"><h2><a href="https://aws.amazon.com/certification/certified-devops-engineer-professional/">AWS DEV OPS PROFESSIONAL</a> CHEAT SHEET</h2>
+<hr>
+<ul>
+<li><strong>Domain 1: SDLC Automation (16 questions)</strong></li>
+<li><strong>Domain 2: Configuration Management &#x26; Infrastructure as Code (16 questions)</strong></li>
+<li><strong>Domain 3: Monitoring and Logging (11 questions)</strong></li>
+<li><strong>Domain 4: Policies and Standards Automation (9 questions)</strong></li>
+<li><strong>Domain 5: Incident and Event Response (13 questions)</strong></li>
+<li><strong>Domain 6: High Availability, Fault Tolerance, &#x26; DR (10 questions)</strong></li>
+</ul>
+<h2><a href="https://aws.amazon.com/codedeploy/">CodeDeploy</a></h2>
+<h3>blue/green is past but want to change to run one set of servers and to update everything at same time</h3>
+<ul>
+<li>Edit CD application deployment group and change the deployment type from <a href="https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/bluegreen-deployments.html">blue/green</a> to in-place</li>
+<li>you are able to edit the application deployment group in <a href="https://aws.amazon.com/codedeploy/">CodeDeploy</a>, you do not have to create a new one.</li>
+</ul>
+<h4>AWS_CODEBUILD_MAX_MEM_ALLOC defined in multiple parts</h4>
+<ul>
+<li>value in <strong>start build operation</strong> call takes HIGHEST precedence</li>
+<li>value in the <strong>build project definition</strong></li>
+<li>value in the <strong>build spec declaration</strong> takes lowest precedence</li>
+<li>DO NOT SET ENV VAR with 'CODEBUILD_'</li>
+</ul>
+<h2><a href="https://aws.amazon.com/cloudwatch/">CloudWatch</a></h2>
+<ul>
+<li>With <a href="https://aws.amazon.com/cloudtrail/">CloudTrail</a> enabled create CW Event rule to track AWS API call via <a href="https://aws.amazon.com/cloudtrail/">CloudTrail</a></li>
+<li>use <a href="https://aws.amazon.com/sns/">SNS</a> as a target for notification</li>
+<li>create a rule that triggers on an action by an AWS service that does not emit events, you can base the rule on API calls</li>
+<li><a href="https://docs.aws.amazon.com/amazon%5BDynamoDB%5D(https://aws.amazon.com/dynamodb/)/latest/developerguide/Streams.html">Dynamo Streams</a> captures information but do not capture DeleteTable API calls, they only capture item level events</li>
+</ul>
+<h3>Resolving the audit deficiency requires the creation of a centralized log monitoring capability for the AWS-based apps and infrastructure, and for certain on-premises systems that they interface with</h3>
+<ul>
+<li><a href="https://aws.amazon.com/what-is/elasticsearch/">Elasticsearch</a> is a fully managed service that lets you collect and analyze logs metrics, giving you a comprehensive view into your apps and infrastructure</li>
+<li>CloudWatch collects via <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-%5BEC2%5D(https://aws.amazon.com/ec2/)-Instance.html">CloudWatch Agent</a>:
+<ul>
+<li>API events from <a href="https://aws.amazon.com/cloudtrail/">CloudTrail</a></li>
+<li>networking events from <a href="https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html">VPC Flow Logs</a></li>
+<li>app &#x26; system logs from <a href="https://aws.amazon.com/ec2/">EC2</a> instances</li>
+</ul>
+</li>
+<li>Using a single <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html">CloudWatch log group</a> ensures that system logs share the same retention, monitoring, and access control settings.</li>
+<li><a href="https://aws.amazon.com/lambda/">Lambda</a> in each account can move log data from CW into <a href="https://aws.amazon.com/what-is/elasticsearch/">Elasticsearch</a> for indexing</li>
+<li>Visualization with <a href="https://www.elastic.co/kibana/">Kibana</a></li>
+<li>CloudWatch log streams are a sequences of events from the same source, whereas a log group is a collection of log streams.</li>
+<li>Logstash works well for collecting logs, but is usually paired with <a href="https://aws.amazon.com/what-is/elasticsearch/">Elasticsearch</a> for log monitoring and analysis.</li>
+<li>AWS System Manager agents send status and execution info back to Systems Manager but NOT THE APPS LOGS, which the CW Logs agents are capable of sending.</li>
+</ul>
+<h4>want to monitor AWS resources, on premises resources, apps and services</h4>
+<ul>
+<li>CW console is a suitable service for selecting metrics and creating graphs</li>
+<li>CW logs will allow you to log both AWS and on premises resources</li>
+<li>CW Alarms will be suitable for alerts and notifications</li>
+</ul>
+<h2>CloudFormation</h2>
+<h3>Best Practices</h3>
+<ul>
+<li>separate stacks into individual, separate logical components with dependencies on each other</li>
+<li>best way to link is with Exports and Imports</li>
+<li>each CF template to be separate file</li>
+</ul>
+<h3>upgrade database</h3>
+<ul>
+<li>major update - advances both minor and major - can take longer - compatibility issue during &#x26; after possible</li>
+<li>minor update - keeps the major version the same while advance the minor</li>
+<li>SourceDBInstanceIdentifier in CF template for a RDS Read Replica</li>
+<li>rolling upgrade with read replicas</li>
+</ul>
+<h3>template creating VPC and a subnet forEach AZ w/in Region the Stack is created. Requires Region to be passed in stack as a parameter. Automate with intrinsic</h3>
+<ul>
+<li>Mappings Section - list each AZ in each Region</li>
+<li>Resources use !Ref "AWS::Region" to return the Region</li>
+<li>Fn::GetAZs to return a list of ALL AZs</li>
+<li>FN:Select to choose each AZ from the list</li>
+</ul>
+<h2>CodePipeline</h2>
+<ul>
+<li>two versions of code require 2 pipelines</li>
+<li>master to one production to another</li>
+</ul>
+<h3>GitHub Errors?</h3>
+<ul>
+<li>CP uses OAuth tokens to integrate with GitHub you might have revoked permissions on the Oath token for CP</li>
+<li>The number of OAuth tokens is limited and if CP reaches that limit older tokens will stop working and actions in pipeline that rely upon that token will fail.</li>
+<li>Try to manually configure one OAuth token as a personal access token and then configure all pipeline in your AWS account to use that token</li>
+</ul>
+<h2>CodeCommit</h2>
+<ul>
+<li>create IAM policy with required permissions and attach it to a  <code>developers</code> group</li>
+</ul>
+<h3>new CC repo all but 1 can connect via SSh</h3>
+<ul>
+<li>CC requires <a href="https://aws.amazon.com/kms/">KMS</a>. a policy might be attached to the already existing IAM user that DENIES KMS actions required</li>
+<li>For a new IAM user attach AWSCodeCommitFullAccess or another managed policy for CC access</li>
+<li>user might have prev configured his local computer to use credential helper for CC. if so EDIT the .GITCONFIG file to remove the credential helper info from the file before using git credentials</li>
+</ul>
+<h3><a href="https://docs.aws.amazon.com/codebuild/latest/userguide/sample-build-badges.html">auto building PR's with a testing status badge</a></h3>
+<ul>
+<li>CW Events rule on POST/PUT to PR's with a target set to CB</li>
+<li>2nd rule for success or fail of CB build it's target would be a <a href="https://aws.amazon.com/lambda/">Lambda</a> to update the PR</li>
+</ul>
+<h3>CICD pipeline for DR - Docker</h3>
+<ul>
+<li>use CB to acquire <a href="https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html">ECR</a> credentials using the CLI helpers</li>
+<li>build the image and push it into ECR</li>
+<li>start another CD stage -> into <a href="https://aws.amazon.com/ecs/">ECS</a></li>
+<li>CW Events does NOT support CodeDeploy as a target there CodeDeploy must be invoked by CP</li>
+</ul>
+<h3>compile release notes from CC</h3>
+<ul>
+<li>Setup CW Event rule to match CodeCommit repository events 'CodeCommit Repository State Change'</li>
+<li>commit must be tagged for easy future reference</li>
+<li>look for 'referenceCreated' events with a 'tag' referenceType that are created when a production release is tagged after a merge to master</li>
+<li><a href="https://aws.amazon.com/lambda/">Lambda</a> func use the CC API to retrieve that release commit message and store it in a static website hosting enabled S3 bucket</li>
+</ul>
+<h2><a href="https://aws.amazon.com/codebuild/">CodeBuild</a></h2>
+<h3>RDS test DB is isolated on private subnet. Want to run at night</h3>
+<ul>
+<li><a href="https://aws.amazon.com/certification/certified-devops-engineer-professional/">Amazon</a> VPC access in your CB project needs to be enabled</li>
+<li>Specify your VPC ID, subnets, and security groups in your build project</li>
+<li>set up CW Events to start pipeline on schedule</li>
+<li><code>aws events put-rule --schedule-expression 'cron(10 3 ? *MON-FRI*)' --name IntegrationTests</code></li>
+<li>CB DOES NOT SUPPORT assigning elastic IP addresses to the network interfaces that it creates, and auto-assigning a public IP address is not supported by <a href="https://aws.amazon.com/ec2/">EC2</a> for any network interfaces created outside <a href="https://aws.amazon.com/ec2/">EC2</a> instance launches</li>
+</ul>
+<h2><a href="https://aws.amazon.com/config/">AWS Config</a></h2>
+<ul>
+<li><em>AWS Config auditing compatibility provided with a timeline dashboard with compliance over time.</em></li>
+</ul>
+<h3>alerts of EBS NOT encrypted</h3>
+<ul>
+<li>Config custom managed rule checking for <a href="https://docs.aws.amazon.com/config/latest/developerguide/encrypted-volumes.html">EBS volume encryption</a>.</li>
+<li>CW Event rule alerts</li>
+<li><em><a href="https://aws.amazon.com/sns/">SNS</a> topics when directly integrated with Config can only be used to stream all the notifications and configuration changes and <strong>NOT</strong> selectively for a given rule</em></li>
+</ul>
+<h3><a href="https://aws.amazon.com/step-functions/">StepFunctions</a></h3>
+<h3>daily EBS backup workflow</h3>
+<ul>
+<li>StepFunction state machine with <a href="https://aws.amazon.com/lambda/">Lambda</a> and CW Events is a solution</li>
+<li>StepFunction can coordinate the logic to automate the a snapshot flow</li>
+</ul>
+<h4><a href="https://aws.amazon.com/blogs/awsmarketplace/announcing-the-golden-ami-pipeline/">golden ami</a> retrieve and inspect with AWS Inspector</h4>
+<ul>
+<li>using <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/Create-CloudWatch-Events-Scheduled-Rule.html">CW events schedule</a> a StepFunction which will launch a single <a href="https://aws.amazon.com/ec2/">EC2</a> instance from the AMI &#x26; tag it</li>
+<li>SF kicks off AMI assessment template using AWS Inspector and the created tag.</li>
+<li>cost effective to test on SINGLE <a href="https://aws.amazon.com/ec2/">EC2</a> instance - run assessment then terminate</li>
+</ul>
+<h2><a href="https://aws.amazon.com/dynamodb/">DynamoDB</a> &#x26; <a href="https://aws.amazon.com/lambda/">Lambda</a> &#x26; <a href="https://aws.amazon.com/ec2/">EC2</a></h2>
+<h3>send logs before termination</h3>
+<ul>
+<li>Lifecycle hooks = custom actions by pausing instances as an <a href="https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-groups.html">ASG</a> launches or terminates them.</li>
+<li>while is <strong>WAIT</strong> state you can connect and download logs or other data</li>
+<li>termination hook for <a href="https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-groups.html">ASG</a> &#x26; create CW Event rule target -> <a href="https://aws.amazon.com/lambda/">Lambda</a> which invokes SSM Run Cmd to send log files from <a href="https://aws.amazon.com/ec2/">EC2</a> to S3</li>
+<li><a href="https://aws.amazon.com/dynamodb/">DynamoDB</a> table to compile metadata index -> primary key = instance_id &#x26; sort key = datetime</li>
+<li>S3 event integrate w/ <a href="https://aws.amazon.com/lambda/">Lambda</a> <code>PUT</code> -> triggers write to <a href="https://aws.amazon.com/dynamodb/">DynamoDB</a> table</li>
+</ul>
+<h3>streams <a href="https://aws.amazon.com/lambda/">Lambda</a> throttle</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Fan-out_(software)">fan-out pattern</a> with <a href="https://aws.amazon.com/lambda/">Lambda</a> and <a href="https://aws.amazon.com/sqs/">SQS</a>/<a href="https://aws.amazon.com/sns/">SNS</a></li>
+</ul>
+<h2><a href="https://aws.amazon.com/ecs/">ECS</a></h2>
+<h3>send logs om a container on <a href="https://aws.amazon.com/ecs/">ECS</a></h3>
+<ul>
+<li><a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using_awslogs.html">awslogs driver</a> writes to CW logs natively</li>
+<li>the <a href="https://aws.amazon.com/ec2/">EC2</a> should have proper IAM role to write to CWL</li>
+<li>require <code>logs:CreateLogStream</code> and <code>logs:PutLogEvents</code> permission on the IAM role</li>
+</ul>
+<h2>AMIs ?</h2>
+<h3>security hardened daily check for vulnerabilities</h3>
+<ul>
+<li>CWE on daily schedule target = StepFunction</li>
+<li>SF -> <a href="https://aws.amazon.com/ec2/">EC2</a> instance from AMI</li>
+</ul>
+<h2><a href="https://docs.aws.amazon.com/health/index.html">Health Service</a></h2>
+<h3><a href="https://github.com/aws/aws-health-tools/blob/master/automated-actions/AWS_RISK_CREDENTIALS_EXPOSED/README.md">AWS_RISK_CREDENTIALS_EXPOSED</a></h3>
+<ul>
+<li>CW Event checking -> SF workflow to issue API calls to IAM, <a href="https://aws.amazon.com/cloudtrail/">CloudTrail</a>, and <a href="https://aws.amazon.com/sns/">SNS</a> (for alert)</li>
+<li>Personal Health Dashboard service</li>
+<li>if way to react to event will have retries and you want full audit trail of each workflow SF > <a href="https://aws.amazon.com/lambda/">Lambda</a></li>
+</ul>
+<h2><a href="https://docs.aws.amazon.com/systems-manager/index.html">SSM</a></h2>
+<h3>list of install software packages</h3>
+<ul>
+<li>
+<p><em>SSM Agent can be installed and configured on <a href="https://aws.amazon.com/ec2/">EC2</a> instance, on prem, or a VM.</em></p>
+</li>
+<li>
+<p>makes it possible for System Manager to update, manage, and configure these resources</p>
+</li>
+<li>
+<p>SSM Inventory collects metadata from managed instances - data can be stored</p>
+</li>
+<li>
+<p>Create CW Event rule yo trigger a <a href="https://aws.amazon.com/lambda/">Lambda</a> func on hourly basis. This can be set to do a comparison of the instances that share running in <a href="https://aws.amazon.com/ec2/">EC2</a> and those tracked by SSM</p>
+</li>
+<li>
+<p>An <a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html">SSM automation</a> can not contain complex logic to handle failures, although it would provide an execution history.</p>
+</li>
+<li>
+<p>An <a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html">SSM automation</a> documents defines the actions that Systems Manager performs on your managed instances and other AWS resources when an automation execution runs.</p>
+</li>
+<li>
+<p>A document contains one or more steps that run in sequential order.</p>
+</li>
+<li>
+<p>Each ste[ is built around a single action. The output of one step can be used as input in a later step</p>
+</li>
+<li>
+<p>The process of running these actions and their steps is called the automation workflow.</p>
+</li>
+</ul>
+<h2><a href="https://aws.amazon.com/elasticbeanstalk/">ElasticBeanstalk</a></h2>
+<h3><a href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/customize-containers-ec2.html#:~:text=Container-,commands,-You%20can%20use">container_commands</a></h3>
+<ul>
+<li>
+<p><code>container_commands</code> key to execute commands that affect your application source code</p>
+</li>
+<li>
+<p>these run after the app and web server have been set up and the app version archive has been extracted</p>
+</li>
+<li>
+<p>this is BEFORE the app is deployed</p>
+</li>
+<li>
+<p><code>leader_only</code> to only run cmd when a test evaluates to true</p>
+</li>
+<li>
+<p><code>commands</code> do not support leader_only attribute there use <code>container_commands</code></p>
+</li>
+<li>
+<p>nginx comes default with Python in EB</p>
+</li>
+<li>
+<p>Java can be deployed with Java Option, and the Java parameters can be specified in the 'Environment properties' section</p>
+</li>
+</ul>
+<h3>blue/green with .NET/SQLServer/Github</h3>
+<ul>
+<li>Create an <a href="https://aws.amazon.com/blogs/devops/building-windows-containers-with-aws-codepipeline-and-custom-actions/">MSBuild container image</a> with required tools for compiling .NET apps and push it to ECR</li>
+<li>Configure AWS Code Pipeline to fetch the latest GitHub code and schema update script</li>
+<li>Have CP trigger AWS CodeBuild to use the <a href="https://aws.amazon.com/blogs/devops/building-windows-containers-with-aws-codepipeline-and-custom-actions/">MSBuild container image</a> from ECR to compile the source code</li>
+<li>Configure CB to then construct the .NET app</li>
+<li>Also have CB create an executable to run the schema update script</li>
+<li>CP to trigger ACD to deploy .NET app to EB</li>
+<li>CB invoke a PowerShell script to run the schema update executable</li>
+</ul>
+<h2><a href="https://aws.amazon.com/premiumsupport/technology/trusted-advisor/">Trusted Advisor</a></h2>
+<ul>
+<li>checks infrastructure across all regions and provides summary of the results</li>
+</ul>
+<h3>check for low cpu utilization</h3>
+<ul>
+<li>check the low-utilized <a href="https://aws.amazon.com/ec2/">EC2</a> instances are on</li>
+<li>create CW event that tracks the events created by TA use <a href="https://aws.amazon.com/lambda/">Lambda</a> as a target</li>
+<li>the <a href="https://aws.amazon.com/lambda/">Lambda</a> should trigger SSM Automation document with manual approval step</li>
+<li>Upon approval, the SSM document proceeds with instance termination</li>
+</ul>
+<h2><a href="https://aws.amazon.com/blogs/devops/setting-up-a-ci-cd-pipeline-by-integrating-jenkins-with-aws-codebuild-and-aws-codedeploy/">Jenkins</a></h2>
+<h3>Jenkins as build provider in CI/CD</h3>
+<ul>
+<li>CodePipeline plugin for Jenkins</li>
+</ul>
+<h2><a href="https://aws.amazon.com/serverless/sam/">AWS SAM</a></h2>
+<h3>gradually shift customer traffic to the updated <a href="https://aws.amazon.com/lambda/">Lambda</a> in increments of 10% with 10 minutes between each increment until you are satisfied that it's working as expected</h3>
+<ul>
+<li>Define a DeploymentPreference of type <a href="https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/automating-updates-to-serverless-apps.html">'Linear10PercentEvery10Minutes'</a> in your AWS SAM template</li>
+<li>Configure a post traffic hook <a href="https://aws.amazon.com/lambda/">Lambda</a> function to run a sanity test that is invoked by CodeDeploy after traffic shifting completes</li>
+</ul>
+<h2><a href="https://aws.amazon.com/ec2/">EC2</a></h2>
+<h3>High Performance Computing (HPC) app on small number of <a href="https://aws.amazon.com/ec2/">EC2</a> placed in single AZ</h3>
+<ul>
+<li>Deploy the <a href="https://aws.amazon.com/ec2/">EC2</a> servers in a Cluster Placement Group</li>
+<li>Cluster Placement Groups are recommended for application that benefit from low network latency, high network throughput, or both</li>
+<li>also when the majority of the network traffic is between the instances in the group</li>
+</ul>
+<h2><a href="https://aws.amazon.com/server-migration-service/">Server Migration Service</a></h2>
+<ul>
+<li>migrate your servers to cloud?</li>
+<li>current servers are built and configured automatically using Chef</li>
+<li>Server Migration Service will bring your existing Chef managed machines into <a href="https://aws.amazon.com/ec2/">EC2</a> and to manage them with Chef the same way you have been on your in-house system</li>
+</ul>
+<h2><a href="https://aws.amazon.com/kinesis/data-streams/">Kinesis Data Streams</a></h2>
+<h3>Kinesis Data Streams - throughput lower then expected</h3>
+<ul>
+<li>Check the GetShardIterator, CreateStream, and DescribeStream <strong>Service Limits</strong></li>
+<li>Use a Small Producer with the <a href="https://docs.aws.amazon.com/streams/latest/dev/developing-producers-with-kpl.html">Kinesis Producer Library</a>, but using the PutRecords operation</li>
+<li>Develop code using the Z<a href="https://docs.aws.amazon.com/streams/latest/dev/developing-producers-with-kpl.html">Kinesis Producer Library</a> to put data onto the streams</li>
+</ul>
+<h3>slower than expected reading from the shards, but you are also seeing records being skipped - WHAT COULD CAUSE A SLOW DOWN IN READING FROM A SHARD</h3>
+<ul>
+<li>for slow reading - it could be due to the maxRecords value being set too low</li>
+<li>code logic which is calling processRecords being inefficient and causing high CPU usage or blocking</li>
+<li>USUALLY PROCESS RECORDS CALLS HAVING BE UN HANDLED EXCEPTIONS</li>
+</ul>
+<h3>procession incoming streaming data. <a href="https://aws.amazon.com/premiumsupport/knowledge-center/kinesis-data-streams-iteratorage-metric/">GetRecords.IteratorAgeMilliseconds</a> metric increases. How TO REDUCE THE TIME LAG IN THE STREAM</h3>
+<ul>
+<li>Increase parallelism by adding more shards per stream</li>
+<li>Add more <a href="https://aws.amazon.com/ec2/">EC2</a> KCL consumers to allow each to process less shards per instance</li>
+<li>An increased GetRecords.IteratorAgeMilliseconds metric means that either the KCL consumer cannot keep up processing the data from the Kinesis stream or there aren't enough shards in the stream</li>
+</ul>
+<h2><a href="https://aws.amazon.com/cloudsearch/">AWS CloudSearch</a></h2>
+<h3>search contents of documents in <a href="https://aws.amazon.com/s3/">S3</a></h3>
+<ul>
+<li>Implement Amazon CloudSearch</li>
+<li><a href="https://docs.aws.amazon.com/cloudsearch/latest/developerguide/configuring-access.html">Setup Access policies</a></li>
+<li><a href="https://docs.aws.amazon.com/cloudsearch/latest/developerguide/configuring-index-fields.html">Configure your index</a></li>
+<li><a href="https://docs.aws.amazon.com/cloudsearch/latest/developerguide/creating-domains.html">Create a search domain</a></li>
+</ul>
+<h2><a href="https://aws.amazon.com/inspector/">Amazon Inspector</a></h2>
+<h3>weekly scan of ports reachable from outside the VPC</h3>
+<ul>
+<li>Configure Network Assessments</li>
+<li>Amazon Inspector is an automated security assessment service which will allow you to improve the security and compliance of your applications.</li>
+<li><strong>A network configuration analysis checks for any ports reachable from outside the VPC.</strong></li>
+<li>THE AGENT IS REQUIRED</li>
+</ul>
+<h3>latency of static files currently shared EFS volume across all your app servers its to slow</h3>
+<ul>
+<li>Utilize Amazon CloudFront to optimize your static content</li>
+<li>Use <a href="https://aws.amazon.com/dynamodb/">DynamoDB</a> Global Tables to create a multi-master, multi-region data store for your application's back-end.</li>
+<li><a href="https://aws.amazon.com/dynamodb/">DynamoDB</a> streams will propagate changes between the replicas so that users will have high performant and consistent app experience regardless of from where they access the site</li>
+<li>MULTI REGION REPLICATION AND MULTI-MASTER WRITES = GLOBAL TABLE in <a href="https://aws.amazon.com/dynamodb/">DynamoDB</a></li>
+</ul>
+<h4>ACKNOWLEDGEMENTS</h4>
+<p><a href="https://smadikanti.medium.com/aws-devops-professional-cheat-sheet-2cf77f76ace0">AWS DEV OPS Cheat Sheet - medium article smadikanti</a></p>
+<p><a href="https://www.jakearmijo.com/">Jake Armijo</a> <strong>|</strong> Full Stack Software Engineer
+</p>
+<p>Connect with me on <a href="https://www.linkedin.com/in/jake-armijo/">LinkedIn</a></p>
+<p>Schedule a meeting with me on <a href="https://calendly.com/armijojake/meeting">Calendly</a></p>
+</div></main><div class="layout_backToHome__1vZsp"><a href="/blog">← Back to Blog</a></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"postData":{"id":"aws-dev-ops-prof-cert","contentHtml":"\u003ch2\u003e\u003ca href=\"https://aws.amazon.com/certification/certified-devops-engineer-professional/\"\u003eAWS DEV OPS PROFESSIONAL\u003c/a\u003e CHEAT SHEET\u003c/h2\u003e\n\u003chr\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eDomain 1: SDLC Automation (16 questions)\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eDomain 2: Configuration Management \u0026#x26; Infrastructure as Code (16 questions)\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eDomain 3: Monitoring and Logging (11 questions)\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eDomain 4: Policies and Standards Automation (9 questions)\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eDomain 5: Incident and Event Response (13 questions)\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eDomain 6: High Availability, Fault Tolerance, \u0026#x26; DR (10 questions)\u003c/strong\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e\u003ca href=\"https://aws.amazon.com/codedeploy/\"\u003eCodeDeploy\u003c/a\u003e\u003c/h2\u003e\n\u003ch3\u003eblue/green is past but want to change to run one set of servers and to update everything at same time\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eEdit CD application deployment group and change the deployment type from \u003ca href=\"https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/bluegreen-deployments.html\"\u003eblue/green\u003c/a\u003e to in-place\u003c/li\u003e\n\u003cli\u003eyou are able to edit the application deployment group in \u003ca href=\"https://aws.amazon.com/codedeploy/\"\u003eCodeDeploy\u003c/a\u003e, you do not have to create a new one.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4\u003eAWS_CODEBUILD_MAX_MEM_ALLOC defined in multiple parts\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003evalue in \u003cstrong\u003estart build operation\u003c/strong\u003e call takes HIGHEST precedence\u003c/li\u003e\n\u003cli\u003evalue in the \u003cstrong\u003ebuild project definition\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003evalue in the \u003cstrong\u003ebuild spec declaration\u003c/strong\u003e takes lowest precedence\u003c/li\u003e\n\u003cli\u003eDO NOT SET ENV VAR with 'CODEBUILD_'\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e\u003ca href=\"https://aws.amazon.com/cloudwatch/\"\u003eCloudWatch\u003c/a\u003e\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003eWith \u003ca href=\"https://aws.amazon.com/cloudtrail/\"\u003eCloudTrail\u003c/a\u003e enabled create CW Event rule to track AWS API call via \u003ca href=\"https://aws.amazon.com/cloudtrail/\"\u003eCloudTrail\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003euse \u003ca href=\"https://aws.amazon.com/sns/\"\u003eSNS\u003c/a\u003e as a target for notification\u003c/li\u003e\n\u003cli\u003ecreate a rule that triggers on an action by an AWS service that does not emit events, you can base the rule on API calls\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://docs.aws.amazon.com/amazon%5BDynamoDB%5D(https://aws.amazon.com/dynamodb/)/latest/developerguide/Streams.html\"\u003eDynamo Streams\u003c/a\u003e captures information but do not capture DeleteTable API calls, they only capture item level events\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eResolving the audit deficiency requires the creation of a centralized log monitoring capability for the AWS-based apps and infrastructure, and for certain on-premises systems that they interface with\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://aws.amazon.com/what-is/elasticsearch/\"\u003eElasticsearch\u003c/a\u003e is a fully managed service that lets you collect and analyze logs metrics, giving you a comprehensive view into your apps and infrastructure\u003c/li\u003e\n\u003cli\u003eCloudWatch collects via \u003ca href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-%5BEC2%5D(https://aws.amazon.com/ec2/)-Instance.html\"\u003eCloudWatch Agent\u003c/a\u003e:\n\u003cul\u003e\n\u003cli\u003eAPI events from \u003ca href=\"https://aws.amazon.com/cloudtrail/\"\u003eCloudTrail\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003enetworking events from \u003ca href=\"https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html\"\u003eVPC Flow Logs\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003eapp \u0026#x26; system logs from \u003ca href=\"https://aws.amazon.com/ec2/\"\u003eEC2\u003c/a\u003e instances\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003cli\u003eUsing a single \u003ca href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html\"\u003eCloudWatch log group\u003c/a\u003e ensures that system logs share the same retention, monitoring, and access control settings.\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://aws.amazon.com/lambda/\"\u003eLambda\u003c/a\u003e in each account can move log data from CW into \u003ca href=\"https://aws.amazon.com/what-is/elasticsearch/\"\u003eElasticsearch\u003c/a\u003e for indexing\u003c/li\u003e\n\u003cli\u003eVisualization with \u003ca href=\"https://www.elastic.co/kibana/\"\u003eKibana\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003eCloudWatch log streams are a sequences of events from the same source, whereas a log group is a collection of log streams.\u003c/li\u003e\n\u003cli\u003eLogstash works well for collecting logs, but is usually paired with \u003ca href=\"https://aws.amazon.com/what-is/elasticsearch/\"\u003eElasticsearch\u003c/a\u003e for log monitoring and analysis.\u003c/li\u003e\n\u003cli\u003eAWS System Manager agents send status and execution info back to Systems Manager but NOT THE APPS LOGS, which the CW Logs agents are capable of sending.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4\u003ewant to monitor AWS resources, on premises resources, apps and services\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003eCW console is a suitable service for selecting metrics and creating graphs\u003c/li\u003e\n\u003cli\u003eCW logs will allow you to log both AWS and on premises resources\u003c/li\u003e\n\u003cli\u003eCW Alarms will be suitable for alerts and notifications\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003eCloudFormation\u003c/h2\u003e\n\u003ch3\u003eBest Practices\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eseparate stacks into individual, separate logical components with dependencies on each other\u003c/li\u003e\n\u003cli\u003ebest way to link is with Exports and Imports\u003c/li\u003e\n\u003cli\u003eeach CF template to be separate file\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eupgrade database\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003emajor update - advances both minor and major - can take longer - compatibility issue during \u0026#x26; after possible\u003c/li\u003e\n\u003cli\u003eminor update - keeps the major version the same while advance the minor\u003c/li\u003e\n\u003cli\u003eSourceDBInstanceIdentifier in CF template for a RDS Read Replica\u003c/li\u003e\n\u003cli\u003erolling upgrade with read replicas\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003etemplate creating VPC and a subnet forEach AZ w/in Region the Stack is created. Requires Region to be passed in stack as a parameter. Automate with intrinsic\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eMappings Section - list each AZ in each Region\u003c/li\u003e\n\u003cli\u003eResources use !Ref \"AWS::Region\" to return the Region\u003c/li\u003e\n\u003cli\u003eFn::GetAZs to return a list of ALL AZs\u003c/li\u003e\n\u003cli\u003eFN:Select to choose each AZ from the list\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003eCodePipeline\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003etwo versions of code require 2 pipelines\u003c/li\u003e\n\u003cli\u003emaster to one production to another\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eGitHub Errors?\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eCP uses OAuth tokens to integrate with GitHub you might have revoked permissions on the Oath token for CP\u003c/li\u003e\n\u003cli\u003eThe number of OAuth tokens is limited and if CP reaches that limit older tokens will stop working and actions in pipeline that rely upon that token will fail.\u003c/li\u003e\n\u003cli\u003eTry to manually configure one OAuth token as a personal access token and then configure all pipeline in your AWS account to use that token\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003eCodeCommit\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003ecreate IAM policy with required permissions and attach it to a  \u003ccode\u003edevelopers\u003c/code\u003e group\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003enew CC repo all but 1 can connect via SSh\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eCC requires \u003ca href=\"https://aws.amazon.com/kms/\"\u003eKMS\u003c/a\u003e. a policy might be attached to the already existing IAM user that DENIES KMS actions required\u003c/li\u003e\n\u003cli\u003eFor a new IAM user attach AWSCodeCommitFullAccess or another managed policy for CC access\u003c/li\u003e\n\u003cli\u003euser might have prev configured his local computer to use credential helper for CC. if so EDIT the .GITCONFIG file to remove the credential helper info from the file before using git credentials\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e\u003ca href=\"https://docs.aws.amazon.com/codebuild/latest/userguide/sample-build-badges.html\"\u003eauto building PR's with a testing status badge\u003c/a\u003e\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eCW Events rule on POST/PUT to PR's with a target set to CB\u003c/li\u003e\n\u003cli\u003e2nd rule for success or fail of CB build it's target would be a \u003ca href=\"https://aws.amazon.com/lambda/\"\u003eLambda\u003c/a\u003e to update the PR\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eCICD pipeline for DR - Docker\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003euse CB to acquire \u003ca href=\"https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html\"\u003eECR\u003c/a\u003e credentials using the CLI helpers\u003c/li\u003e\n\u003cli\u003ebuild the image and push it into ECR\u003c/li\u003e\n\u003cli\u003estart another CD stage -\u003e into \u003ca href=\"https://aws.amazon.com/ecs/\"\u003eECS\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003eCW Events does NOT support CodeDeploy as a target there CodeDeploy must be invoked by CP\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003ecompile release notes from CC\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eSetup CW Event rule to match CodeCommit repository events 'CodeCommit Repository State Change'\u003c/li\u003e\n\u003cli\u003ecommit must be tagged for easy future reference\u003c/li\u003e\n\u003cli\u003elook for 'referenceCreated' events with a 'tag' referenceType that are created when a production release is tagged after a merge to master\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://aws.amazon.com/lambda/\"\u003eLambda\u003c/a\u003e func use the CC API to retrieve that release commit message and store it in a static website hosting enabled S3 bucket\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e\u003ca href=\"https://aws.amazon.com/codebuild/\"\u003eCodeBuild\u003c/a\u003e\u003c/h2\u003e\n\u003ch3\u003eRDS test DB is isolated on private subnet. Want to run at night\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://aws.amazon.com/certification/certified-devops-engineer-professional/\"\u003eAmazon\u003c/a\u003e VPC access in your CB project needs to be enabled\u003c/li\u003e\n\u003cli\u003eSpecify your VPC ID, subnets, and security groups in your build project\u003c/li\u003e\n\u003cli\u003eset up CW Events to start pipeline on schedule\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003eaws events put-rule --schedule-expression 'cron(10 3 ? *MON-FRI*)' --name IntegrationTests\u003c/code\u003e\u003c/li\u003e\n\u003cli\u003eCB DOES NOT SUPPORT assigning elastic IP addresses to the network interfaces that it creates, and auto-assigning a public IP address is not supported by \u003ca href=\"https://aws.amazon.com/ec2/\"\u003eEC2\u003c/a\u003e for any network interfaces created outside \u003ca href=\"https://aws.amazon.com/ec2/\"\u003eEC2\u003c/a\u003e instance launches\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e\u003ca href=\"https://aws.amazon.com/config/\"\u003eAWS Config\u003c/a\u003e\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cem\u003eAWS Config auditing compatibility provided with a timeline dashboard with compliance over time.\u003c/em\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003ealerts of EBS NOT encrypted\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eConfig custom managed rule checking for \u003ca href=\"https://docs.aws.amazon.com/config/latest/developerguide/encrypted-volumes.html\"\u003eEBS volume encryption\u003c/a\u003e.\u003c/li\u003e\n\u003cli\u003eCW Event rule alerts\u003c/li\u003e\n\u003cli\u003e\u003cem\u003e\u003ca href=\"https://aws.amazon.com/sns/\"\u003eSNS\u003c/a\u003e topics when directly integrated with Config can only be used to stream all the notifications and configuration changes and \u003cstrong\u003eNOT\u003c/strong\u003e selectively for a given rule\u003c/em\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003e\u003ca href=\"https://aws.amazon.com/step-functions/\"\u003eStepFunctions\u003c/a\u003e\u003c/h3\u003e\n\u003ch3\u003edaily EBS backup workflow\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eStepFunction state machine with \u003ca href=\"https://aws.amazon.com/lambda/\"\u003eLambda\u003c/a\u003e and CW Events is a solution\u003c/li\u003e\n\u003cli\u003eStepFunction can coordinate the logic to automate the a snapshot flow\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4\u003e\u003ca href=\"https://aws.amazon.com/blogs/awsmarketplace/announcing-the-golden-ami-pipeline/\"\u003egolden ami\u003c/a\u003e retrieve and inspect with AWS Inspector\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003eusing \u003ca href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/Create-CloudWatch-Events-Scheduled-Rule.html\"\u003eCW events schedule\u003c/a\u003e a StepFunction which will launch a single \u003ca href=\"https://aws.amazon.com/ec2/\"\u003eEC2\u003c/a\u003e instance from the AMI \u0026#x26; tag it\u003c/li\u003e\n\u003cli\u003eSF kicks off AMI assessment template using AWS Inspector and the created tag.\u003c/li\u003e\n\u003cli\u003ecost effective to test on SINGLE \u003ca href=\"https://aws.amazon.com/ec2/\"\u003eEC2\u003c/a\u003e instance - run assessment then terminate\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e\u003ca href=\"https://aws.amazon.com/dynamodb/\"\u003eDynamoDB\u003c/a\u003e \u0026#x26; \u003ca href=\"https://aws.amazon.com/lambda/\"\u003eLambda\u003c/a\u003e \u0026#x26; \u003ca href=\"https://aws.amazon.com/ec2/\"\u003eEC2\u003c/a\u003e\u003c/h2\u003e\n\u003ch3\u003esend logs before termination\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eLifecycle hooks = custom actions by pausing instances as an \u003ca href=\"https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-groups.html\"\u003eASG\u003c/a\u003e launches or terminates them.\u003c/li\u003e\n\u003cli\u003ewhile is \u003cstrong\u003eWAIT\u003c/strong\u003e state you can connect and download logs or other data\u003c/li\u003e\n\u003cli\u003etermination hook for \u003ca href=\"https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-groups.html\"\u003eASG\u003c/a\u003e \u0026#x26; create CW Event rule target -\u003e \u003ca href=\"https://aws.amazon.com/lambda/\"\u003eLambda\u003c/a\u003e which invokes SSM Run Cmd to send log files from \u003ca href=\"https://aws.amazon.com/ec2/\"\u003eEC2\u003c/a\u003e to S3\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://aws.amazon.com/dynamodb/\"\u003eDynamoDB\u003c/a\u003e table to compile metadata index -\u003e primary key = instance_id \u0026#x26; sort key = datetime\u003c/li\u003e\n\u003cli\u003eS3 event integrate w/ \u003ca href=\"https://aws.amazon.com/lambda/\"\u003eLambda\u003c/a\u003e \u003ccode\u003ePUT\u003c/code\u003e -\u003e triggers write to \u003ca href=\"https://aws.amazon.com/dynamodb/\"\u003eDynamoDB\u003c/a\u003e table\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003estreams \u003ca href=\"https://aws.amazon.com/lambda/\"\u003eLambda\u003c/a\u003e throttle\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://en.wikipedia.org/wiki/Fan-out_(software)\"\u003efan-out pattern\u003c/a\u003e with \u003ca href=\"https://aws.amazon.com/lambda/\"\u003eLambda\u003c/a\u003e and \u003ca href=\"https://aws.amazon.com/sqs/\"\u003eSQS\u003c/a\u003e/\u003ca href=\"https://aws.amazon.com/sns/\"\u003eSNS\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e\u003ca href=\"https://aws.amazon.com/ecs/\"\u003eECS\u003c/a\u003e\u003c/h2\u003e\n\u003ch3\u003esend logs om a container on \u003ca href=\"https://aws.amazon.com/ecs/\"\u003eECS\u003c/a\u003e\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using_awslogs.html\"\u003eawslogs driver\u003c/a\u003e writes to CW logs natively\u003c/li\u003e\n\u003cli\u003ethe \u003ca href=\"https://aws.amazon.com/ec2/\"\u003eEC2\u003c/a\u003e should have proper IAM role to write to CWL\u003c/li\u003e\n\u003cli\u003erequire \u003ccode\u003elogs:CreateLogStream\u003c/code\u003e and \u003ccode\u003elogs:PutLogEvents\u003c/code\u003e permission on the IAM role\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003eAMIs ?\u003c/h2\u003e\n\u003ch3\u003esecurity hardened daily check for vulnerabilities\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eCWE on daily schedule target = StepFunction\u003c/li\u003e\n\u003cli\u003eSF -\u003e \u003ca href=\"https://aws.amazon.com/ec2/\"\u003eEC2\u003c/a\u003e instance from AMI\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e\u003ca href=\"https://docs.aws.amazon.com/health/index.html\"\u003eHealth Service\u003c/a\u003e\u003c/h2\u003e\n\u003ch3\u003e\u003ca href=\"https://github.com/aws/aws-health-tools/blob/master/automated-actions/AWS_RISK_CREDENTIALS_EXPOSED/README.md\"\u003eAWS_RISK_CREDENTIALS_EXPOSED\u003c/a\u003e\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eCW Event checking -\u003e SF workflow to issue API calls to IAM, \u003ca href=\"https://aws.amazon.com/cloudtrail/\"\u003eCloudTrail\u003c/a\u003e, and \u003ca href=\"https://aws.amazon.com/sns/\"\u003eSNS\u003c/a\u003e (for alert)\u003c/li\u003e\n\u003cli\u003ePersonal Health Dashboard service\u003c/li\u003e\n\u003cli\u003eif way to react to event will have retries and you want full audit trail of each workflow SF \u003e \u003ca href=\"https://aws.amazon.com/lambda/\"\u003eLambda\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e\u003ca href=\"https://docs.aws.amazon.com/systems-manager/index.html\"\u003eSSM\u003c/a\u003e\u003c/h2\u003e\n\u003ch3\u003elist of install software packages\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003cem\u003eSSM Agent can be installed and configured on \u003ca href=\"https://aws.amazon.com/ec2/\"\u003eEC2\u003c/a\u003e instance, on prem, or a VM.\u003c/em\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003emakes it possible for System Manager to update, manage, and configure these resources\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eSSM Inventory collects metadata from managed instances - data can be stored\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eCreate CW Event rule yo trigger a \u003ca href=\"https://aws.amazon.com/lambda/\"\u003eLambda\u003c/a\u003e func on hourly basis. This can be set to do a comparison of the instances that share running in \u003ca href=\"https://aws.amazon.com/ec2/\"\u003eEC2\u003c/a\u003e and those tracked by SSM\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eAn \u003ca href=\"https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html\"\u003eSSM automation\u003c/a\u003e can not contain complex logic to handle failures, although it would provide an execution history.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eAn \u003ca href=\"https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html\"\u003eSSM automation\u003c/a\u003e documents defines the actions that Systems Manager performs on your managed instances and other AWS resources when an automation execution runs.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eA document contains one or more steps that run in sequential order.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eEach ste[ is built around a single action. The output of one step can be used as input in a later step\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eThe process of running these actions and their steps is called the automation workflow.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e\u003ca href=\"https://aws.amazon.com/elasticbeanstalk/\"\u003eElasticBeanstalk\u003c/a\u003e\u003c/h2\u003e\n\u003ch3\u003e\u003ca href=\"https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/customize-containers-ec2.html#:~:text=Container-,commands,-You%20can%20use\"\u003econtainer_commands\u003c/a\u003e\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003econtainer_commands\u003c/code\u003e key to execute commands that affect your application source code\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003ethese run after the app and web server have been set up and the app version archive has been extracted\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003ethis is BEFORE the app is deployed\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003eleader_only\u003c/code\u003e to only run cmd when a test evaluates to true\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ccode\u003ecommands\u003c/code\u003e do not support leader_only attribute there use \u003ccode\u003econtainer_commands\u003c/code\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003enginx comes default with Python in EB\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eJava can be deployed with Java Option, and the Java parameters can be specified in the 'Environment properties' section\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eblue/green with .NET/SQLServer/Github\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eCreate an \u003ca href=\"https://aws.amazon.com/blogs/devops/building-windows-containers-with-aws-codepipeline-and-custom-actions/\"\u003eMSBuild container image\u003c/a\u003e with required tools for compiling .NET apps and push it to ECR\u003c/li\u003e\n\u003cli\u003eConfigure AWS Code Pipeline to fetch the latest GitHub code and schema update script\u003c/li\u003e\n\u003cli\u003eHave CP trigger AWS CodeBuild to use the \u003ca href=\"https://aws.amazon.com/blogs/devops/building-windows-containers-with-aws-codepipeline-and-custom-actions/\"\u003eMSBuild container image\u003c/a\u003e from ECR to compile the source code\u003c/li\u003e\n\u003cli\u003eConfigure CB to then construct the .NET app\u003c/li\u003e\n\u003cli\u003eAlso have CB create an executable to run the schema update script\u003c/li\u003e\n\u003cli\u003eCP to trigger ACD to deploy .NET app to EB\u003c/li\u003e\n\u003cli\u003eCB invoke a PowerShell script to run the schema update executable\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e\u003ca href=\"https://aws.amazon.com/premiumsupport/technology/trusted-advisor/\"\u003eTrusted Advisor\u003c/a\u003e\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003echecks infrastructure across all regions and provides summary of the results\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003echeck for low cpu utilization\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003echeck the low-utilized \u003ca href=\"https://aws.amazon.com/ec2/\"\u003eEC2\u003c/a\u003e instances are on\u003c/li\u003e\n\u003cli\u003ecreate CW event that tracks the events created by TA use \u003ca href=\"https://aws.amazon.com/lambda/\"\u003eLambda\u003c/a\u003e as a target\u003c/li\u003e\n\u003cli\u003ethe \u003ca href=\"https://aws.amazon.com/lambda/\"\u003eLambda\u003c/a\u003e should trigger SSM Automation document with manual approval step\u003c/li\u003e\n\u003cli\u003eUpon approval, the SSM document proceeds with instance termination\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e\u003ca href=\"https://aws.amazon.com/blogs/devops/setting-up-a-ci-cd-pipeline-by-integrating-jenkins-with-aws-codebuild-and-aws-codedeploy/\"\u003eJenkins\u003c/a\u003e\u003c/h2\u003e\n\u003ch3\u003eJenkins as build provider in CI/CD\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eCodePipeline plugin for Jenkins\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e\u003ca href=\"https://aws.amazon.com/serverless/sam/\"\u003eAWS SAM\u003c/a\u003e\u003c/h2\u003e\n\u003ch3\u003egradually shift customer traffic to the updated \u003ca href=\"https://aws.amazon.com/lambda/\"\u003eLambda\u003c/a\u003e in increments of 10% with 10 minutes between each increment until you are satisfied that it's working as expected\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eDefine a DeploymentPreference of type \u003ca href=\"https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/automating-updates-to-serverless-apps.html\"\u003e'Linear10PercentEvery10Minutes'\u003c/a\u003e in your AWS SAM template\u003c/li\u003e\n\u003cli\u003eConfigure a post traffic hook \u003ca href=\"https://aws.amazon.com/lambda/\"\u003eLambda\u003c/a\u003e function to run a sanity test that is invoked by CodeDeploy after traffic shifting completes\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e\u003ca href=\"https://aws.amazon.com/ec2/\"\u003eEC2\u003c/a\u003e\u003c/h2\u003e\n\u003ch3\u003eHigh Performance Computing (HPC) app on small number of \u003ca href=\"https://aws.amazon.com/ec2/\"\u003eEC2\u003c/a\u003e placed in single AZ\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eDeploy the \u003ca href=\"https://aws.amazon.com/ec2/\"\u003eEC2\u003c/a\u003e servers in a Cluster Placement Group\u003c/li\u003e\n\u003cli\u003eCluster Placement Groups are recommended for application that benefit from low network latency, high network throughput, or both\u003c/li\u003e\n\u003cli\u003ealso when the majority of the network traffic is between the instances in the group\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e\u003ca href=\"https://aws.amazon.com/server-migration-service/\"\u003eServer Migration Service\u003c/a\u003e\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003emigrate your servers to cloud?\u003c/li\u003e\n\u003cli\u003ecurrent servers are built and configured automatically using Chef\u003c/li\u003e\n\u003cli\u003eServer Migration Service will bring your existing Chef managed machines into \u003ca href=\"https://aws.amazon.com/ec2/\"\u003eEC2\u003c/a\u003e and to manage them with Chef the same way you have been on your in-house system\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e\u003ca href=\"https://aws.amazon.com/kinesis/data-streams/\"\u003eKinesis Data Streams\u003c/a\u003e\u003c/h2\u003e\n\u003ch3\u003eKinesis Data Streams - throughput lower then expected\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eCheck the GetShardIterator, CreateStream, and DescribeStream \u003cstrong\u003eService Limits\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003eUse a Small Producer with the \u003ca href=\"https://docs.aws.amazon.com/streams/latest/dev/developing-producers-with-kpl.html\"\u003eKinesis Producer Library\u003c/a\u003e, but using the PutRecords operation\u003c/li\u003e\n\u003cli\u003eDevelop code using the Z\u003ca href=\"https://docs.aws.amazon.com/streams/latest/dev/developing-producers-with-kpl.html\"\u003eKinesis Producer Library\u003c/a\u003e to put data onto the streams\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eslower than expected reading from the shards, but you are also seeing records being skipped - WHAT COULD CAUSE A SLOW DOWN IN READING FROM A SHARD\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003efor slow reading - it could be due to the maxRecords value being set too low\u003c/li\u003e\n\u003cli\u003ecode logic which is calling processRecords being inefficient and causing high CPU usage or blocking\u003c/li\u003e\n\u003cli\u003eUSUALLY PROCESS RECORDS CALLS HAVING BE UN HANDLED EXCEPTIONS\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003eprocession incoming streaming data. \u003ca href=\"https://aws.amazon.com/premiumsupport/knowledge-center/kinesis-data-streams-iteratorage-metric/\"\u003eGetRecords.IteratorAgeMilliseconds\u003c/a\u003e metric increases. How TO REDUCE THE TIME LAG IN THE STREAM\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eIncrease parallelism by adding more shards per stream\u003c/li\u003e\n\u003cli\u003eAdd more \u003ca href=\"https://aws.amazon.com/ec2/\"\u003eEC2\u003c/a\u003e KCL consumers to allow each to process less shards per instance\u003c/li\u003e\n\u003cli\u003eAn increased GetRecords.IteratorAgeMilliseconds metric means that either the KCL consumer cannot keep up processing the data from the Kinesis stream or there aren't enough shards in the stream\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e\u003ca href=\"https://aws.amazon.com/cloudsearch/\"\u003eAWS CloudSearch\u003c/a\u003e\u003c/h2\u003e\n\u003ch3\u003esearch contents of documents in \u003ca href=\"https://aws.amazon.com/s3/\"\u003eS3\u003c/a\u003e\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eImplement Amazon CloudSearch\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://docs.aws.amazon.com/cloudsearch/latest/developerguide/configuring-access.html\"\u003eSetup Access policies\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://docs.aws.amazon.com/cloudsearch/latest/developerguide/configuring-index-fields.html\"\u003eConfigure your index\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://docs.aws.amazon.com/cloudsearch/latest/developerguide/creating-domains.html\"\u003eCreate a search domain\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003e\u003ca href=\"https://aws.amazon.com/inspector/\"\u003eAmazon Inspector\u003c/a\u003e\u003c/h2\u003e\n\u003ch3\u003eweekly scan of ports reachable from outside the VPC\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eConfigure Network Assessments\u003c/li\u003e\n\u003cli\u003eAmazon Inspector is an automated security assessment service which will allow you to improve the security and compliance of your applications.\u003c/li\u003e\n\u003cli\u003e\u003cstrong\u003eA network configuration analysis checks for any ports reachable from outside the VPC.\u003c/strong\u003e\u003c/li\u003e\n\u003cli\u003eTHE AGENT IS REQUIRED\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3\u003elatency of static files currently shared EFS volume across all your app servers its to slow\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003eUtilize Amazon CloudFront to optimize your static content\u003c/li\u003e\n\u003cli\u003eUse \u003ca href=\"https://aws.amazon.com/dynamodb/\"\u003eDynamoDB\u003c/a\u003e Global Tables to create a multi-master, multi-region data store for your application's back-end.\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"https://aws.amazon.com/dynamodb/\"\u003eDynamoDB\u003c/a\u003e streams will propagate changes between the replicas so that users will have high performant and consistent app experience regardless of from where they access the site\u003c/li\u003e\n\u003cli\u003eMULTI REGION REPLICATION AND MULTI-MASTER WRITES = GLOBAL TABLE in \u003ca href=\"https://aws.amazon.com/dynamodb/\"\u003eDynamoDB\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch4\u003eACKNOWLEDGEMENTS\u003c/h4\u003e\n\u003cp\u003e\u003ca href=\"https://smadikanti.medium.com/aws-devops-professional-cheat-sheet-2cf77f76ace0\"\u003eAWS DEV OPS Cheat Sheet - medium article smadikanti\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://www.jakearmijo.com/\"\u003eJake Armijo\u003c/a\u003e \u003cstrong\u003e|\u003c/strong\u003e Full Stack Software Engineer\n\u003c/p\u003e\n\u003cp\u003eConnect with me on \u003ca href=\"https://www.linkedin.com/in/jake-armijo/\"\u003eLinkedIn\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eSchedule a meeting with me on \u003ca href=\"https://calendly.com/armijojake/meeting\"\u003eCalendly\u003c/a\u003e\u003c/p\u003e\n","title":"AWS DOP-C01 Cheat Sheet","date":"2022-12-17","category":"Guidance, Advice","template":"blog-post","tags":"AWS, Exam, DEV OPS, AWS Certified, AWS Professional, Cheat Sheet, AWS Certified DevOps Engineer - Professional"}},"__N_SSG":true},"page":"/blog/[id]","query":{"id":"aws-dev-ops-prof-cert"},"buildId":"VAtrMvffHXl6KoSzfFe-D","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
