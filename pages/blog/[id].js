@@ -24,7 +24,7 @@ export default function Post({ postData }) {
   return (
     <Layout>
       <Head>
-        <title>{postData.title} - Armijo - Blog</title>
+        <title>{postData.title}</title>
         <link
           rel="canonical"
           href={`https://www.jakearmijo.com/blog/${postData.id}`}

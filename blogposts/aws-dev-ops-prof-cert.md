@@ -1,6 +1,6 @@
 ---
 id: 'aws-dev-ops-prof-cert'
-title: 'AWS DOP-C01 Cheat Sheet'
+title: 'AWS DevOps Professional Cheat Sheet'
 date: '2022-12-17'
 category: "Guidance, Advice"
 template: "blog-post"
