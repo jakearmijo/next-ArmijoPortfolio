@@ -24,10 +24,12 @@ I watched this **[incredible tutorial](https://explorers.netlify.com/learn/nextj
 
 ![Netlify](../public/images/netlifyLogo.png)
 
-<img
+<Image
   loader="myImageLoader"
   src="../public/images/netlifyLogo.png"
-  alt="Netlify">
+  alt="Netlify"
+  width="200"
+  height="150">
 
 ### Step By Step How To - Netlify
 
@@ -44,7 +46,12 @@ I watched this **[incredible tutorial](https://explorers.netlify.com/learn/nextj
 
 ## Google Domains
 
-![GoogleDomains](../public/images/google-domains-logo.png)
+<Image
+  loader="myImageLoader"
+  src="../public/images/google-domains-logo.png"
+  alt="GoogleDomains"
+  width="200"
+  height="150">
 
 ### Step By Step How To - Google
 
