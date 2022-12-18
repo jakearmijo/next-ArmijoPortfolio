@@ -634,8 +634,16 @@ footer {
 }
 
 .blogIntroDiv > ul > ul{
-  list-style: none;
   padding-left: 15px;
+}
+
+.blogIntroDiv > h1 {
+  list-style: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 50%;
+  justify-content: center;
+  
 }
 
 .blogIntroDiv > h2 {
