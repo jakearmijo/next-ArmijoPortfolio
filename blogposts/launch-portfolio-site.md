@@ -6,19 +6,21 @@ category: "Tutorial"
 template: "blog-post"
 tags: 'Google Domains, Netlify, Nextjs, Gatsby, DNS, Portfolio Site'
 ---
-## How I launched my portfolio site with Google Domains and Netlify
+# How I launched my portfolio site with Google Domains and Netlify
 
 ____________________________________________________________
   
-Hello Everyone, I knew I wanted to create my website a little while ago. I looked at different tech options and tried to select which one would be best. I knew **[Next.js](https://nextjs.org/)** and **[Gatsby](https://www.gatsbyjs.com/)** were popular choices so I mainly researched those. After Boot camp, I did make a full React-based portfolio, but it was large and slow on load time. I knew I could research how to improve this, but I thought I would change the pace and try something new. I was reading about how server-side rendering would be better for load time. I chose Next over Gatsby because I thought it was a bit newer. I enjoyed the Next tutorials while going through them, so I converted the React-based project into a Next.js project.
+Hello Everyone, I knew I wanted to create my website a little while ago. I looked at different tech options and tried to select which one would be best. I knew **[Next.js](https://nextjs.org/)** and **[Gatsby](https://www.gatsbyjs.com/)** were popular choices so I mainly researched those. After Boot camp, I did make a full [React-based portfolio](https://reactjs.org/), but it was large and slow on load time. I knew I could research how to improve this, but I thought I would change the pace and try something new. I was reading about how server-side rendering would be better for load time. I chose Next over Gatsby because I thought it was a bit newer. I enjoyed the Next tutorials while going through them, so I converted the React-based project into a Next.js project.
 
 </br>
 
-When I started to research domains and where to purchase them, I checked GoDaddy first (just because I'm 30 and I've always seen and heard their name) I also stumbled into Google Domains which I quickly leaned towards as the price was even with the range I was seeing and I wanted to have something from a brand I knew. I also came across sites such as  A2, Bluehost, Netlify, or Namecheap. I honestly have no advice as I'm sure if you have made it this far the process is decently simple with any provider you chose. In the end, the final check-out price was $12 for 1 year that I set to reoccurring. There was also an option on there to have a "work" email address. For example, you can choose info@jakearmijo.com or something along those lines. This was an addon for Google Workspace and was $6 per user per month and came with 30GB of cloud storage.
+When I started to research domains and where to purchase them, I checked GoDaddy first (just because I'm 30 and I've always seen and heard their name) I also stumbled into Google Domains which I quickly leaned towards as the price was even with the range I was seeing and I wanted to have something from a brand I knew. I also came across sites such as  [A2](https://www.a2hosting.com/), [Bluehost](https://www.bluehost.com/content/bluehost/en), [Netlify](https://www.netlify.com/), or [Namecheap](https://www.namecheap.com/). I honestly have no advice as I'm sure if you have made it this far the process is decently simple with any provider you chose. In the end, the final check-out price was $12 for 1 year that I set to reoccurring. There was also an option on there to have a "work" email address. For example, you can choose info@jakearmijo.com or something along those lines. This was an addon for [Google Workspace](https://workspace.google.com/) and was $6 per user per month and came with 30GB of cloud storage.
 
 </br>
 
-I watched this **[incredible tutorial](https://explorers.netlify.com/learn/nextjs)** by Cassidoo and I applied it to my site in order to get it up and running with a basic Netlify URL. The process for Netlify to add my custom domain after I had purchased it from google domains is posted below.
+## Netlify
+
+I watched this **[incredible tutorial](https://explorers.netlify.com/learn/nextjs)** by [Cassidoo](https://cassidoo.co/) and I applied it to my site in order to get it up and running with a basic Netlify URL. The process for Netlify to add my custom domain after I had purchased it from google domains is posted below.
 
 ![Netlify](../public/images/netlifyLogo.png)
 
@@ -36,7 +38,7 @@ I watched this **[incredible tutorial](https://explorers.netlify.com/learn/nextj
 5. You will be redirected to your domain settings where you will see your domain. You will see that your domain will have a warning, asking you to "check your DNS configuration". Click to Options -> Set Up Netlify DNS.
 6. Add domain - Netlify will ask you to re-verify your domain name
 7. Add DNS records - The DNS records for your Netlify sites will be configured automatically. I did not have an email account with the domain so I skipped this part.
-8. Activate Netlify DNS - Nelify will give you the names of their name savers. Keep them open and head to google domains.
+8. Activate Netlify DNS - Netlify will give you the names of their name savers. Keep them open and head to google domains.
 
 </br>
 
@@ -55,7 +57,7 @@ I watched this **[incredible tutorial](https://explorers.netlify.com/learn/nextj
 
 Congrats! Your domain is set up - it may take more time but mine was ready within minutes. That is how [https://www.jakearmijo.com](https://www.jakearmijo.com) was born.
 
-Netlify will also set up the HTTPS certificate via [letsencrypt.org](https://letsencrypt.org/donate/). This process took a little longer but when I awoke in the morning I had the HTTPS before the URL and my site was not receiving a privacy warning.
+Netlify will also set up the [HTTPS certificate](https://www.cloudflare.com/learning/ssl/what-is-an-ssl-certificate/) via [letsencrypt.org](https://letsencrypt.org/donate/). This process took a little longer but when I awoke in the morning I had the HTTPS before the URL and my site was not receiving a privacy warning.
 
 Cheers,
 

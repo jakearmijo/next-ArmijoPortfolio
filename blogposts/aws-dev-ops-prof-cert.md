@@ -6,7 +6,7 @@ category: "Guidance, Advice"
 template: "blog-post"
 tags: 'AWS, Exam, DEV OPS, AWS Certified, AWS Professional, Cheat Sheet, AWS Certified DevOps Engineer - Professional'
 ---
-## [AWS DEV OPS PROFESSIONAL](https://aws.amazon.com/certification/certified-devops-engineer-professional/) CHEAT SHEET
+# [AWS DEV OPS PROFESSIONAL](https://aws.amazon.com/certification/certified-devops-engineer-professional/) CHEAT SHEET
 
 ____________________________________________________________
 
@@ -26,7 +26,7 @@ ____________________________________________________________
 - Edit CD application deployment group and change the deployment type from [blue/green](https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/bluegreen-deployments.html) to in-place
 - you are able to edit the application deployment group in [CodeDeploy](https://aws.amazon.com/codedeploy/), you do not have to create a new one.
 
-#### AWS_CODEBUILD_MAX_MEM_ALLOC defined in multiple parts
+### AWS_CODEBUILD_MAX_MEM_ALLOC defined in multiple parts
 
 - value in **start build operation** call takes HIGHEST precedence
 - value in the **build project definition**
@@ -54,7 +54,7 @@ ____________________________________________________________
 - Logstash works well for collecting logs, but is usually paired with [Elasticsearch](https://aws.amazon.com/what-is/elasticsearch/) for log monitoring and analysis.
 - AWS System Manager agents send status and execution info back to Systems Manager but NOT THE APPS LOGS, which the CW Logs agents are capable of sending.
 
-#### want to monitor AWS resources, on premises resources, apps and services
+### want to monitor AWS resources, on premises resources, apps and services
 
 - CW console is a suitable service for selecting metrics and creating graphs
 - CW logs will allow you to log both AWS and on premises resources
@@ -149,7 +149,7 @@ ____________________________________________________________
 - StepFunction state machine with [Lambda](https://aws.amazon.com/lambda/) and CW Events is a solution
 - StepFunction can coordinate the logic to automate the a snapshot flow
 
-#### [golden ami](https://aws.amazon.com/blogs/awsmarketplace/announcing-the-golden-ami-pipeline/) retrieve and inspect with AWS Inspector
+### [golden ami](https://aws.amazon.com/blogs/awsmarketplace/announcing-the-golden-ami-pipeline/) retrieve and inspect with AWS Inspector
 
 - using [CW events schedule](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/Create-CloudWatch-Events-Scheduled-Rule.html) a StepFunction which will launch a single [EC2](https://aws.amazon.com/ec2/) instance from the AMI & tag it
 - SF kicks off AMI assessment template using AWS Inspector and the created tag.
