@@ -1,23 +1,23 @@
-import Head from 'next/head'
-import Layout from '../../components/layout'
-import { getAllPostIds, getPostData } from '../../lib/utils'
-import Script from 'next/script'
+import Head from "next/head";
+import Layout from "../../components/layout";
+import { getAllPostIds, getPostData } from "../../lib/utils";
+import Script from "next/script";
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id)
+  const postData = await getPostData(params.id);
   return {
     props: {
-      postData
-    }
-  }
+      postData,
+    },
+  };
 }
 
 export async function getStaticPaths() {
-  const paths = getAllPostIds()
+  const paths = getAllPostIds();
   return {
     paths,
-    fallback: false
-  }
+    fallback: false,
+  };
 }
 
 export default function Post({ postData }) {
@@ -25,10 +25,23 @@ export default function Post({ postData }) {
     <Layout>
       <Head>
         <title>{postData.title} - Armijo - Blog</title>
+        <link
+          rel="canonical"
+          href={`https://www.jakearmijo.com/blog/${postData.id}`}
+          key="canonical"
+        />
+        <meta
+          name="description"
+          content={`${postData.title}`}
+        />
       </Head>
-      <Script strategy="afterInteractive" async src="https://www.googletagmanager.com/gtag/js?id=G-LLL7EVW69L"></Script>
       <Script
-        id='google-analytics'
+        strategy="afterInteractive"
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-LLL7EVW69L"
+      ></Script>
+      <Script
+        id="google-analytics"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
@@ -39,9 +52,12 @@ export default function Post({ postData }) {
               page_path: window.location.pathname,
             });
           `,
-          }}
+        }}
       />
-      <div className='blogIntroDiv' dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      <div
+        className="blogIntroDiv"
+        dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+      />
     </Layout>
-  )
+  );
 }

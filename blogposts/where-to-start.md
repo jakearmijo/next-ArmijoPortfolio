@@ -38,7 +38,7 @@ Here I want to talk about my current experience and how I have already learned n
 
 Overall it is on you to decide. Any path you choose is fine. They all have pros and cons and it's on you to make the best of the choice you made. For me, it was a start-up. What sold me was the knowledge I was going to be exposed to. I recommend any of these paths to anyone who is searching. If you have any questions or want to make some comments just reach out to me. Don't take this as a bible as this is just me writing my personal thoughts and about my personal experience. Everyone is different and like I said it is ON YOU to decide. I hope this gave you some small insight into the scene and more information when making your decision.
 
-Jake Armijo **|** Full Stack Software Engineer
+[Jake Armijo](https://www.jakearmijo.com/) **|** Full Stack Software Engineer
 </br>
 
 Connect with me on [LinkedIn](https://www.linkedin.com/in/jake-armijo/)

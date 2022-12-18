@@ -48,7 +48,7 @@ Or you can skip everything and just spend around $500 USD to buy the information
 
 </br>
 
-Jake Armijo **|** Full Stack Software Engineer
+[Jake Armijo](https://www.jakearmijo.com/) **|** Full Stack Software Engineer
 </br>
 
 Connect with me on [LinkedIn](https://www.linkedin.com/in/jake-armijo/)
