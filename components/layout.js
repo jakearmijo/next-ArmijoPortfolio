@@ -35,8 +35,8 @@ export default function Layout({ children, home }) {
               src={JakeMijLogo}
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
-              width="800"
-              height="600"
+              width="400"
+              height="300"
             />
           </>
         ) : (
@@ -48,8 +48,8 @@ export default function Layout({ children, home }) {
                   src={JakeMijLogo}
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt={name}
-                  width="800"
-                  height="600"
+                  width="400"
+                  height="300"
                 />
               </a>
             </Link>
