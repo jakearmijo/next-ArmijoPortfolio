@@ -26,6 +26,11 @@ export default function Post( { allPostsData } ) {
       <Head>
         <title>The Mij Blog</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link
+          rel="canonical"
+          href="https://www.jakearmijo.com/blog"
+          key="canonical"
+        />
       </Head>
       <Script strategy="afterInteractive" async src="https://www.googletagmanager.com/gtag/js?id=G-LLL7EVW69L"></Script>
       <Script

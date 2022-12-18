@@ -15,7 +15,7 @@ function NavbarBlog() {
       <Link href="/">
         CONTACT
       </Link>
-      <Link href="https://jakearmijo.com/blog">
+      <Link href="/blog">
         BLOG
       </Link>
       <Link href="http://todaystilts.jakearmijo.com/">

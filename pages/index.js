@@ -19,6 +19,12 @@ function Home() {
       <Head>
         <title>The Armijo Algorithm</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="robots" content="all" />
+        <link
+          rel="canonical"
+          href="https://www.jakearmijo.com/"
+          key="canonical"
+        />
       </Head>
         <Script strategy="afterInteractive" async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_TRACKING_ID}`}></Script>
         <Script

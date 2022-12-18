@@ -82,7 +82,7 @@ Secondly, The act of being intentional. Life is driven by intention decision mak
 Time is not a friend to ADHD people. Don’t stress about how long things will take. You will have to work harder than the others.
 Set Intentions and create certainty to increase your chances of success with ADHD.
 
-Jake Armijo **|** Full Stack Software Engineer
+[Jake Armijo](https://www.jakearmijo.com/) **|** Full Stack Software Engineer
 </br>
 
 Connect with me on [LinkedIn](https://www.linkedin.com/in/jake-armijo/)

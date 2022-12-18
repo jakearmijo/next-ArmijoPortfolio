@@ -10,7 +10,7 @@ tags: 'Google Domains, Netlify, Nextjs, Gatsby, DNS, Portfolio Site'
 
 ____________________________________________________________
   
-Hello Everyone, I knew I wanted to create my website a little while ago. I looked at different tech options and tried to select which one would be best. I knew **[Next.js](https://nextjs.org/)** and **[Gatsby](https://www.gatsbyjs.com/)** were popular choices so I mainly researched those. After Bootcamp, I did make a full React-based portfolio, but it was large and slow on load time. I knew I could research how to improve this, but I thought I would change the pace and try something new. I was reading about how server-side rendering would be better for load time. I chose Next over Gatsby because I thought it was a bit newer. I enjoyed the Next tutorials while going through them, so I converted the React-based project into a Next.js project.
+Hello Everyone, I knew I wanted to create my website a little while ago. I looked at different tech options and tried to select which one would be best. I knew **[Next.js](https://nextjs.org/)** and **[Gatsby](https://www.gatsbyjs.com/)** were popular choices so I mainly researched those. After Boot camp, I did make a full React-based portfolio, but it was large and slow on load time. I knew I could research how to improve this, but I thought I would change the pace and try something new. I was reading about how server-side rendering would be better for load time. I chose Next over Gatsby because I thought it was a bit newer. I enjoyed the Next tutorials while going through them, so I converted the React-based project into a Next.js project.
 
 </br>
 
@@ -19,6 +19,13 @@ When I started to research domains and where to purchase them, I checked GoDaddy
 </br>
 
 I watched this **[incredible tutorial](https://explorers.netlify.com/learn/nextjs)** by Cassidoo and I applied it to my site in order to get it up and running with a basic Netlify URL. The process for Netlify to add my custom domain after I had purchased it from google domains is posted below.
+
+![Netlify](../public/images/netlifyLogo.png)
+
+<img
+  loader="myImageLoader"
+  src="../public/images/netlifyLogo.png"
+  alt="Netlify">
 
 ### Step By Step How To - Netlify
 
@@ -35,6 +42,8 @@ I watched this **[incredible tutorial](https://explorers.netlify.com/learn/nextj
 
 ## Google Domains
 
+![GoogleDomains](../public/images/google-domains-logo.png)
+
 ### Step By Step How To - Google
 
   1. Navigate to your domain settings
@@ -50,7 +59,7 @@ Netlify will also set up the HTTPS certificate via [letsencrypt.org](https://let
 
 Cheers,
 
-Jake Armijo **|** Full Stack Software Engineer
+[Jake Armijo](https://www.jakearmijo.com/) **|** Full Stack Software Engineer
 </br>
 
 Connect with me on [LinkedIn](https://www.linkedin.com/in/jake-armijo/)
