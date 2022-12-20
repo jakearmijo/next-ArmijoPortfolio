@@ -43,18 +43,20 @@ async function getStaticProps() {
 function Post({
   allPostsData
 }) {
-  const lastPostBtn = 'Last Post';
-  const nextPostBtn = 'Next Post';
-  const backtoHome = 'Back to Home Page';
-  const tableOfContents = 'Table Of Contents';
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_components_layout__WEBPACK_IMPORTED_MODULE_0__/* .default */ .Z, {
     home: true,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)((next_head__WEBPACK_IMPORTED_MODULE_1___default()), {
       children: [/*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("title", {
-        children: "The Mij Blog"
+        children: "The Armijo Blog"
       }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("meta", {
         name: "viewport",
         content: "initial-scale=1.0, width=device-width"
+      }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("meta", {
+        name: "robots",
+        content: "all"
+      }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("meta", {
+        name: "description",
+        content: "Jake Armijo blog site"
       }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("link", {
         rel: "canonical",
         href: "https://www.jakearmijo.com/blog"
@@ -96,7 +98,8 @@ function Post({
           children: allPostsData.map(({
             id,
             date,
-            title
+            title,
+            tags
           }, idx) => /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__.default, {
             href: `/blog/${id}`,
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("li", {
@@ -105,8 +108,10 @@ function Post({
                 children: "Post Title:"
               }), " ", title, /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("br", {}), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("strong", {
                 children: "Post Date:"
-              }), " ", date, /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("h6", {
-                children: "_______________________"
+              }), " ", date, /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("br", {}), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("strong", {
+                children: "Post Tags:"
+              }), " ", tags, /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("h2", {
+                children: "____________________________________"
               }), /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx("br", {})]
             }, id)
           }, idx))

@@ -105,8 +105,8 @@ function Layout({
           src: public_images/* JakeMijLogo */.mm,
           className: `${(layout_module_default()).headerHomeImage} ${(utils_module_default()).borderCircle}`,
           alt: layout_name,
-          width: "800",
-          height: "600"
+          width: "400",
+          height: "300"
         })
       }) : /*#__PURE__*/jsx_runtime_.jsx(jsx_runtime_.Fragment, {
         children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
@@ -117,8 +117,8 @@ function Layout({
               src: public_images/* JakeMijLogo */.mm,
               className: `${(layout_module_default()).headerImage} ${(utils_module_default()).borderCircle}`,
               alt: layout_name,
-              width: "800",
-              height: "600"
+              width: "400",
+              height: "300"
             })
           })
         })
