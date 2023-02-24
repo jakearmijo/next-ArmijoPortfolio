@@ -24,7 +24,7 @@ export default function Projects() {
         <h1 className="projectTitle">Andrew Phipps Real Estate</h1>
         <Image
           loader={myImageLoader}
-          src="../public/images/AndrewPhippsRealEstate.png"
+          src="/images/AndrewPhippsRealEstate.png"
           className="projectImage"
           width="1000"
           height="600"
@@ -42,8 +42,7 @@ export default function Projects() {
             performance and actions. This was my first time deploying with
             Amplify and it was fun to learn something new from scratch. The
             domain was purchased with Google domains and I took care of all the
-            DNS things. The full website can be viewed here ->
-            https://www.andrewphippsrealestate.com/#/
+            DNS things.
           </p>
           <p className="p-project p-tech">
             Technologies: JavaScript, React, AWS Amplify, AWS Lambda, Google

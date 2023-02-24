@@ -26,6 +26,7 @@ import JakeMijLogo from './JAKEMIJUPDATE.svg'
 import SendItLogo from './sendit.png'
 import LinkedInLogo from './LinkedIn.png'
 import Phutbol from './Phutbol.svg'
+import AndrewPhippsRealEstate from './AndrewPhippsRealEstate.svg'
 import Externallink2 from './externallink2.png'
 import Github3 from './github3.png'
 import JDBCars from './JDBCars.svg'
@@ -68,6 +69,7 @@ export {
   SendItLogo,
   LinkedInLogo,
   Phutbol,
+  AndrewPhippsRealEstate,
   Externallink2,
   Github3,
   JDBCars,
