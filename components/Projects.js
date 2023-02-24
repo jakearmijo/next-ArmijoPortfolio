@@ -24,7 +24,7 @@ export default function Projects() {
         <h1 className="projectTitle">Andrew Phipps Real Estate</h1>
         <Image
           loader={myImageLoader}
-          src="/images/AndrewPhippsRealEstate.png"
+          src="/images/AndrewPhippsRealEstate.svg"
           className="projectImage"
           width="1000"
           height="600"
