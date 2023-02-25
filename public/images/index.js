@@ -85,5 +85,6 @@ export {
   AWSLogo,
   AzureLogo,
   TerraformLogo_2,
-  DatadogLogo
+  DatadogLogo,
+  MongoDBLogo,
 }

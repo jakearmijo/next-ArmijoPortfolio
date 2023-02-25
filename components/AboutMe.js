@@ -30,6 +30,7 @@ import {
   FastAPILogo,
   AWSLogo,
   AzureLogo,
+  MongoDBLogo
  } from '../public/images'
  import {myImageLoader} from '../lib/utils'
 
@@ -124,12 +125,16 @@ export default function AboutMe() {
               <span className="tooltiptext">FastApi</span>
             </div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} width="3vw" height="3vw"  src={SequelizeLogo} alt="HTML" />
+              <Image loader={myImageLoader} width="3vw" height="3vw"  src={SequelizeLogo} alt="Sequelize Logo" />
               <span className="tooltiptext">Sequelize</span>
             </div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} width="3vw" height="3vw"  src={PostgresLogo} alt="CSS" />
+              <Image loader={myImageLoader} width="3vw" height="3vw"  src={PostgresLogo} alt="Postgres Logo" />
               <span className="tooltiptext">Postgres</span>
+            </div>
+            <div className="tech tooltip">
+              <Image loader={myImageLoader} width="3vw" height="3vw"  src={MongoDBLogo} alt="Mongo DB Logo" />
+              <span className="tooltiptext">MongoDB</span>
             </div>
             <div className="tech tooltip">
               <Image loader={myImageLoader} width="3vw" height="3vw"  src={SocketIOLogo} alt="Socket.io" />
