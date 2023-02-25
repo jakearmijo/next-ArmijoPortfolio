@@ -41,6 +41,9 @@ import AWSLogo from './AWSLogo.svg'
 import AzureLogo from './AzureLogo.png'
 import TerraformLogo_2 from './TerraformLogo_2.png'
 import DatadogLogo from './DatadogLogo.png'
+import MongoDBLogo from './MongoDBLogo.png'
+import DevOpsCert from './dev_ops_cert.png'
+import DevAssCert from './dev_ass_cert.png'
 
 export {
   ReactLogo,
@@ -87,4 +90,6 @@ export {
   TerraformLogo_2,
   DatadogLogo,
   MongoDBLogo,
+  DevOpsCert,
+  DevAssCert
 }

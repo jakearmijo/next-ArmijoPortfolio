@@ -30,7 +30,9 @@ import {
   FastAPILogo,
   AWSLogo,
   AzureLogo,
-  MongoDBLogo
+  MongoDBLogo,
+  DevOpsCert,
+  DevAssCert
  } from '../public/images'
  import {myImageLoader} from '../lib/utils'
 
@@ -242,6 +244,14 @@ export default function AboutMe() {
             <div className="tech tooltip">
               <Image loader={myImageLoader} width="3vw" height="3vw"  src={AWSLogo} alt="AwsLogo" />
               <span className="tooltiptext">AWS</span>
+            </div>
+            <div className="tech tooltip">
+              <Image loader={myImageLoader} width="3vw" height="3vw"  src={DevAssCert} alt="Dev Associate AWS" />
+              <span className="tooltiptext">Developer Associate</span>
+            </div>
+            <div className="tech tooltip">
+              <Image loader={myImageLoader} width="3vw" height="3vw"  src={DevOpsCert} alt="Dev Ops AWS" />
+              <span className="tooltiptext">Dev Ops</span>
             </div>
             <div className="tech tooltip">
               <Image loader={myImageLoader} width="3vw" height="3vw"  src={AzureLogo} alt="Azure" />
