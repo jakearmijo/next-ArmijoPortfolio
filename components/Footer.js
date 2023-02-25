@@ -40,7 +40,7 @@ export default function Footer() {
           </a>
         </div>
         <div id="copyright">
-          © <span id="year">2020</span> Jake Armijo. All rights reserved.
+          © <span id="year">2023</span> Jake Armijo. All rights reserved.
         </div>
       </footer>
     </div>
