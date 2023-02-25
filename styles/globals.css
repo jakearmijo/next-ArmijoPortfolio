@@ -329,7 +329,7 @@ p {
   background-position: center;
   background-size: cover;
   margin: 60px;
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
   transition: all 1s ease;
   border: 5px solid #333333;
 }
