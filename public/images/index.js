@@ -39,6 +39,8 @@ import DockerLogo from './DockerLogo.png'
 import VueLogo from './VUEjsLogo.png'
 import AWSLogo from './AWSLogo.svg'
 import AzureLogo from './AzureLogo.png'
+import TerraformLogo_2 from './TerraformLogo_2.png'
+import DatadogLogo from './DatadogLogo.png'
 
 export {
   ReactLogo,
@@ -82,4 +84,6 @@ export {
   FastAPILogo,
   AWSLogo,
   AzureLogo,
+  TerraformLogo_2,
+  DatadogLogo
 }

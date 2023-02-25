@@ -25,6 +25,7 @@ import {
   MochaLogo,
   ChaiLogo,
   DockerLogo,
+  TerraformLogo_2,
   VueLogo,
   FastAPILogo,
   AWSLogo,
@@ -166,8 +167,16 @@ export default function AboutMe() {
               <span className="tooltiptext">TravisCI</span>
             </div>
             <div className="tech tooltip">
-              <Image loader={myImageLoader} width="3vw" height="3vw"  src={DockerLogo} alt="TravisCI" />
+              <Image loader={myImageLoader} width="3vw" height="3vw"  src={DockerLogo} alt="Docker" />
               <span className="tooltiptext">Docker</span>
+            </div>
+            <div className="tech tooltip">
+              <Image loader={myImageLoader} width="3vw" height="3vw"  src={TerraformLogo_2} alt="Terraform" />
+              <span className="tooltiptext">Terraform</span>
+            </div>
+            <div className="tech tooltip">
+              <Image loader={myImageLoader} width="3vw" height="3vw"  src="/images/DatadogLogo.png" alt="DatadogLogo" />
+              <span className="tooltiptext">Datadog</span>
             </div>
           </div>
           <div
