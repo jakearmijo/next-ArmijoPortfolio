@@ -21,7 +21,6 @@ function Home() {
         <link
           rel="canonical"
           href="https://www.jakearmijo.com/"
-          key="canonical"
         />
       </Head>
       <Script

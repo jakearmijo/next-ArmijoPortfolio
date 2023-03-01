@@ -29,7 +29,6 @@ export default function Post({ postData }) {
         <link
           rel="canonical"
           href={`https://www.jakearmijo.com/blog/${postData.id}`}
-          key="canonical"
         />
         <meta
           name="description"

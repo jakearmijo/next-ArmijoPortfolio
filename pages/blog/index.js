@@ -26,7 +26,6 @@ export default function Post({ allPostsData }) {
         <link
           rel="canonical"
           href="https://www.jakearmijo.com/blog"
-          key="canonical"
         />
       </Head>
       <Script
