@@ -7,7 +7,7 @@ template: "blog-post"
 tags: 'Google Dev Tools, Reduce, Map, Nodejs, Web Scraping'
 ---
 
-# WIP - Web Scraping and how to use reduce and map inside google dev tools console
+## WIP - Web Scraping and how to use reduce and map inside google dev tools console
 
 Let's say I needed to pull specific information off of a webpage. I could utilize web scraping. Web scraping, web harvesting, or web data extraction is [data scraping](https://www.cloudflare.com/learning/bots/what-is-data-scraping/) used for extracting information from websites. Although it can be used for a wide variety of things (some good and some not good) some useful examples include:
 
@@ -29,7 +29,7 @@ In the examples we are going to be imagining we are trying to grab a bunch of di
   
   1. Open Chrome and navigate to [featuredcustomers.com](https://www.featuredcustomers.com/vendor/woocommerce/case-studies/all). This is the website we will be grabbing all of our URLs from.
 
-## MAP EXAMPLE -> can add in the .com to query and show that as well
+### MAP EXAMPLE -> can add in the .com to query and show that as well
 
 ```Java[script](https://realpython.com/python-web-scraping-practical-introduction/)
 Array.from(document.querySelectorAll('.caseStudy-card-heading > a'))
@@ -38,7 +38,7 @@ Array.from(document.querySelectorAll('.caseStudy-card-heading > a'))
     .join(), name: title, source: 'https://www.bigcommerce.com/case-study/'}))`
 ```
 
-## REDUCE -> [Example we site to scrap](https://www.silksoftware.com/work/)
+### REDUCE -> [Example we site to scrap](https://www.silksoftware.com/work/)
 
 ```Java[script](https://realpython.com/python-web-scraping-practical-introduction/)
 Array.from(document.querySelectorAll('.content-center')).reduce((previous, element) => {
@@ -48,7 +48,7 @@ Array.from(document.querySelectorAll('.content-center')).reduce((previous, eleme
       return [...previous,{ url: undefined, name: innerHTML, source: 'https://netalico.com/', provider:innerText }]}, [])`
 ```
 
-### NOTES
+#### NOTES
 
 Or you can skip everything and just spend around $500 USD to buy the information or data you want from a site that already has been doing this for years.
 

@@ -6,7 +6,7 @@ category: "Tutorial"
 template: "blog-post"
 tags: 'Google Domains, Netlify, Nextjs, Gatsby, DNS, Portfolio Site'
 ---
-# How I launched my portfolio site with Google Domains and Netlify
+## How I launched my portfolio site with Google Domains and Netlify
 
 ____________________________________________________________
   
@@ -18,7 +18,7 @@ When I started to research domains and where to purchase them, I checked GoDaddy
 
 </br>
 
-## Netlify
+### Netlify
 
 I watched this **[incredible tutorial](https://explorers.netlify.com/learn/nextjs)** by [Cassidoo](https://cassidoo.co/) and I applied it to my site in order to get it up and running with a basic Netlify URL. The process for Netlify to add my custom domain after I had purchased it from google domains is posted below.
 
@@ -31,7 +31,7 @@ I watched this **[incredible tutorial](https://explorers.netlify.com/learn/nextj
   width="200"
   height="150">
 
-### Step By Step How To - Netlify
+#### Step By Step How To - Netlify
 
 1. In your Netlify console, navigate to your site and click Domain Settings. Click the green button "Add a custom domain".
 2. It will prompt you to provide the name of the domain you have bought. For example **<https://www.jakearmijo.com>**.
@@ -44,7 +44,7 @@ I watched this **[incredible tutorial](https://explorers.netlify.com/learn/nextj
 
 </br>
 
-## Google Domains
+### Google Domains
 
 <Image
   loader="myImageLoader"
@@ -53,7 +53,7 @@ I watched this **[incredible tutorial](https://explorers.netlify.com/learn/nextj
   width="200"
   height="150">
 
-### Step By Step How To - Google
+#### Step By Step How To - Google
 
   1. Navigate to your domain settings
   2. Click DNS
