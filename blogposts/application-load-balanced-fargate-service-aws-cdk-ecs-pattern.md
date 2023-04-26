@@ -41,17 +41,17 @@ To use the **`ApplicationLoadBalancedFargateService`** construct, you will need 
 
 2. Install the AWS CDK by running the following command:
 
-  ```shell
-    npm install -g aws-cdk
-  ```
+```shell
+  npm install -g aws-cdk
+```
 
 3. Creating a new CDK app:
 
   Create a new directory for your CDK app and navigate into it. Then, run the following command to create a new Python CDK app:
 
-  ```shell
-    cdk init --language python
-  ```
+```shell
+  cdk init --language python
+```
 
 This will create a new CDK app with the necessary boilerplate files.
 
@@ -97,15 +97,15 @@ In this example, we create a new VPC with two availability zones, an ECS cluster
   To deploy our stack, we need to build and synthesize our CDK app, and then deploy the resulting CloudFormation template using the AWS CLI.
   First, build and synthesize the app by running the following commands:
 
-  ```shell
-    cdk synth
-  ```
+```shell
+  cdk synth
+```
 
 6. Now that we have defined our infrastructure, we can deploy it to AWS by running the following command:
 
-  ```shell
-    cdk deploy
-  ```
+```shell
+  cdk deploy
+```
 
 This will package and deploy our application to AWS. Once the deployment is complete, we can verify that our application is up and running by navigating to the URL of the load balancer.
 
@@ -113,4 +113,4 @@ This will package and deploy our application to AWS. Once the deployment is comp
 
 In this article, we have seen how to use the AWS CDK to define and deploy an Application Load Balanced Fargate service using Python. We have also discussed the basic architecture of the Fargate service and how it fits into a typical ECS pattern. The AWS CDK is a powerful tool for defining and deploying AWS infrastructure and allows us to use the same programming language and tools that we use to build our applications.
 
-[The Documentation](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_aws-ecs-patterns.ApplicationLoadBalancedFargateService.html)
+[**The ApplicationLoadBalancedFargateService Documentation** - Click Here](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_aws-ecs-patterns.ApplicationLoadBalancedFargateService.html)
