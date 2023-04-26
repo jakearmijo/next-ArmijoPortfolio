@@ -1,7 +1,7 @@
 ---
 id: 'why-docker-image-size-grows'
 title: 'Why do Docker Image Sizes grow?'
-date: '2023-4-23'
+date: '2023-4-22'
 category: "Guidance, Advice, Technical, Docker, Containers"
 template: "blog-post"
 tags: 'Docker, Scalable, Web Development, Container'
