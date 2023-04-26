@@ -33,7 +33,7 @@ useEffect(() => {
 
 Then the effect would run whenever the value of **`someValue`** changes.
 
-Why is the dependency array important?
+## Why is the dependency array important?
 
 The dependency array is important for two reasons:
 
@@ -58,7 +58,7 @@ useEffect(() => {
 
 Now, the effect will only run when the value of **`count`** changes, and the infinite loop is avoided.
 
-Tips for using the dependency array
+## Tips for using the dependency array
 
 Here are a few tips to keep in mind when using the dependency array:
 
