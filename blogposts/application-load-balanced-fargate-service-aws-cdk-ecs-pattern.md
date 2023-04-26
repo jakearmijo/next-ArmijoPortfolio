@@ -27,7 +27,7 @@ Let's take a quick look at ECS Fargate. ECS Fargate is a serverless compute engi
 
 Now, let's see how to use the **`ApplicationLoadBalancedFargateService`** construct to deploy an ECS Fargate service behind an Application Load Balancer.
 
-Using the **`ApplicationLoadBalancedFargateService`**
+## Using the **`ApplicationLoadBalancedFargateService`**
 
 To use the **`ApplicationLoadBalancedFargateService`** construct, you will need to have an AWS account and have the AWS CLI and AWS CDK installed. You will also need to have a Docker image for your application, which can be stored in a container registry like Amazon ECR (Elastic Container Registry).
 
