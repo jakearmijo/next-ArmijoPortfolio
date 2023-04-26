@@ -21,7 +21,7 @@ At a high level, RabbitMQ works by receiving messages from producers and passing
 
 In RabbitMQ, messages are organized into queues. Producers send messages to a queue, and consumers subscribe to that queue to receive messages. When a message is received, it is removed from the queue and processed by the consumer.
 
-Integrating RabbitMQ with a Node.js, Express.js, and MongoDB web application
+### Integrating RabbitMQ with a Node.js, Express.js, and MongoDB web application
 
 To integrate RabbitMQ with a Node.js, Express.js, and MongoDB web application, we'll need to do the following:
 
