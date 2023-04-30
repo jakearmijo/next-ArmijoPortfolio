@@ -11,15 +11,15 @@ tags: 'AWS, Scalable, Python, Web Development, CDK, ALB, Fargate, ECS, ECS Patte
 
 ## AWS CDK's ApplicationLoadBalancedFargateService
 
-AWS CDK (Cloud Development Kit) is a framework for defining cloud infrastructure in code. It allows developers to use familiar programming languages, such as TypeScript or Python, to define infrastructure as code. One of the constructs provided by AWS CDK is the **`ApplicationLoadBalancedFargateService`**, which simplifies the deployment of a Fargate service behind an Application Load Balancer.
+[AWS CDK (Cloud Development Kit)](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-construct-library.html) is a framework for defining cloud infrastructure in code. It allows developers to use familiar programming languages, such as TypeScript or Python, to define [infrastructure as code](https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac). One of the constructs provided by AWS CDK is the **`ApplicationLoadBalancedFargateService`**, which simplifies the deployment of a [Fargate service](https://docs.aws.amazon.com/AmazonECS/latest/userguide/what-is-fargate.html) behind an [Application Load Balancer](https://github.com/donnemartin/system-design-primer#load-balancer).
 
-## System Design
+## [System Design](https://github.com/donnemartin/system-design-primer)
 
-Before we dive into how to use the **`ApplicationLoadBalancedFargateService`** ecs pattern, let's first discuss the system design that it enables.
+Before we dive into how to use the **`ApplicationLoadBalancedFargateService`** [ecs pattern](https://docs.aws.amazon.com/cdk/api/v1/docs/aws-ecs-patterns-readme.html), let's first discuss the system design that it enables.
 
-At a high level, the **`ApplicationLoadBalancedFargateService`** allows you to create an Amazon ECS (Elastic Container Service) Fargate service that runs a set of containers and is fronted by an Application Load Balancer. The Application Load Balancer distributes incoming traffic across the containers running in the Fargate service, based on rules that you define.
+At a high level, the **`ApplicationLoadBalancedFargateService`** allows you to create an [Amazon ECS (Elastic Container Service)](https://aws.amazon.com/ecs/) Fargate service that runs a set of [containers](https://www.docker.com/resources/what-container/#:~:text=A%20Docker%20container%20image%20is,tools%2C%20system%20libraries%20and%20settings.) and is fronted by an Application Load Balancer. The Application Load Balancer distributes incoming traffic across the containers running in the Fargate service, based on rules that you define.
 
-The Fargate service is part of a larger architecture that might include other AWS services, such as Amazon RDS (Relational Database Service) for database storage or Amazon S3 for object storage. The Application Load Balancer provides a central entry point for incoming traffic and routes that traffic to the appropriate services running in the Fargate service.
+The Fargate service is part of a larger architecture that might include other AWS services, such as [Amazon RDS (Relational Database Service)](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html) for database storage or [Amazon S3 for object storage](https://docs.aws.amazon.com/s3/index.html). The Application Load Balancer provides a central entry point for incoming traffic and routes that traffic to the appropriate services running in the Fargate service.
 
 ## ECS Fargate
 
@@ -29,7 +29,7 @@ Now, let's see how to use the **`ApplicationLoadBalancedFargateService`** constr
 
 ## Using the **`ApplicationLoadBalancedFargateService`**
 
-To use the **`ApplicationLoadBalancedFargateService`** construct, you will need to have an AWS account and have the AWS CLI and AWS CDK installed. You will also need to have a Docker image for your application, which can be stored in a container registry like Amazon ECR (Elastic Container Registry).
+To use the **`ApplicationLoadBalancedFargateService`** construct, you will need to have an AWS account and have the AWS CLI and AWS CDK installed. You will also need to have a Docker image for your application, which can be stored in a container registry like [Amazon ECR (Elastic Container Registry)](https://aws.amazon.com/ecr/) or [DockerHub](https://hub.docker.com/).
 
 ## Here's an example of how to use the **`ApplicationLoadBalancedFargateService`** in Python
 
